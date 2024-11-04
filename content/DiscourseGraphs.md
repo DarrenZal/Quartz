@@ -1,4 +1,4 @@
-# Integrating Discourse Graphs into OpenCivics' Decentralized Knowledge Commons
+# Discourse Graphs for Open Civics Knowledge Commons
 
 ## Executive Summary
 
