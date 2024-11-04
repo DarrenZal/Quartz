@@ -53,38 +53,29 @@ By modeling these dynamic feedback loops, Open Civics could create a system wher
 
 ### Modified Graph with Protocols & Playbooks
 ```mermaid
-flowchart TD 
-    D[Domain]
+%%{ init: { 'flowchart': { 'curve': 'step' } } }%%
+graph TB
+    C[Claim/Conclusion]
+    Q[Question/Hypothesis]
+    PR[Protocol]
+    PB[Playbook/Experiment]
+    E[Evidence/Results]
     
-    D -->|"categorizes"| MT[Model/Theory]
-    D -->|"scopes"| Q[Question/Hypothesis]
-    
-    MT -->|"informs"| C[Claim/Conclusion]
-    Q -->|"generates"| C
-    
-    C -->|"requires"| E[Evidence/Results]
     E -->|"supports/opposes"| C
+    E -->|"Informs/generates"| Q
+    C -->|"informs / generates"| Q
+    Q -->|"Informs"| PR
+    Q -->|"Informs"| PB
+    PR -->|"Implimented by"| PB
+    PB -->|"generates"| E
     
-    E -->|"validates"| PR[Protocol]
-    
-    PR -->|"implements"| PB[Playbook/Implementation]
-    PB -->|"produces"| I[Impact Metrics]
-    I -->|"generates"| E
-
-    PB -->|"adaptation insights"| PR
-    PR -->|"refines"| MT
-    MT -->|"improves"| PR
-    
-    style D fill:#e6e6fa,stroke-width:3px,color:#000
-    style MT fill:#87ceeb,color:#000
     style Q fill:#ffd700,color:#000
     style C fill:#98fb98,stroke-width:2px,color:#000
     style E fill:#ff69b4,color:#000
     style PR fill:#4169e1,stroke-width:2px,color:#000
     style PB fill:#f5f5f5,color:#000
-    style I fill:#ffa07a,color:#000
     
-    linkStyle default color:white
+    linkStyle default stroke:#a3a3a1,tip:#a3a3a1, stroke-width:4px;
 
 ```
 The diagram illustrates the interconnected nature of knowledge in our civic protocol development system. Rather than purely top-down, it represents a bidirectional flow where knowledge can emerge from both theoretical frameworks and practical implementations. This aligns with the DIKW (Data-Information-Knowledge-Wisdom) framework, where each level builds upon and enriches the others:
