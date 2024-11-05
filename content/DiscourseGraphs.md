@@ -344,6 +344,22 @@ Integrating decentralized discourse graphs into Knowledge Commons aligns with th
 [Discourse Graphs and the Future of Science](https://research.protocol.ai/blog/2023/discourse-graphs-and-the-future-of-science/)<br/>
 [Mapping Investments in Scientific Public Goods](https://youtu.be/P0KUt2yrUkw)
 
+<script src="https://giscus.app/client.js"
+        data-repo="DarrenZal/Quartz"
+        data-repo-id="R_kgDONJp5NA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONJp5NM4Cj_Fw"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
 ---
 
 # Appendix A: Technical Specification
