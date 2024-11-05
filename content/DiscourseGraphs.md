@@ -62,7 +62,6 @@ graph BT
     M[Model/Theory]
 
     E --> R
-    R --> H
     R --> C
     C --> H
     C --> M
@@ -73,7 +72,7 @@ graph BT
     style R fill:#ff1493,color:#000
     style E fill:#ffffff,color:#000
     style M fill:#00CED1,color:#000
-    linkStyle 0,1,5 stroke:#ffd700,stroke-width:4px
+    linkStyle 0,1,2,4 stroke:#ffd700,stroke-width:4px
 ```
 
 <!-- <figure>
