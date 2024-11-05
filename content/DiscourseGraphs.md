@@ -1,5 +1,5 @@
 ---
-title: From Discourse to Knowledge Commons
+title: Discourse Graphs for Knowledge Commons
 backlinks: true
 ---
 
