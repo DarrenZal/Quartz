@@ -1,59 +1,95 @@
-# Discourse Graphs for Open Civics Knowledge Commons
+---
+title: Discourse Graphs for Open Civics
+backlinks: true
+---
 
 ## Executive Summary
 
-OpenCivics envisions a society where citizens transform from passive consumers into active stewards of our planet, communities, and commons. Central to this vision is the development of [**open protocols**](/OpenProtocols). This proposal outlines how <a href="https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/" target="_blank">**decentralized discourse graphs**</a> can be integrated into OpenCivics' Knowledge Commons Protocol to enhance collective knowledge building, support the propagation of open protocols, and facilitate the evolutionary adaptation of our civilizational systems. By emphasizing decentralization and democratization, we ensure that knowledge networks become true commons, accessible and contributable by all.
+As we face increasingly complex global challenges, there's a growing need to transform our relationship with knowledge from passive consumption to active stewardship. Central to this transformation is the development of open protocols that can serve as composable building blocks for societal systems. Collective sensemaking emerges as a crucial capability, enabling communities to cultivate and propagate knowledge and wisdom effectively.
+
+This proposal explores how <a href="https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/" target="_blank">**decentralized discourse graphs**</a> can be integrated into collective sensemaking protocols to enhance knowledge building, support the implementation of open protocols, and facilitate the evolutionary adaptation of our social systems. By emphasizing decentralization and democratization, we can ensure that knowledge networks become true commons—accessible to all and enriched by many.
 
 ## Introduction
 
-### The Metacrisis and OpenCivics' Vision for Open Protocols
+In the face of an existential <a href="https://www.sloww.co/meta-crisis-101/" target="_blank">**metacrisis**</a>, humanity must reimagine itself as an intrinsic part of the living world, responsible for the vitality of our planet and communities. <a href="https://opencivics.co/" target="_blank">**OpenCivics**</a> proposes an approach where civic infrastructures localize and distribute resources and decision-making via open, participatory mechanisms. This necessitates the development of [open protocols](/OpenProtocols)—patterns of human coordination that function as civilizational services using a networked approach.
 
-In the face of an existential metacrisis, humanity must reimagine itself as an intrinsic part of the living world, responsible for the vitality of our planet and communities. OpenCivics proposes an approach where civic infrastructures localize and distribute resources and decision-making via open, participatory mechanisms. This necessitates the development of [open protocols](/OpenProtocols)—patterns of human coordination that function as civilizational services using a networked approach.
+<a href="https://www.societylibrary.org/" target="_blank">**The Society Library**</a>'s pioneering work in debate mapping demonstrates the practical value of structured knowledge representation. Their 'descriptive emergent structuring' approach - where questions emerge from collected arguments rather than being predetermined - offers a valuable model for how discourse graphs can evolve organically from community contributions. This bottom-up approach to question formation aligns with our decentralized vision while helping to minimize structural bias in knowledge organization.
 
-### The Need for Decentralized Discourse Graph<sup>[4]</sup>
+### The Value of Decentralized Discourse
 
-To effectively develop and propagate open protocols, we require a decentralized, democratized method for mapping and [synthesizing](https://scalingsynthesis.com/q-what-is-synthesis/)  collective knowledge. <a href="https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/" target="_blank">**Decentralized discourse graphs**</a> offer a solution by enabling bottom-up knowledge creation across multiple domains through interconnected nodes and relationships. By decentralizing the synthesis process, we distribute responsibilities among diverse participants, reflecting OpenCivics' commitment to inclusivity and collective stewardship.
+To effectively develop and propagate open protocols, we require a decentralized, democratized method for mapping and [synthesizing](https://scalingsynthesis.com/q-what-is-synthesis/)  collective knowledge. <a href="https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/" target="_blank">**Decentralized discourse graphs**</a> offer a solution by enabling bottom-up knowledge creation across multiple domains.
 
-## Discourse Graphs Explained
+## What Are Discourse Graphs?
 
-### What Are Discourse Graphs?
+```mermaid
+graph BT
+    S[Source]
+    E[Evidence]
+    Q[Question]
+    C[Claim]
 
-<figure>
+    S -->|"substantiate/contextualize"| E
+    E -->|"support/oppose"| C
+    C -->|"synthesizes"| E
+    E -->|"inform/generate"| Q
+    C -->|"inform/generate"| Q
+    
+    style Q fill:#ffd700,color:#000
+    style C fill:#00cc99,color:#000
+    style E fill:#ff1493,color:#000
+    style S fill:#ffffff,color:#000
+```
+<!-- <figure>
   <img src="/discoursegraph.png" alt="discourse graph"></img>
   <figcaption>
     <small>
       <a href="https://ask.pubpub.org/about" target="_blank">Source: A Discourse Graph primer</a>
     </small>
   </figcaption>
-</figure>
+</figure> -->
 
-[Discourse graphs](https://ask.pubpub.org/about) are data structures that represent knowledge as a network of interconnected nodes—such as questions, claims, evidence, protocols, and playbooks—and relationships like supports or opposes. This granular approach aligns with the needs of open protocol development by:
+[Discourse graphs](https://ask.pubpub.org/about) are data structures that represent knowledge as a network of interconnected nodes—such as questions, claims, evidence—and relationships like supports or opposes.
 
-- Allowing for detailed mapping of complex ideas.
-- Supporting modularity and reuse of knowledge components.
-- Facilitating decentralized contribution and iterative refinement.
-- Enabling democratized participation where knowledge is treated as a commons.
+The concept of discourse graphs as a structured approach to organizing knowledge has evolved over time, with different variants emerging to suit various needs and contexts. The discourse graph model described above is based on conventions proposed by <a href="https://joelchan.me/" target="_blank">**Joel Chan**</a>. However, adaptations have developed in other academic fields, reflecting unique terminologies and practices.
 
-The concept of discourse graphs as a structured approach to organizing knowledge has evolved over time, with different variants emerging to suit various needs and contexts. The discourse graph model described above is based on conventions proposed by Joel Chan. However, adaptations have developed in other academic fields, reflecting unique terminologies and practices.
+For instance, biologist <a href="https://matsulab.com/" target="_blank">**Matt Akamatsu**</a>'s *Results Graph* modifies the discourse graph model to align with experimental science. In this model, experiments yield data that either supports or opposes specific conclusions and generates new hypotheses. This structure reflects the iterative nature of scientific inquiry, where hypotheses motivate further experimentation, and experimental conclusions contribute to our evolving scientific theories and models of the world.
 
-For instance, biologist Matt Akamatsu's *Results Graph* modifies the discourse graph model to align with experimental science. In this model, experiments yield data that either supports or opposes specific conclusions and generates new hypotheses. This structure reflects the iterative nature of scientific inquiry, where hypotheses motivate further experimentation, and experimental conclusions contribute to our evolving scientific theories and models of the world.
+```mermaid
+graph BT
+    E[Experiment]
+    R[Result]
+    H[Hypothesis]
+    C[Conclusion]
+    M[Model/Theory]
 
-<figure>
+    E --> R
+    R --> H
+    R --> C
+    C --> H
+    C --> M
+    H -->|"learning loop"| E
+    
+    style H fill:#ffd700,color:#000
+    style C fill:#00cc99,color:#000
+    style R fill:#ff1493,color:#000
+    style E fill:#ffffff,color:#000
+    style M fill:#00CED1,color:#000
+    linkStyle 0,1,5 stroke:#ffd700,stroke-width:4px
+```
+
+<!-- <figure>
   <img src="/resultsgraph.png" alt="results graph"></img>
   <figcaption>
     <small>
       <a href="https://ask.pubpub.org/about" target="_blank">Source: A Discourse Graph primer</a>
     </small>
   </figcaption>
-</figure>
+</figure> -->
 
-In this Open Civics community, there is a unique opportunity to explore synthesis loops: how iterative experimentation, civic theory-building, and collaborative frameworks can be visually and structurally represented within discourse graphs to deepen our understanding of decentralized civilizational systems. Beyond conventional discourse and results graph ontologies, we might consider how implementations of protocols—each as an experiment in civic design—could generate evidence to support or refine civic hypotheses, thereby motivating further experimentation and adaptations across regions or contexts.
-
-By modeling these dynamic feedback loops, Open Civics could create a system where civic interactions, open-source frameworks, and commons governance principles form an evolving network of “extitutions” (external, open organizations). Protocol implementations in one community would contribute insights and potential adaptations for others, with incentives aligned to promote cascading benefits within the commons. In this way, the synthesis loop approach could serve as both a roadmap and engine for continuous learning and adaptation within decentralized civic systems.
+In the Open Civics community, there is a unique opportunity to explore learning loops: how iterative experimentation, civic theory-building, and collaborative frameworks can be visually and structurally represented within discourse graphs to deepen our understanding of decentralized civilizational systems. Beyond conventional discourse and results graph ontologies, we might consider how implementations of protocols—each as an experiment in civic design—could generate evidence to support or refine civic hypotheses, thereby motivating further experimentation and adaptations across regions or contexts.
 
 ### Modified Graph with Protocols & Playbooks
 ```mermaid
-%%{ init: { 'flowchart': { 'curve': 'step' } } }%%
 graph TB
     C[Claim/Conclusion]
     Q[Question/Hypothesis]
@@ -76,89 +112,9 @@ graph TB
     style PB fill:#f5f5f5,color:#000
     
     linkStyle default stroke:#a3a3a1,tip:#a3a3a1, stroke-width:4px;
-
-```
-The diagram illustrates the interconnected nature of knowledge in our civic protocol development system. Rather than purely top-down, it represents a bidirectional flow where knowledge can emerge from both theoretical frameworks and practical implementations. This aligns with the DIKW (Data-Information-Knowledge-Wisdom) framework, where each level builds upon and enriches the others:
-
-1. Emergent Knowledge Creation:
-- Raw data and information from implementations (Playbooks & Impact Metrics)
-- Knowledge synthesis through Evidence and Claims
-- Understanding through Models/Theories
-- Wisdom in determining appropriate Domains and Questions
-2. Synthesis Loops:
-- Ground-up Learning: Practical implementations generate data and insights
-- Knowledge Integration: Evidence from multiple sources validates or challenges existing understanding
-- Theory Evolution: Real-world experience informs and reshapes theoretical models
-- Wisdom Development: The synthesis process helps identify "what is best" for different contexts
-3. Bidirectional Flow:
-- Bottom-up: Practical experience → Evidence → Claims → Theory
-- Top-down: Theory → Protocols → Implementations
-- Continuous interplay between theory and practice
-This structure embraces both emergent knowledge creation and theoretical guidance while maintaining clear relationships between different types of knowledge. The synthesis loops ensure that practical wisdom emerges from collective experience, while theoretical understanding helps guide new implementations.
-
-### Node Types and Their Schemas
-
-#### Protocol Nodes
-
-Protocols are general guidelines not tied to a specific locality. They are openly documented and freely available for anyone to use, implement, and modify.
-
-```yaml
----
-type: protocol
-id: [protocol-id]
-author: [author-id]
-contributors:
-  - [contributor-id]
-relationships:
-  - related_to: [node-id]
----
-**Objective:** [Describe the purpose and goal of the protocol.]
-
-**Scope:** [What's included and excluded in the protocol.]
-
-**Procedures:** [Step-by-step instructions to achieve the objective.]
-
-**Roles and Responsibilities:** [Who is responsible for each action within the procedures.]
-
-**Materials and Equipment:** [What’s required to carry out the procedures.]
-
-**Guidelines:** [Suggested considerations while conducting procedures.]
-
-**Documentation:** [Suggestions on how to document the outcomes of the procedures.]
 ```
 
-#### Playbook Nodes
-
-Playbooks document the use or implementation of a protocol in a specific context or locality. They capture adaptations and practical applications.
-
-```yaml
----
-type: playbook
-id: [playbook-id]
-author: [author-id]
-contributors:
-  - [contributor-id]
-protocol: [protocol-id]
-locality: [bioregion or domain]
-relationships:
-  - implements: [protocol-id]
-  - supports: [node-id]
-  - opposes: [node-id]
-permissions:
-  read: public | group
-  write: public | group
----
-[Detailed documentation of how the protocol was implemented, including any adaptations or outcomes.]
-```
-
-#### Other Node Types
-
-- **Question Nodes:** Pose questions or challenges.
-- **Claim Nodes:** Present assertions or proposals.
-- **Evidence Nodes:** Provide supporting or opposing information.
-- **Other:** Topics, Experiments, Models..
-
-### Decentralizing the Discourse Graph
+### Decentralizing the Discourse Graph[^4]
 
 Decentralization of discourse graphs means:
 
@@ -167,7 +123,7 @@ Decentralization of discourse graphs means:
 - **No Central Authority:** Eliminating centralized control over knowledge synthesis and validation.
 - **Local Autonomy:** Supporting bioregional and domain-specific knowledge commons managed by local experts or communities.
 
-### Community Roles in a Decentralized Knowledge Graph
+### Roles in Decentralized Knowledge Commmons
 
 To facilitate decentralization, we recognize the need for diverse community roles:
 
@@ -211,7 +167,9 @@ By dividing responsibilities, we reduce individual burdens and encourage broader
 
 Each markdown file represents a node in the discourse graph, defined by frontmatter metadata.
 
-#### Protocol Nodes (No Locality)
+#### Protocol Nodes
+Protocols are general guidelines not tied to a specific locality. They are openly documented and freely available for anyone to use, implement, and modify.
+
 
 ```yaml
 ---
@@ -223,10 +181,23 @@ contributors:
 relationships:
   - related_to: [node-id]
 ---
-[Protocol content following the OpenCivics protocol schema.]
+**Objective:** [Describe the purpose and goal of the protocol.]
+
+**Scope:** [What's included and excluded in the protocol.]
+
+**Procedures:** [Step-by-step instructions to achieve the objective.]
+
+**Roles and Responsibilities:** [Who is responsible for each action within the procedures.]
+
+**Materials and Equipment:** [What’s required to carry out the procedures.]
+
+**Guidelines:** [Suggested considerations while conducting procedures.]
+
+**Documentation:** [Suggestions on how to document the outcomes of the procedures.]
 ```
 
-#### Playbook Nodes (With Locality)
+#### Playbook Nodes
+Playbooks document the use or implementation of a protocol in a specific context or locality. They capture adaptations and practical applications.
 
 ```yaml
 ---
@@ -245,12 +216,13 @@ permissions:
   read: public | group
   write: public | group
 ---
-[Playbook content detailing the implementation of the protocol in a specific context.]
+[Detailed documentation of how the protocol was implemented, including any adaptations or outcomes.]
 ```
 
 #### Other Nodes
 
-- **Question Nodes:**
+<details>
+<summary>Question Nodes</summary>
 
   ```yaml
   ---
@@ -264,8 +236,9 @@ permissions:
   ---
   [Question text.]
   ```
-
-- **Claim Nodes:**
+</details>
+<details>
+<summary>Claim Nodes</summary>
 
   ```yaml
   ---
@@ -280,8 +253,9 @@ permissions:
   ---
   [Claim text.]
   ```
-
-- **Evidence Nodes:**
+</details>
+<details>
+<summary>Evidence Nodes</summary>
 
   ```yaml
   ---
@@ -296,21 +270,15 @@ permissions:
   ---
   [Evidence content.]
   ```
-
-### Decentralized Query Capabilities
-
-Using distributed tools and decentralized platforms, we enable dynamic queries without relying on centralized servers.
-
-- **Peer-to-Peer Networks:** Utilize networks like IPFS and OriginTrail for hosting and sharing the discourse graph.
-- **Local-First Software:** Encourage the use of applications that work offline and synchronize when possible.
-- **Federated Queries:** Allow queries to span across multiple nodes or instances, supporting a federated approach.
+</details>
 
 ### Integration with Decentralized Tools
 
 - **Version Control:** Use decentralized version control systems like git and TerminusDB.
-- **Publishing Platforms:** Leverage decentralized web technologies for hosting content.
-- **Editing Tools:** Promote the use of open-source, decentralized editors.
+- **Publishing Platforms:** Leverage decentralized web technologies for hosting content: Arweave, IPFS, OriginTrail for example.
+- **Local-first Editing Tools:** Promote the use of open-source, local-first, decentralized editors.
 - **Contribution Mechanisms:** Implement systems that allow for merging contributions without central gatekeepers.
+- **Federated Queries:** Allow queries to span across multiple nodes or instances, supporting a federated approach.
 
 ### Integration with Semantic Web Standards
 
@@ -343,50 +311,125 @@ Example of a Protocol node in JSON-LD:
 </details>
 
 
+## Supporting Progressive Formalization
 
-## Supporting Progressive Protocolization in a Decentralized Context
+The process of incremental formalization[^5] is crucial for protocol development, allowing communities to start with informal documentation and gradually add structure as patterns and needs emerge. This approach addresses the cognitive overhead and premature structuring challenges identified in knowledge management systems.
 
-### Stage 1: Conception and Gestation
 
-- **Distributed Questioning:** Encourage diverse participants to pose questions relevant to their contexts.
-- **Community Claims:** Allow communities to document their approaches without needing centralized approval.
-- **Shared Evidence Collection:** Participants contribute evidence from varied sources, enriching the collective understanding.
+### Stage 1: Informal Exploration and Discovery
+<details>
+<summary>Lightweight Entry</summary><br/>
+Begin with minimal structure to maximize exploration and reduce cognitive overhead.
 
-### Stage 2: Maturation
+- Allow free-form documentation of community practices
+- Support varied media types and formats 
+- Defer formal categorization until patterns emerge
+</details>
 
-- **Collaborative Specification:** Diverse contributors propose and refine protocol specifications.
-- **Hybrid Implementations:** Communities experiment with implementations, sharing results openly.
-- **Decentralized Relationships:** Relationships between nodes form organically based on contributions.
+<details>
+<summary>Emergent Question Formation</summary><br/>
+Questions emerge organically from gathered evidence and observations.
 
-### Stage 3: Reproduction and Decomposition
+- Questions emerge organically from collected evidence and claims
+- Multiple perspectives and approaches are documented informally
+- Initial relationships form naturally through basic linking and tagging
+- Pattern recognition algorithms suggest potential structural relationships
+</details>
 
-- **Local Adaptations:** Communities modify protocols to suit their needs, documenting changes in playbooks.
-- **Forking and Merging:** Protocols evolve through forking (creating variants) and merging (combining improvements), akin to open-source software development.
-- **Cross-Pollination:** Communities learn from each other's adaptations, fostering innovation.
+<details>
+<summary>Community Documentation</summary><br/>
+Enable natural documentation flows with minimal barriers to entry.
 
-## Addressing Challenges in Decentralized Knowledge Building
+- Capture approaches and evidence in their natural form
+- Use simple markup or tags for basic organization
+- Allow multiple entry points based on user preference and context
+</details>
 
-### Overcoming Human Behavior Obstacles
+### Stage 2: Incremental Formalization
 
-- **Lazy Participation:** Design the system to capture passive contributions, such as implicit data from reading habits or lightweight annotations.
-- **Complexity Management:** Provide tools that simplify interaction with the discourse graph, preventing cognitive overload.
-- **Incentivization:** Implement social or token-based incentives to encourage active participation.
+<details>
+<summary>Pattern Recognition</summary><br/><br/>
+Identify and surface emerging patterns in community knowledge.
 
-### Ensuring Quality and Reliability
+- Automated systems identify recurring patterns in informal documentation
+- Community stewards suggest potential formal structures
+- Users can accept, modify, or reject suggested formalizations
+</details>
 
-- **Reputation Systems:** Allow users to build reputations based on their contributions, enhancing trust.
-- **Peer Review Mechanisms:** Enable community validation of nodes and relationships.
-- **Conflict Resolution:** Establish protocols for addressing conflicting information or disputes.
+<details>
+<summary>Collaborative Specification</summary><br/>
+Convert emerging patterns into more formal protocol specifications.
 
-### Supporting Diverse Contribution Levels
+- Convert successful patterns into protocol specifications
+- Maintain flexibility to adapt specifications as needs evolve
+- Support multiple levels of formality simultaneously
+</details>
 
-- **Role Flexibility:** Allow participants to fluidly move between roles based on interest and capacity.
-- **Accessibility:** Ensure the platform is accessible to users with varying technical abilities.
-- **Education and Onboarding:** Provide resources to help new participants understand how to contribute effectively.
+<details>
+<summary>Relationship Development</summary><br/>
+Allow relationships to formalize naturally as their value becomes apparent.
+
+- Formalize relationships between nodes as their utility becomes clear
+- Support both structured and unstructured connections
+- Enable search-based relationship discovery
+</details>
+
+### Stage 3: Adaptation and Evolution
+
+<details>
+<summary>Local Customization</summary><br/>
+Support contextual adaptation of formalized protocols.
+
+- Communities adapt formal protocols to local contexts
+- Document variations through playbooks
+- Maintain links between formal and informal elements
+</details>
+
+<details>
+<summary>Organic Growth</summary><br/>
+Enable natural evolution of protocols through community practice.
+
+- Protocols evolve through community usage patterns
+- Support both structured evolution (forking/merging) and informal adaptation
+- Enable cross-pollination of ideas across communities
+</details>
+
+### Implementation Support
+
+<details>
+<summary>Role Flexibility</summary><br/>
+Support diverse community roles in the formalization process.
+
+- Curators: Help identify emerging patterns
+- Connectors: Surface potential relationships
+- Formalizers: Assist in structuring mature content
+- Mediators: Bridge between formal and informal approaches
+</details>
+
+<details>
+<summary>Technical Features</summary><br/>
+Provide tools that support incremental formalization.
+
+- Pattern recognition algorithms to suggest structure
+- Rich search capabilities to surface related content
+- Flexible metadata systems that grow with usage
+- Tools for incremental addition of formal attributes
+</details>
+
+This approach balances the need for structure with the reality of how knowledge and practices evolve, allowing communities to formalize their understanding progressively while maintaining the benefits of emergent organization.
 
 ## Practical Applications
 
-### Example: Quadratic Funding in the Cascadia Bioregion
+The Society Library's success in mapping complex societal debates demonstrates the practical viability of structured knowledge representation for collective sensemaking. Their experience shows that careful attention to bias reduction, comprehensive media coverage, and emergent structure can help create truly representative knowledge commons. By incorporating these lessons into our discourse graphs approach, we can better ensure our knowledge networks serve as genuine tools for democratic deliberation and collective wisdom building.
+
+### The Open Protocol Library as a Knowledge Commons
+
+The concept of an open protocol library exemplifies how knowledge commons can be structured to support collaborative research and development. As illustrated in our flowcharts, scientific inquiry involves iterative cycles of synthesis and validation, where evidence informs claims and generates new questions. A protocol library serves as a vital infrastructure for this process.
+
+In the example that follows, we see how this framework applies to studying quadratic funding in the Cascadia Bioregion. The protocol library approach allows researchers to build on existing methodologies while contributing new evidence and insights back to the commons.
+
+<details>
+<summary>Example: Quadratic Funding in the Cascadia Bioregion</summary>
 
 **Question Node:**
 
@@ -483,7 +526,8 @@ We adapted the quadratic funding protocol for the Cascadia Bioregion to support 
 
 Participants can run queries to gain insights, for example using Obsidian's dataview feature.
 <details>
-<summary> Example Query</summary>
+<summary>Example Query</summary>
+
 ```dataview
 // Find all playbooks implementing the quadratic funding protocol in Cascadia, ranked by outcomes
 TABLE
@@ -502,6 +546,8 @@ SORT playbook["Outcomes"]["Matching Pool Utilization"] DESC
 - **Purpose:** Retrieve playbooks that implemented the quadratic funding protocol in the Cascadia Bioregion.
 - **Outcomes Analysis:** Examine the effectiveness based on metrics like matching pool utilization.
 - **Insights Gained:** Identify successful adaptations and areas for improvement.
+</details>
+
 </details>
 
 ## Implementation Plan
@@ -549,17 +595,25 @@ SORT playbook["Outcomes"]["Matching Pool Utilization"] DESC
 
 1. **Participation Rates:** Measure the diversity and number of contributors.
 2. **Decentralization Level:** Assess the distribution of data and control.
-3. **Community Satisfaction:** Gather feedback on usability and impact.
-4. **Protocol Evolution:** Track how protocols adapt and improve over time.
-5. **Knowledge Diversity:** Evaluate the range of knowledge domains and regions represented.
+3. **Cross-Format Coherence:** Assess how well arguments and claims maintain consistency across different media formats
+4. **Community Satisfaction:** Gather feedback on usability and impact.
+5. **Protocol Evolution:** Track how protocols adapt and improve over time.
+6. **Knowledge Diversity:** Evaluate the range of knowledge domains and regions represented.
 
 ## Conclusion
 
-Integrating decentralized discourse graphs into OpenCivics' Knowledge Commons Protocol aligns with our core principles of decentralization, democratization, and collective stewardship. By distributing responsibilities and empowering diverse participation, we create a resilient and inclusive knowledge network that serves as a true commons. This approach not only enhances the development and propagation of open protocols but also embodies the transformative vision of reimagining ourselves as active stewards of our planet and communities. Together, we can harness the collective intelligence needed to address the existential challenges of our time.
+Integrating decentralized discourse graphs into Knowledge Commons aligns with the principles of decentralization, democratization, and collective stewardship. By distributing responsibilities and empowering diverse participation, we create a resilient and inclusive knowledge network that serves as a true commons. This approach not only enhances the development and propagation of open protocols but also embodies the transformative vision of reimagining ourselves as active stewards of our planet and communities. Together, we can harness the collective intelligence needed to address the existential challenges of our time. 
 
 ## References
+- [Decentralized Discourse Graphs](https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/)<br/>
+- ["Synthesis tools need to support incremental formalization"](https://scalingsynthesis.com/c-synthesis-tools-need-to-support-incremental-formalization/)
+- [The Society Library Debate Mapping Program](https://www.societylibrary.org/debate-mapping-program)<br/>
+- [Discourse Graphs and the Future of Science](https://research.protocol.ai/blog/2023/discourse-graphs-and-the-future-of-science/)<br/>
+- [Mapping Investments in Scientific Public Goods](https://youtu.be/P0KUt2yrUkw)<br/>
 
-[1] [The Society Library Debate Mapping Program](https://www.societylibrary.org/debate-mapping-program)<br/>
-[2] [Discourse Graphs and the Future of Science](https://research.protocol.ai/blog/2023/discourse-graphs-and-the-future-of-science/)<br/>
-[3] [Mapping Investments in Scientific Public Goods](https://youtu.be/P0KUt2yrUkw)<br/>
-[4] [Decentralized Discourse Graphs](https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/)
+
+[^1]: [The Society Library Debate Mapping Program](https://www.societylibrary.org/debate-mapping-program)<br/>
+[^2]: [Discourse Graphs and the Future of Science](https://research.protocol.ai/blog/2023/discourse-graphs-and-the-future-of-science/)<br/>
+[^3]: [Mapping Investments in Scientific Public Goods](https://youtu.be/P0KUt2yrUkw)<br/>
+[^4]: [Decentralized Discourse Graphs](https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/)
+[^5]: See ["Synthesis tools need to support incremental formalization"](https://scalingsynthesis.com/c-synthesis-tools-need-to-support-incremental-formalization/) for a detailed discussion of how incremental formalization helps balance formal structure with user needs.
