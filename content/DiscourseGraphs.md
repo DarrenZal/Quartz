@@ -127,31 +127,6 @@ Decentralization of discourse graphs means:
 - **No Central Authority:** Eliminating centralized control over knowledge synthesis and validation.
 - **Local Autonomy:** Supporting bioregional and domain-specific knowledge commons managed by local experts or communities.
 
-## Alignment with OpenCivics' Objectives
-
-<details>
-<summary> Decentralized Collaboration and Democratization</summary>
-
-- **Inclusivity:** By decentralizing the discourse graph, we empower a diverse range of participants to contribute, reflecting the democratized ethos of OpenCivics.
-- **Commons-Based Approach:** Knowledge networks become a shared resource, accessible and contributable by all, embodying the principles of a knowledge commons.
-- **Stigmergic Coordination:** Decentralized contributions lead to emergent patterns of organization without centralized control.
-</details>
-
-<details>
-<summary> Addressing Human Behavior Challenges</summary>
-
-- **Lowering Barriers to Entry:** By allowing participants to contribute in various capacities based on their interests and strengths, we accommodate varying levels of engagement.
-- **Encouraging Participation:** Implementing mechanisms such as reputation systems, rewards, or acknowledgment can motivate contributions.
-- **Reducing Complexity:** Providing user-friendly tools and interfaces makes it easier for participants to engage without becoming overwhelmed.
-</details>
-
-<details>
-<summary> Supporting Localized Knowledge Commons</summary>
-
-- **Bioregional Knowledge Commons:** Allow communities to manage knowledge relevant to specific regions, fostering local autonomy and relevance.
-- **Domain-Specific Graphs:** Experts can oversee knowledge graphs in specialized domains, ensuring accuracy and depth.
-</details>
-
 ## Supporting Progressive Formalization
 
 The process of <a href="https://scalingsynthesis.com/c-synthesis-tools-need-to-support-incremental-formalization/" target="_blank">**incremental formalization**</a> is crucial for protocol development, allowing communities to start with informal documentation and gradually add structure as patterns and needs emerge. This approach addresses the cognitive overhead and premature structuring challenges identified in knowledge management systems.
