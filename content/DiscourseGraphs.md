@@ -1,5 +1,5 @@
 ---
-title: Discourse Graphs for Knowledge Commons
+title: Discourse Graphs for Civic Knowledge Commons
 backlinks: true
 ---
 
@@ -233,6 +233,38 @@ Provide tools that support incremental formalization.
 </details>
 
 This approach balances the need for structure with the reality of how knowledge and practices evolve, allowing communities to formalize their understanding progressively while maintaining the benefits of emergent organization.
+
+## Integration with Decentralized Science (DeSci)
+
+The discourse graph approach for civic knowledge commons is highly complementary with [Decentralized Science (DeSci)](/GraphsForDeSci). Both frameworks aim to transform traditional knowledge creation and sharing processes through decentralization and democratization.
+
+<details>
+<summary>Key synergies</summary><br/>
+
+1. **Shared Infrastructure**
+   - Both utilize discourse graphs for knowledge representation
+   - Common decentralized storage and verification mechanisms
+   - Shared protocols for knowledge validation and attribution
+
+2. **Complementary Goals**
+   - DeSci focuses on democratizing scientific research and funding
+   - Civic knowledge commons emphasize local implementation and adaptation
+   - Together they create a full cycle from research to civic application
+
+3. **Mutual Benefits**
+   - Scientific findings inform civic protocol development
+   - Community implementations provide real-world validation
+   - Shared incentive mechanisms encourage participation
+   - Cross-pollination between academic and civic knowledge
+
+4. **Joint Impact**
+   - Accelerates knowledge transfer between research and practice
+   - Enables evidence-based civic infrastructure development
+   - Supports bottom-up scientific inquiry driven by community needs
+   - Creates feedback loops between theory and implementation
+</details>
+
+This integration enables a new model where scientific research and civic implementation evolve together, creating more resilient and adaptive knowledge systems.
 
 ## Technical Overview
 
