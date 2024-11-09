@@ -26,20 +26,11 @@ My work examines the convergence of several key areas:
 - **Web3 & Decentralized Networks**: Creating resilient, democratic systems
 - **Regenerative Economics**: Building economic systems that restore rather than deplete
 - **Global Coordination**: Addressing complex challenges while preserving local autonomy
-- **Metacrisis Response**: Developing integrated solutions to interconnected global challenges
+- **[Metacrisis Response](https://metacrisis.xyz/)**: Developing integrated solutions to interconnected global challenges
 
 ### The Connected Vision
 
 These explorations are part of a larger inquiry into how we can develop the protocols, tools, and practices needed for a regenerative global civilization. Discourse graphs represent one promising primitive in this broader ecosystem of solutions.
-
-## Future Directions
-
-Upcoming explorations will examine:
-- Decentralized governance protocols
-- Regenerative economic models
-- Bioregional coordination systems
-- Collective intelligence platforms
-- Web3 infrastructure for public goods
 
 Stay tuned as we explore these interconnected paths toward a more regenerative future.
 
