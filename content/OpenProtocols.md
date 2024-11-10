@@ -17,5 +17,5 @@ The development of open protocols requires careful consideration of their dynami
 
 Sources:<br/>
 [1] Mike Masnick, <a href="https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech" target="_blank">"Protocols, Not Platforms: A Technological Approach to Free Speech</a> ,"Knight First Amendment Institute at Columbia University, August 21, 2019.<br/>
-[2] OpenCivics, "<a href="https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech" target="_blank">Collaborative Protocols</a>, OpenCivics Wiki, 2024.
+[2] OpenCivics, "<a href="https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech" target="_blank">Collaborative Protocols</a>, OpenCivics Wiki, 2024.<br/>
 [3] Weyl, E. G., Tang, A., & ⿻ Community. (2024). "Rights, Operating Systems and ⿻ Freedom" in Plurality: The Future of Collaborative Technology and Democracy. Available at https://www.plurality.net/
