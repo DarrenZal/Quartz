@@ -392,21 +392,3 @@ audio::-webkit-media-controls-panel {
     transform: rotateX(0deg) rotateY(0deg) scale(1);
   }
 }
-
-/* Custom scrollbar styling */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #faf8f4;  /* Warm off-white color matching the background */
-}
-
-::-webkit-scrollbar-thumb {
-  background: #e0dcd5;  /* Slightly darker shade for the thumb */
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #d0ccc5;  /* Even darker shade for hover state */
-}
