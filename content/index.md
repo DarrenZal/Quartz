@@ -1,7 +1,6 @@
 ---
 title: Exploring Protocols for Regenerative Global Civilization
 ---
-
 Welcome! This space explores the intersection of decentralized technologies, collective intelligence, and regenerative practices as we work toward addressing the metacrisis and building more resilient social systems. My research and writing focus on how we can develop and implement protocols that enable effective global coordination while respecting local autonomy and ecological wisdom.
 
 ## Current Focus: Discourse Graphs as a Coordination Primitive

@@ -271,18 +271,7 @@ audio::-webkit-media-controls-panel {
     }
   }
 
-  #leaves {
-    position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom: 0px;
-    right: -600px;
-    width: 1600px;
-    height: 1400px;
-    background-image: url("/static/leaves.png");
-    perspective: 400px;
-    animation: billow 8s ease-in-out infinite;
-  }
+
 
   #blinds {
     position: relative;
@@ -371,24 +360,37 @@ audio::-webkit-media-controls-panel {
   }
 }
 
+#leaves {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -20px;
+  right: -700px;
+  width: 1600px;
+  height: 1400px;
+  background-image: url("/static/leaves.png");
+  filter: url(#wind);
+  animation: billow 8s ease-in-out infinite;
+}
+
 @keyframes billow {
   0% {
-    transform: rotateX(0deg) rotateY(0deg) scale(1);
+    transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
   }
 
-  18% {
-    transform: rotateX(1deg) rotateY(2deg) scale(1.03);
+  25% {
+    transform: perspective(400px) rotateX(1deg) rotateY(2deg) scale(1.02);
   }
 
-  32% {
-    transform: rotateX(-4deg) rotateY(-2deg) scale(0.96);
+  50% {
+    transform: perspective(400px) rotateX(-4deg) rotateY(-2deg) scale(0.97);
   }
 
-  66% {
-    transform: rotateX(3deg) rotateY(-1deg) scale(1.04);
+  75% {
+    transform: perspective(400px) rotateX(1deg) rotateY(-1deg) scale(1.04);
   }
 
   100% {
-    transform: rotateX(0deg) rotateY(0deg) scale(1);
+    transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
   }
 }
