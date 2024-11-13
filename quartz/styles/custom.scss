@@ -394,3 +394,22 @@ audio::-webkit-media-controls-panel {
     transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
   }
 }
+
+
+/* For WebKit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust the width if needed */
+}
+
+::-webkit-scrollbar-track {
+  background: #eadac2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(36, 25, 25, 0.2); /* Adjust the scrollbar thumb color and transparency */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4); /* Darken the thumb when hovered */
+}
