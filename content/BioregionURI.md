@@ -143,7 +143,7 @@ Let’s build a future where collaboration thrives, and bioregions flourish. Thi
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="transparent_dark"
+        data-theme="dark_dimmed"
         data-lang="en"
         crossorigin="anonymous"
         async>

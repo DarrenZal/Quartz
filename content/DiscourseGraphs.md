@@ -360,7 +360,7 @@ Integrating decentralized discourse graphs into Knowledge Commons aligns with th
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="transparent_dark"
+        data-theme="dark_dimmed"
         data-lang="en"
         crossorigin="anonymous"
         async>
