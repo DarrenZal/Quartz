@@ -368,7 +368,7 @@ audio::-webkit-media-controls-panel {
   right: -700px;
   width: 1600px;
   height: 1400px;
-  background-image: url("/static/leaves.png");
+  background-image: url("/static/leaves.png?v=1");
   filter: url(#wind);
   animation: billow 8s ease-in-out infinite;
 }
