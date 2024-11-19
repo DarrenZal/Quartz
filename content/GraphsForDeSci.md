@@ -1,5 +1,5 @@
 ---
-title: Graphs for DeSci
+title: Discourse Graphs for DeSci
 backlinks: true
 ---
 
@@ -17,7 +17,7 @@ The traditional scientific process faces several challenges:
 
 ## Graph-Based Science: From Simple to Sophisticated
 
-### A Foundation: Discourse Graphs
+### A Foundation: [Discourse graphs](https://ask.pubpub.org/about)
 
 ```mermaid
 graph BT
@@ -38,7 +38,7 @@ graph BT
     style S fill:#ffffff,color:#000
 ```
 
-At their core, discourse graphs provide a minimal but powerful framework:
+At their core, discourse graphs provide a simple yet powerful framework:
 - Questions that drive inquiry
 - Claims that propose answers
 - Evidence that supports claims
@@ -114,7 +114,7 @@ graph BT
     style EX fill:#87CEEB,color:#000
 ```
 
-The basic discourse graph framework can be extended into a goal-oriented model through research roadmapping. This extension adds several key capabilities:
+The basic discourse graph framework can be extended to accomodate discourse in various aspects of science, for example a goal-oriented model for research roadmapping. This extension might add several key capabilities:
 
 1. **Goal-Oriented Structure**
    - Define clear goal states and their essential properties
@@ -134,44 +134,91 @@ The basic discourse graph framework can be extended into a goal-oriented model t
    - Support venture creation
    - Identify non-obvious intervention points
 
-Each node in a research roadmap is supported by its own discourse graph, creating a rich, interconnected knowledge network.
+### Integration with Web3
 
-### Integration with Web3 and Civic Knowledge Commons
+DeSci Discourse Graphs can naturally integrate with Web3 in key ways:
 
-Research roadmaps can naturally integrate with Web3 mechanisms and civic knowledge networks in several key ways:
-
-1. **Impact Certificates**
+**Impact Certificates**
    - Researchers can issue certificates for proposed initiatives
    - Claims in certificates supported by discourse graphs
    - Roadmaps identify high-leverage funding opportunities
    - Enable transparent markets for scientific impact
    - Support risk-sharing across multiple funders
 
-2. **Decentralized Knowledge Graphs**
-   - Host discourse graphs on decentralized infrastructure like OriginTrail's <a href="https://origintrail.io/blog/announcing-the-id-theory-desci-ipo-initial-paranet-offering" target="_blank">DeSci Knowledge Graph</a> 
-   - Ensure knowledge is discoverable, verifiable, and properly attributed
-   - Enable AI services to interact with verified knowledge without hallucination
-   - Support knowledge mining and incentivization through tokens
-   - Create foundation for autonomous research agents
+**Decentralized Knowledge Graphs**
 
-3. **[Civic Knowledge Network](DiscourseGraphs) Integration**
-   - Connect scientific research directly to civic discourse and local implementation
+- Host discourse graphs on decentralized infrastructure like <a href="https://origintrail.io/blog/announcing-the-id-theory-desci-ipo-initial-paranet-offering" target="_blank">DeSci Knowledge Graph</a> 
+- Ensure knowledge is discoverable, verifiable, and properly attributed
+- Enable AI services to interact with verified knowledge without hallucination
+- Support knowledge mining and incentivization through tokens
+- Create foundation for autonomous research agents
+
+The combination of discourse graphs with OriginTrail's DeSci Knowledge Graph creates powerful new capabilities:
+
+1. Automated Knowledge Mining
+
+   • AI services process scientific papers into initial discourse graphs
+   
+   • Knowledge miners validate and refine AI-generated discourse
+   
+   • Progressive improvement of automated parsing via feedback loops
+   
+   • Preservation of attribution and provenance through transformation chains
+
+
+2. Verifiable Knowledge Integration
+
+   • Clear tracking of knowledge origins and transformations
+
+   • Support for both symbolic and neural AI capabilities
+
+   • Creation of trusted foundations for autonomous research
+
+3. Enhanced AI Services
+
+   • Structure-aware scientific chat interfaces that can:
+      - Navigate between claims, evidence, and questions naturally
+      - Explain the chain of reasoning behind scientific conclusions
+      - Identify gaps in evidence or logical connections
+      - Generate targeted research questions based on knowledge gaps
+
+   • Improved retrieval-augmented generation (dRAG) through:
+      - Context-aware citation of supporting evidence
+      - Clear distinction between claims and evidence in responses
+      - Ability to traverse related research across domains
+      - Generation of structured knowledge from conversations
+
+
+4. Collaborative Knowledge Mining
+
+   • Enhanced mining incentives through:
+      - Rewards for creating high-quality discourse structures
+      - Bonuses for connecting previously isolated knowledge areas
+      - Recognition for identifying key claims and evidence
+      - Incentives for validating AI-generated structures
+
+   • Peer review mechanisms:
+      - Validation of claim-evidence relationships
+      - Assessment of cross-domain connections
+      - Tracking of knowledge reuse and impact
+
+This integration creates a foundation for truly autonomous scientific research, where AI agents can:
+- Navigate verified scientific knowledge
+- Generate testable hypotheses
+- Design experimental protocols
+- Synthesize findings across domains
+- Propose new research directions
+- While maintaining clear provenance and attribution
+
+### Integration with Civic Knowledge Commons
+DeSci discourse graphs could be integrated with [Civic Knowledge Networks](DiscourseGraphs):
+
+**Civic Knowledge Networks Integration**
    - Enable bottom-up scientific processes through community participation
-   - Bridge between academic research and practical civic applications
+   - Bridge academic research with practical civic applications
    - Support decentralized societal infrastructure development through evidence-based practices
-   - Allow communities to contribute local knowledge and implementation experience
-   - Enable cross-pollination between scientific findings and civic protocols
+   - Enable citizen science and local knowledge contribution
    - Transform scientific process from top-down to participatory model
-
-The combination of these elements enables:
-- Transparent attribution and incentives for knowledge contributions
-- Verifiable AI interactions with scientific knowledge
-- Efficient markets for research outcomes
-- Autonomous research frameworks built on verified knowledge
-- Cross-domain knowledge integration and discovery
-- Democratic participation in scientific knowledge creation
-- Integration of scientific findings into civic infrastructure development
-- Bidirectional flow between academic research and community implementation
 
 ## A Discourse Graph Analysis
 
@@ -273,7 +320,24 @@ To advance graph-based DeSci, we need:
    - Create spaces for experimental funding models
    - Encourage and reward cross-disciplinary synthesis efforts
 
-The future of science is decentralized, and graph-based knowledge systems provide a flexible, extensible framework for making that future a reality. By starting with the simple, universal structure of discourse graphs and extending it through research roadmapping, we can create a more effective, collaborative, and impact-driven scientific ecosystem that properly incentivizes and rewards ambitious research while facilitating crucial cross-domain synthesis.
+The future of science is decentralized, and graph-based knowledge systems provide a flexible, extensible framework for making that future a reality. By starting with the simple, universal structure of discourse graphs and extending for various functions of science such as research roadmapping, we can create a more effective, collaborative, and impact-driven scientific ecosystem that properly incentivizes and rewards ambitious research while facilitating crucial cross-domain synthesis.
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="DarrenZal/Quartz"
+        data-repo-id="R_kgDONJp5NA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONJp5NM4Cj_Fw"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark_dimmed"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
 
 ---
 References:
