@@ -219,7 +219,7 @@ DeSci Discourse Graphs create a unified framework integrating financial incentiv
 #### 2. Decentralized Knowledge Management
 
 **Knowledge Graph Infrastructure**
-- Host discourse graphs on decentralized networks (e.g., <a href="https://origintrail.io/blog/announcing-the-id-theory-desci-ipo-initial-paranet-offering" target="_blank">DeSci Knowledge Graph</a>)
+- Host discourse graphs on decentralized networks (e.g., <a href="https://origintrail.io/blog/announcing-the-id-theory-desci-ipo-initial-paranet-offering" target="_blank">OriginTrail's DeSci Knowledge Graph</a>)
 - Ensure knowledge is discoverable, verifiable, and properly attributed
 - Support knowledge mining and incentivization through tokens
 - Create foundation for autonomous research agents
