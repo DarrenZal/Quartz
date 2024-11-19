@@ -65,7 +65,7 @@ graph BT
     RD[Research Direction]
     G[Goal State]
     OP[Open Problems]
-    M[Market Constraints]
+    M[Constraints]
     IV[Intervention Points]
     O[Outcome]
     H[Hypothesis]
@@ -147,7 +147,7 @@ DeSci Discourse Graphs can naturally integrate with Web3 in key ways:
 
 **Decentralized Knowledge Graphs**
 
-- Host discourse graphs on decentralized infrastructure like <a href="https://origintrail.io/blog/announcing-the-id-theory-desci-ipo-initial-paranet-offering" target="_blank">DeSci Knowledge Graph</a> 
+- Host discourse graphs on decentralized infrastructure like the <a href="https://origintrail.io/blog/announcing-the-id-theory-desci-ipo-initial-paranet-offering" target="_blank">DeSci Knowledge Graph</a> on OriginTrail
 - Ensure knowledge is discoverable, verifiable, and properly attributed
 - Enable AI services to interact with verified knowledge without hallucination
 - Support knowledge mining and incentivization through tokens
@@ -210,75 +210,18 @@ This integration creates a foundation for truly autonomous scientific research, 
 - Propose new research directions
 - While maintaining clear provenance and attribution
 
-### Integration with Civic Knowledge Commons
-DeSci discourse graphs could be integrated with [Civic Knowledge Networks](DiscourseGraphs):
+### Integration Across Knowledge Domains
+Discourse graphs enable seamless connection between scientific knowledge and other domains. The integration with civic knowledge commons demonstrates this potential:
 
-**Civic Knowledge Networks Integration**
-   - Enable bottom-up scientific processes through community participation
-   - Bridge academic research with practical civic applications
-   - Support decentralized societal infrastructure development through evidence-based practices
-   - Enable citizen science and local knowledge contribution
-   - Transform scientific process from top-down to participatory model
+**Example: [Civic Knowledge Commons](DiscourseGraphs)**
 
-## A Discourse Graph Analysis
+   - Enable bottom-up knowledge creation through community participation
+   - Bridge specialized research with practical applications
+   - Support evidence-based development of societal infrastructure
+   - Create bidirectional knowledge flow between experts and practitioners
+   - Transform siloed processes into participatory models
 
-What benefits do graph-based knowledge systems offer for DeSci?
-<details>
-<summary>Enable efficient research markets</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- Support impact certificate issuance and trading<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Create transparent attribution of contributions<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Enable price discovery for research outcomes<br/>
-</details>
-<details>
-<summary>Support strategic planning</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- Map pathways through research roadmaps<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Identify high-leverage opportunities<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- De-risk ambitious research through market mechanisms<br/>
-</details>
-<details>
-<summary>Foster collaboration and innovation</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- Track contributions across complex projects<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Enable specialized labor and expertise<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Support cross-domain knowledge integration<br/>
-
-</details>
-</details>
-
-How can research roadmaps enhance basic discourse graphs?
-<details>
-<summary>Add goal-oriented structure</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- Connect research to desired outcomes<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Identify critical pathways and bottlenecks<br/>
-</details>
-<details>
-<summary>Enable strategic planning</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- Map technical and commercial constraints<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Identify promising research directions<br/>
-</details>
-<details>
-<summary>Support impact evaluation</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- Track progress toward goals<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Measure contribution significance<br/>
-</details>
-</details>
-
-What role can AI play in these systems?
-<details>
-<summary>Enhance system efficiency</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- Help evaluate potential impact<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Identify promising research directions<br/>
-</details>
-<details>
-<summary>Support graph maintenance</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- Classify and connect different types of nodes<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Track relationships between contributions<br/>
-</details>
-<details>
-<summary>Enable semantic reasoning</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- Connect goals to potential approaches<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- Identify non-obvious intervention points<br/>
-
-</details>
+This pattern could be replicated across domains - from environmental management to public health to education. The structure of discourse graphs allows different knowledge communities to maintain their specific contexts while creating clear interfaces for collaboration, making knowledge more accessible and actionable while preserving rigor.
 
 ## Cross-Domain Integration
 Discourse graphs offer a powerful solution to one of science's greatest challenges: the increasing specialization and fragmentation of knowledge. While specialization has driven scientific progress, it has also created silos that make it difficult to address complex, interdisciplinary challenges. Discourse graphs can help bridge these divides by:
@@ -290,6 +233,45 @@ Discourse graphs offer a powerful solution to one of science's greatest challeng
 - Overcoming the limitations of traditional search methods that rely on stable, shared understanding of terminology across fields [Chan, 2021]
 
 This framework is particularly valuable as we face increasingly complex challenges that require integrating insights from multiple scientific domains. The ability to synthesize research across all of science is crucial for addressing the needs of the day and the goals of tomorrow.
+
+## Summary of Key Benefits
+
+The integration of discourse graphs, Web3, and AI creates three fundamental advantages for decentralized science:
+1. Enhanced Knowledge Organization and Discovery
+
+   • Structured representation of scientific claims and evidence enables more effective knowledge synthesis
+
+   • Cross-domain integration supports discovery of non-obvious connections
+
+   • AI-assisted navigation and analysis of complex research landscapes
+
+   • Preservation of crucial context and provenance for scientific claims
+
+2. Improved Research Coordination and Planning
+
+   • Goal-oriented roadmaps connect research efforts to desired outcomes
+
+   • Clear identification of critical pathways, bottlenecks, and intervention points
+
+   • Strategic alignment of technical development with market opportunities
+
+   • Enhanced ability to track progress and measure contribution significance
+
+   • Support for specialized labor and expertise across complex projects
+
+3. Market-Driven Innovation and Impact
+
+   • Transparent attribution and valuation of scientific contributions
+
+   • Efficient markets for research outcomes through impact certificates
+
+   • Risk-sharing mechanisms for ambitious research initiatives
+
+   • Market-based discovery of high-leverage opportunities
+
+   • Incentivization of crucial but traditionally undervalued work like synthesis and replication
+
+These benefits create a foundation for a more effective, collaborative, and impact-driven scientific ecosystem. By addressing the core challenges of traditional scientific practice while enabling new capabilities, discourse graphs and their extensions provide a framework for truly decentralized science.
 
 ## Moving Forward
 
