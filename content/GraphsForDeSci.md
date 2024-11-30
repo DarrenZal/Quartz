@@ -462,7 +462,7 @@ References:
 - Chan, J. (2021). "Discourse Graphs for Augmented Knowledge Synthesis: What and Why"*
 - "Outcomes Graph: A protocol for applied science coordination" (https://deepscienceventures.com/content/the-outcomes-graph-2)
 - "Exploring Impact Certificates" (https://www.punkrockbio.com/p/exploring-impact-certificates)
-
+- "Collective grassroots knowledge generation with lab discourse graphs" (https://roamresearch.com/#/app/akamatsulab/page/ud1vxU56v)
 ---
 
 # Appendix A: Current Implementation Landscape
