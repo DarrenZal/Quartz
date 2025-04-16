@@ -1,188 +1,80 @@
 ---
-
-title: Percolation Finance
-
+title: "Percolation Finance: Funding at the Critical Frontier"
 backlinks: true
+---
+
+# Funding at the Critical Frontier
+
+## Why talk about drips, roots and money?
+Water does not spread evenly through a hillside: it meanders, pools, and—only when enough pores line up—surges through the rock to recharge an aquifer. That sharp switch from *no flow* to *global flow* is captured by **percolation theory**, a branch of statistical physics that has illuminated everything from battery electrodes to epidemic outbreaks.
+
+### Two ambitions for impact finance
+1. **Universal Reach (access equity)** — no high‑leverage project remains cut off for want of plumbing.
+2. **System‑Level Leverage (productivity maximisation)** — direct each marginal unit of capital to the point where it increases collective value the most.
+
+Percolation theory helps with the first ambition **and** gives a decision signal for the second.  The critical threshold *p ₍c₎* marks the *productive frontier*: just enough connectivity that any additional link or dollar can trigger a system‑wide cascade.
 
 ---
 
-## Nature‑Inspired Networks for Flowing Capital
+## 1  Percolation theory in a nutshell
 
-  
-
-Healthy ecosystems allocate resources without a central planner:
-
-* Water percolates through soil until every root is reached.
-
-* Fungal mycelium threads nutrients to where growth potential is highest.
-
-* Energy ripples through food webs, always taking the least‐resistance path.
-
-  
-
-The same self‑organising principle can guide how **money, credit and guarantees** move through an economy that aims for maximum collective benefit.
-
-The mathematics that captures the moment “local trickles become a river” is **percolation theory**. When the fraction _p_ of open links in a network exceeds a critical threshold _p ₍c₎_, isolated clusters suddenly merge into a spanning component, and flow becomes system‑wide [Wikipedia](https://en.wikipedia.org/wiki/Percolation_theory?utm_source=chatgpt.com)[Wikipedia](https://en.wikipedia.org/wiki/Percolation_threshold?utm_source=chatgpt.com).
-
-  
-
-In finance that threshold signals the point where capital—whether grants, low‑interest loans, mutual‑credit vouchers, or state money—begins to reach every project that can use it productively. Designing for this **critical connectivity** lets us channel resources as efficiently and resiliently as nature does.
-
-  
+* **Open vs. closed edge** – In hydrology an edge is open if a pore lets water through; in finance if a trust line can move value.
+* **Critical threshold *p ₍c₎*** – Below it, only small puddles (finite clusters) exist; above it, a **spanning cluster** appears and flow can, in principle, reach every node.
+* **Universality** – Near *p ₍c₎* many systems share power‑law behaviour regardless of microscopic details; that makes the threshold a robust design target.
+* **Multiplex twist** – Promises, redemption venues, collateral and data assurances form *layered* networks; coupling shifts the effective *p ₍c₎* and can cause abrupt cascades.
 
 ---
 
-  
+## 2  From “reachable” to “worth funding”
+1. **Connectivity phase (plumbing)**  Compute *p* for the current network of grants, loans, vouchers and state money. 
+   *If *p < p ₍c₎* → add guarantee pools, bridge exchanges or voucher‑fiat swaps until reachable = 100 %.*
+2. **Leverage phase (allocation)**  Stay *just above* *p ₍c₎* and use graph analytics to rank which open paths create the largest systemic lift.
+   - *Percolation centrality* pinpoints nodes whose upgrade floods new territory.
+   - *Cluster entropy* peaks near *p ₍c₎*; funding hypotheses in that zone (e.g., cutting‑edge science or regenerative pilots) yields maximal information gain before semantic saturation.
 
-### 1  Percolation theory in one minute
-
-  
-
-- **Nodes / edges** – actors and the promises, trust lines or payment rails between them.
-
-- **Open edge** – a link able to transmit value (meets KYC, liquidity, trust score, etc.).
-
-- **Critical threshold _p ₍c₎_** – the minimum fraction of open edges needed for a giant connected component (the “river”) to appear.
-
-- **Phase transition** – below _p ₍c₎_ resources stay trapped in puddles; just above it, they flow everywhere with minimal friction.
-
-- **Multiplex twist** – real economies have layered networks: promises, redemption venues, collateral. Percolation thresholds change when layers interact [APS Link](https://link.aps.org/doi/10.1103/PhysRevX.6.021002?utm_source=chatgpt.com)[Nature](https://www.nature.com/articles/s41467-017-01442-2?utm_source=chatgpt.com).
-
-  
+> **Analogy to knowledge discovery**   The “Data‑Driven Funding Agency” concept uses the same logic: identify research domains perched at their percolation threshold, where an extra study can weld many disparate findings into a coherent paradigm.
 
 ---
 
-  
+## 3  Knowledge graphs: sensing the medium
 
-### 2  All forms of funding are just different “fluids”
-
-  
-
-|Instrument|When is the edge **open**?|Analogy|
-
+| Graph element | Hydrology analogue | Finance example |
 |---|---|---|
+| Node | Soil grain | Project, asset, author |
+| Edge | Pore channel | Payment rail, trust line, citation |
+| Edge weight | Hydraulic conductivity | Liquidity × trust × legal certainty |
 
-|**Grant**|Recipient has a verified wallet & proposal|Water|
+A **live KG** grows every time value moves or new evidence appears. Nightly analytics:
 
-|**Low‑interest loan**|Credit score ≥ θ, collateral posted|Syrup|
-
-|**Mutual‑credit voucher** (Will Ruddick’s commitment pooling)|Both parties agree to accept voucher as payment [Resilience.org](https://www.resilience.org/stories/2024-03-05/will-ruddick-on-commitment-pooling-to-build-economic-commons/?utm_source=chatgpt.com)[Grassroots Economics](https://grassecon.org/commitment-pooling?utm_source=chatgpt.com)|Gas|
-
-|**Government fiat**|Counterparties confident in state redemption for taxes/services|Electrolyte|
-
-  
-
-Percolation treats them uniformly—only the probability that a given link can carry value matters.
-
-  
+1. **Edge weighting** → \(w = f(liquidity, trust, impact score)\).
+2. **Threshold sweep** → find τ ≈ *p ₍c₎* where a spanning cluster forms.
+3. **Intervention set** → minimal edges whose opening moves the system from sub‑critical to super‑critical in the *impact‑weighted* layer.
 
 ---
 
-  
+## 4  Workflow to operationalise
 
-### 3  Knowledge graphs: the mycelial map of where value _can_ flow
-
-  
-
-A live KG stores:
-
-  
-
-- **Entities** – projects, people, assets, tokens, impact metrics.
-
-- **Relations** – _owes_, _redeemable‑at_, _supplies‑to_, _advances‑SDG_.
-
-- **Attributes** – trust score, liquidity, maturity date, verified impact.
-
-  
-
-Each transaction adds triples, letting the graph grow like fungal hyphae sensing new nutrients.
-
-  
-
-**Analytics loop**
-
-  
-
-1. **Weight edges** → combine legal readiness, liquidity depth, social trust.
-
-2. **Sweep a threshold τ** → remove edges with weight < τ and watch when a spanning cluster appears (τ ≈ _p ₍c₎_).
-
-3. **Diagnose**
-
-- Nodes with high _percolation centrality_ are bottlenecks—upgrade their capacity.
-
-- Orphan clusters mark projects starved of liquidity—seed them with catalytic micro‑funds.
-
-- Layer fragility reveals where voucher‑redemption or collateral failures could shatter connectivity.
-
-  
+1. **Ingest & harmonise data**  (on‑chain flows, registries, ESG, literature).
+2. **Build ontology**  (FIBO + SDG + domain‑specific vocabularies).
+3. **Run multiplex percolation**  (NetworkX/igraph + custom ML weights).
+4. **Surface signals**  Liquidity Gap Map, cluster maturity index, percolation centrality leaderboard.
+5. **Policy levers**  Guarantees, bridge AMMs, impact oracles, collateral tokenisation.
+6. **Feedback loop**  Each funding action writes back to the KG; rerun analytics → adaptive planning.
 
 ---
 
-  
-
-### 4  Implementation outline
-
-  
-
-|Phase|Key tasks|Tools / tips|
-
-|---|---|---|
-
-|**Data ingestion**|Harvest on‑chain flows, voucher registries, grant databases, ESG datasets.|ETL into a graph DB (Neo4j, GraphDB).|
-
-|**Schema & ontology**|Reuse existing vocabularies (FIBO for finance, SDG ontology, cic: for community currencies).|OWL/RDF, SHACL constraints.|
-
-|**Edge weighting**|Build a scoring model: `weight = f(liquidity, trust, enforceability, impact)`|Start with heuristics; refine with ML.|
-
-|**Percolation analytics**|Run bond‑percolation sweeps; compute cluster sizes, percolation centrality.|NetworkX, igraph, or custom Spark job.|
-
-|**Decision support UI**|Dashboards showing “Liquidity Gap Map,” bottlenecks, τ‐distance per sector.|React + graph‑viz libs.|
-
-|**Policy levers**|Guarantee pools, bridge exchanges, credit‑line adjustments, impact oracles, collateral tokenisation.|Smart contracts, DAO votes.|
-
-|**Feedback loop**|Every new funding action updates KG → rerun analytics nightly.|CI pipeline + scheduled jobs.|
-
-  
+## 5  Conclusion
+Reaching *p ₍c₎* is like ensuring every root *could* sip groundwater. Operating *near* *p ₍c₎* lets each incremental dollar act like fresh rainfall that triggers a watershed‑scale bloom. By coupling percolation mathematics with the situational awareness of knowledge graphs, finance can mimic nature’s knack for **efficient, resilient, and purpose‑driven flow**.
 
 ---
 
-  
-
-### 5  Conclusion
-
-  
-
-By marrying **percolation theory’s critical‑connectivity insight** with a **mycelial view of economic relationships**, we can engineer funding systems that behave like living watersheds: a few well‑placed channels unleash self‑sustaining, equitable flow across the whole landscape.
-
-Whether the fluid is a grant, a loan, a community voucher, or state fiat is secondary; what matters is opening enough trustworthy, liquid paths—_and no more than necessary_—to sit at the edge of the percolation transition where every additional unit of capital delivers maximal systemic benefit.
-
-  
+## 6  Open research questions
+1. **Dynamic *p ₍c₎*** – How do macro shocks or climate extremes shift criticality in coupled financial‑ecological networks?
+2. **Optimal micro‑intervention** – Algorithms for the smallest guarantee set that unlocks the widest flow.
+3. **Semantic saturation** – Where does added complexity collapse hypothesis coherence in knowledge graphs?
+4. **Governance** – Polycentric models for adjusting network edges in real time without central bottlenecks.
 
 ---
-
-  
-
-### 6  Questions for future research
-
-  
-
-1. **Dynamic thresholds** – How does τ (and therefore _p ₍c₎_) evolve with macro‑shocks like interest‑rate spikes or climate events?
-
-2. **Optimal intervention** – What is the minimal cost set of edges to open (or guarantee) to keep the system above criticality in a multiplex context?
-
-3. **Fairness vs. efficiency** – Does targeting percolation centrality unintentionally favour already‑well‑connected actors?
-
-4. **Verification layer** – How do real‑time impact oracles (satellite data, IoT) shift weight distributions and hence liquidity paths?
-
-5. **Governance** – Which DAO or polycentric governance models best decide when and where to open new edges?
-
-  
-
-Exploring these questions will refine a biomimetic finance architecture—one that lets value flow like water, guided by the mycelial intelligence of a shared knowledge graph, to nurture the flourishing of the whole.
-
-  
 
 ## Sources
 
