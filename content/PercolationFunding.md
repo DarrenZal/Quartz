@@ -3,8 +3,6 @@ title: "Percolation Finance: Funding at the Critical Frontier"
 backlinks: true
 ---
 
-# Funding at the Critical Frontier
-
 ## Why talk about drips, roots and money?
 Water does not spread evenly through a hillside: it meanders, pools, and—only when enough pores line up—surges through the rock to recharge an aquifer. That sharp switch from *no flow* to *global flow* is captured by **percolation theory**, a branch of statistical physics that has illuminated everything from battery electrodes to epidemic outbreaks.
 
