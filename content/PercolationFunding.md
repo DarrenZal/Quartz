@@ -19,7 +19,7 @@ Percolation theory helps with the first ambition **and** gives a decision signal
 * **Open vs. closed edge** – In hydrology an edge is open if a pore lets water through; in finance if a trust line can move value.
 * **Critical threshold *p ₍c₎*** – Below it, only small puddles (finite clusters) exist; above it, a **spanning cluster** appears and flow can, in principle, reach every node.
 * **Universality** – Near *p ₍c₎* many systems share power‑law behaviour regardless of microscopic details; that makes the threshold a robust design target.
-* **Multiplex twist** – Promises, redemption venues, collateral and data assurances form *layered* networks; coupling shifts the effective *p ₍c₎* and can cause abrupt cascades.
+* **Multiplex twist** – Promises (e.g. grants, loans, vouchers), collateral guarantees, and data‑assurance links form layered networks; their coupling shifts the effective p₍c₎ and can trigger abrupt cascades.
 
 ---
 
