@@ -1,37 +1,34 @@
 ---
 title: Exploring Protocols for Regenerative Global Civilization
 ---
-Welcome! This space explores the intersection of decentralized technologies, collective intelligence, and regenerative practices as we work toward addressing the metacrisis and building more resilient social systems. My research and writing focus on how we can develop and implement protocols that enable effective global coordination while respecting local autonomy and ecological wisdom.
+Welcome! This digital garden explores the interconnectedness of decentralized technologies, collective intelligence, and regenerative practices. It delves into how we might build more resilient, adaptive, and equitable social, ecological, and economic systems capable of addressing the [metacrisis](metacrisis.md).
 
-## Current Focus: Discourse Graphs as a Coordination Primitive
+The core theme is the shift [From Separation to Connection](FromSeperationToConnection.md)—moving from siloed, centralized structures towards networked, relational approaches inspired by natural systems like mycelial networks. This involves rethinking how we manage knowledge, coordinate action, and steward resources.
 
-I was first introduced to discourse graphs through Karola Kirsanow's talk at Protocol Labs on [Research Roadmapping with Discourse Graphs](https://www.youtube.com/watch?v=P0KUt2yrUkw). This sparked my interest in how decentralized knowledge structures could serve as fundamental building blocks for better societal coordination. My current exploration of discourse graphs represents an entry point into the broader question of how we can develop protocols for regenerative civilization.
+## Key Themes & Explorations
 
-### Recent Posts
+This site weaves together several threads, examining the tools, concepts, and philosophies needed for a regenerative transition:
 
-#### [Graphs for DeSci](GraphsForDeSci.md)
-An exploration of how discourse graphs can revolutionize scientific research through decentralization, moving beyond traditional publication methods to create more collaborative, transparent, and efficient ways of conducting science.
+**1. Networked Knowledge & Sensemaking:**
+   - **[Knowledge Graphs](KnowledgeGraph.md) & [Relational Data](FromSeperationToConnection.md):** Moving beyond tables to represent knowledge through connections and context.
+   - **[Semantic Density](SemanticDensityPrinciple.md):** Why graph-based systems offer more efficient knowledge representation, crucial for AI and decentralized networks.
+   - **[Discourse Graphs](DiscourseGraphs.md):** Mapping conversations and arguments to build shared understanding in [Civic Knowledge Commons](DiscourseGraphs.md) and [Decentralized Science (DeSci)](GraphsForDeSci.md).
+   - **[Knowledge Commons](KnowledgeCommons.md):** Principles and practices for collectively stewarding shared knowledge resources (see also [Sources](KnowledgeCommonsSources.md)).
 
-#### [Discourse Graphs for Civic Knowledge Commons](DiscourseGraphs.md)
-A deep dive into how discourse graphs can serve as the foundation for civic knowledge networks, enabling the transformation from passive knowledge consumption to active stewardship.
+**2. Decentralized Coordination & Governance:**
+   - **[Open Protocols](OpenProtocols.md):** Foundational rules for interoperable, democratic digital infrastructure, moving beyond centralized platforms.
+   - **[Decentralized Science (DeSci)](GraphsForDeSci.md):** Transforming research through open collaboration, funding, and knowledge sharing using graph structures.
 
-## Broader Research Interests
+**3. Regenerative Systems & Place-Based Action:**
+   - **[Cosmo-localism](cosmolocalism.md):** Integrating global knowledge commons with resilient local production ("what is heavy is local, what is light is global").
+   - **[Bioregionalism](BioregionURI.md):** Using natural boundaries (like watersheds) as a basis for ecological stewardship and governance, enabled by standardized identifiers like the proposed [Bioregion URI](BioregionURI.md).
+   - **[Percolation Finance](PercolationFunding.md):** Innovative funding models inspired by physics to identify critical leverage points for systemic impact, often visualized through knowledge graphs.
 
-My work examines the convergence of several key areas:
+**4. Foundational Principles:**
+   - **[Semantic Density & Mycelial Networks](SemanticDensityPrinciple.md):** Drawing inspiration from nature's distributed intelligence for designing resilient information systems.
+   - **[Relationality](FromSeperationToConnection.md):** Embracing interconnectedness as a core principle for technology, culture, and ecology.
 
-- **Collective Intelligence**: How we can better harness our collective wisdom and capabilities
-- **Cosmo-localism**: Balancing global knowledge sharing with local implementation
-- **Bioregionalism**: Developing regenerative practices adapted to local ecosystems
-- **Web3 & Decentralized Networks**: Creating resilient, democratic systems
-- **Regenerative Economics**: Building economic systems that restore rather than deplete
-- **Global Coordination**: Addressing complex challenges while preserving local autonomy
-- **[Metacrisis Response](https://metacrisis.xyz/)**: Developing integrated solutions to interconnected global challenges
-
-### The Connected Vision
-
-These explorations are part of a larger inquiry into how we can develop the protocols, tools, and practices needed for a regenerative global civilization. Discourse graphs represent one promising primitive in this broader ecosystem of solutions.
-
-Stay tuned as we explore these interconnected paths toward a more regenerative future.
+These explorations aim to contribute to the development of practical tools and conceptual frameworks for navigating our complex global challenges and co-creating a more thriving future.
 
 ---
 ## Connect With Me
