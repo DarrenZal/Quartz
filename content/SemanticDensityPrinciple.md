@@ -492,19 +492,19 @@ The Semantic Density Principle suggests knowledge representation choice is funda
 
 **Definition A.1** (Knowledge Representation System). A knowledge representation system R is a formal system for encoding propositions about a domain, consisting of:
 
-- A syntax Sigma_R defining well-formed expressions
-- A semantics mathcalM_R mapping expressions to their meaning
-- A set of inference rules mathcalI_R allowing derivation of implicit information (for symbolic systems) or methods for generating plausible propositions (for neural systems).
+- A syntax $\Sigma_R$ defining well-formed expressions
+- A semantics $\mathcal{M}_R$ mapping expressions to their meaning
+- A set of inference rules $\mathcal{I}_R$ allowing derivation of implicit information (for symbolic systems) or methods for generating plausible propositions (for neural systems).
 
 **Definition A.2** (Size Function). For a representation rinR of a knowledge model, the size function S(r) measures the computational resources, e.g., number of bits required to encode r, token count, or complexity of retrieved context.
 
-**Definition A.3** (Information Content). For **formal symbolic systems**, the information content I(r) of a representation rinR is defined as the cardinality of the set of all distinct, sound, machine-inferable propositions entailed by r under the inference rules mathcalI∗R: I(r)=∣{p∣r⊢IR​​p}∣ Where vdash∗mathcalI_R denotes entailment under the inference rules of R. For **neural systems**, I(r) represents the set of distinct, plausible propositions the system can generate or verify based on its training and context r. Quantifying this set formally for direct comparison remains a research challenge. For **hybrid systems like OG-RAG**, I(r) includes facts made retrievable and understandable by an LLM through ontology grounding using context r (Sharma et al., 2024). The term "proposition" broadly covers statements, facts, ideas, instructions, or other units of meaning the system can represent and process.
+**Definition A.3** (Information Content). For **formal symbolic systems**, the information content $I(r)$ of a representation $r \in R$ is defined as the cardinality of the set of all distinct, sound, machine-inferable propositions entailed by $r$ under the inference rules $\mathcal{I}^*_R$: $$I(r) = |\{p | r \vdash_{\mathcal{I}_R} p\}|$$ Where $\vdash^*_{\mathcal{I}_R}$ denotes entailment under the inference rules of R. For **neural systems**, $I(r)$ represents the set of distinct, plausible propositions the system can generate or verify based on its training and context $r$. Quantifying this set formally for direct comparison remains a research challenge. For **hybrid systems like OG-RAG**, $I(r)$ includes facts made retrievable and understandable by an LLM through ontology grounding using context $r$ (Sharma et al., 2024). The term "proposition" broadly covers statements, facts, ideas, instructions, or other units of meaning the system can represent and process.
 
-**Definition A.4** (Semantic Density). The semantic density D(r) of a representation rinR is defined as: D(r)=S(r)I(r)​ This measures the amount of machine-inferable/generatable information per unit of computational resource.
+**Definition A.4** (Semantic Density). The semantic density $D(r)$ of a representation $r \in R$ is defined as: $$D(r) = \frac{I(r)}{S(r)}$$ This measures the amount of machine-inferable/generatable information per unit of computational resource.
 
-**Definition A.5** (Representational Equivalence). Two representations r_1inR_1 and r_2inR_2 are considered semantically equivalent if they can support the derivation or generation of the same set of relevant propositions about a domain.
+**Definition A.5** (Representational Equivalence). Two representations $r_1 \in R_1$ and $r_2 \in R_2$ are considered semantically equivalent if they can support the derivation or generation of the same set of relevant propositions about a domain.
 
-**Definition A.6** (Semantic Compression Ratio). An alternative view can be the semantic compression ratio of a representation r: SCR(r)=S(r)K(M∣Rtext​)​ Where K(M∣R_text) is the Kolmogorov complexity of representing the model M in plain natural language text. Higher SCR indicates higher semantic density.
+**Definition A.6** (Semantic Compression Ratio). An alternative view can be the semantic compression ratio of a representation $r$: $$SCR(r) = \frac{K(M|R_{\text{text}})}{S(r)}$$ Where $K(M|R_{\text{text}})$ is the Kolmogorov complexity of representing the model M in plain natural language text. Higher SCR indicates higher semantic density.
 
 ---
 
