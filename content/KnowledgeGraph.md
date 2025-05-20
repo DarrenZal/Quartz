@@ -17,9 +17,9 @@ A **knowledge graph** is a graph-structured knowledge base used to represent and
     
 - **Triples**: Subject-Predicate-Object statements (e.g., "Ada Lovelace" — "contributedTo" — "Computing")
     
-- **Ontologies**: Formal definitions of types and relationships (e.g., RDF, OWL)
+- **Ontologies**: Formal definitions of types and relationships (e.g., RDF, OWL) (see [[SemanticDensityPrinciple|Semantic Density Principle]] for effectiveness)
     
-- **Reasoning**: Inferring new knowledge from existing triples via logic
+- **Reasoning**: Inferring new knowledge from existing triples via logic (see [[SemanticDensityPrinciple|Semantic Density Principle]] for effectiveness)
     
 - **Embedding**: Vector-based representation of nodes/edges for ML applications
     
@@ -97,7 +97,7 @@ Knowledge graphs support this transition by:
     
 - **Tools**: Neo4j, GraphDB, TerminusDB, OriginTrail
     
-- **Use Cases**: Personal wikis, bioregional mapping, protocol development, research synthesis
+- **Use Cases**: Personal wikis, bioregional mapping, protocol development, research synthesis, [[GraphsForDeSci|DeSci]]
     
 - **Integrations**: Web3, AI agents, semantic search, decentralized storage
     
@@ -106,9 +106,8 @@ Knowledge graphs support this transition by:
 
 - [Wikipedia: Knowledge Graph](https://en.wikipedia.org/wiki/Knowledge_graph)
     
-- [Discourse Graphs for Civic Knowledge Commons](DiscourseGraphs)
+- [[DiscourseGraphs|Discourse Graphs for Civic Knowledge Commons]]
     
-- [Discourse Graphs for DeSci](GraphsForDeSci)
+- [[GraphsForDeSci|Discourse Graphs for DeSci]]
     
 - [From Seperation To Connection](FromSeperationToConnection)
-

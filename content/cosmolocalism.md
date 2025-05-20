@@ -20,10 +20,10 @@ This principle reflects a key insight about resource use:
    - Circular economy practices
    - Bioregional approach to resource management
 
-2. Global Knowledge Commons
-   - Open-source designs and technology
+2. Global [[KnowledgeCommons|Knowledge Commons]]
+   - Open-source designs and technology (see [[SemanticDensityPrinciple|Semantic Density Principle]] for effective representation)
    - Shared intellectual property
-   - Transnational cooperation protocols
+   - Transnational cooperation [[OpenProtocols|protocols]]
    - Global design repositories
 
 3. Commons-Oriented Capital

@@ -47,7 +47,7 @@ graph BT
   </figcaption>
 </figure> -->
 
-[Discourse graphs](https://ask.pubpub.org/about) are data structures that represent knowledge as a network of interconnected nodes—such as questions, claims, evidence—and relationships like supports or opposes.
+[[KnowledgeGraph|Discourse graphs]] are data structures that represent knowledge as a network of interconnected nodes—such as questions, claims, evidence—and relationships like supports or opposes.
 
 The concept of discourse graphs as a structured approach to organizing knowledge has evolved over time, with different variants emerging to suit various needs and contexts. The discourse graph model described above is based on conventions proposed by <a href="https://joelchan.me/" target="_blank">**Joel Chan**</a>. However, adaptations have developed in other academic fields, reflecting unique terminologies and practices.
 
@@ -489,7 +489,7 @@ permissions:
 
 ### Integration with Semantic Web Standards
 
-The discourse graph structure naturally aligns with semantic web standards, enabling interoperability across different knowledge representation formats:
+The discourse graph structure naturally aligns with semantic web standards (see [[SemanticDensityPrinciple|Semantic Density Principle]] for importance of semantics), enabling interoperability across different knowledge representation formats:
 
 <details>
 <summary>RDF Compatibility</summary>
@@ -637,4 +637,3 @@ SORT playbook["Outcomes"]["Matching Pool Utilization"] DESC
 - **Outcomes Analysis:** Examine the effectiveness based on metrics like matching pool utilization.
 - **Insights Gained:** Identify successful adaptations and areas for improvement.
 </details>
-

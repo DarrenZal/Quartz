@@ -36,7 +36,7 @@ graph BT
     style S fill:#ffffff,color:#000
 ```
 
-[Discourse graphs](https://ask.pubpub.org/about) provide an elegent framework for structuring and sharing scientific arguments:
+[[DiscourseGraphs|Discourse graphs]] provide an elegent framework for structuring and sharing scientific arguments (see [[SemanticDensityPrinciple|Semantic Density Principle]] for how structured representation enhances effectiveness):
 - Questions that drive inquiry
 - Claims that propose answers
 - Evidence that supports claims
@@ -218,7 +218,7 @@ DeSci Discourse Graphs create a unified framework integrating financial incentiv
 
 #### 2. Decentralized Knowledge Management
 
-**Knowledge Graph Infrastructure**
+**[[KnowledgeGraph|Knowledge Graph]] Infrastructure**
 - Host discourse graphs on decentralized networks (e.g., <a href="https://origintrail.io/blog/announcing-the-id-theory-desci-ipo-initial-paranet-offering" target="_blank">OriginTrail's DeSci Knowledge Graph</a>)
 - Ensure knowledge is discoverable, verifiable, and properly attributed
 - Support knowledge mining and incentivization through tokens
@@ -479,4 +479,3 @@ These early implementations reveal both the potential and challenges of discours
 - Need for balance between structure and flexibility
 - Importance of seamless integration with existing research workflows
 - Value of progressive enhancement in tool adoption
-

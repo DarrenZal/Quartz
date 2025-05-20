@@ -13,7 +13,7 @@ Knowledge commons are often characterized by several core principles, drawing fr
 1.  **Shared Resources:** The core element is a body of knowledge or information (data, research, literature, code, designs, etc.).
 2.  **Community:** A community of users and contributors who collaboratively create, share, manage, and *use* the resource.
 3.  **Governance & Management:** Rules, norms, and processes (formal or informal) that govern the creation, management, access, and use of the knowledge resources. This involves shared governance, community involvement, and often relies on enabling institutions like [[OpenProtocols|Open Protocols]] or specific licensing frameworks (e.g., Creative Commons, Copyleft licenses like GPL) to prevent enclosure and ensure openness[^wiki]. Key design principles often include [^opencivics]:
-    *   **Accessibility:** Ensuring resources are easily accessible.
+    *   **Accessibility:** Ensuring resources are easily accessible (see [[SemanticDensityPrinciple|Semantic Density Principle]] regarding effective representation).
     *   **Participation:** Encouraging active community involvement.
     *   **Collaboration:** Fostering a cooperative environment.
     *   **Sustainability:** Ensuring long-term viability.
