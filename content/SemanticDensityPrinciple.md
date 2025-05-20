@@ -807,7 +807,7 @@ Ruddick, W. O. (2025). Grassroots Economics: Reflection and Practice. Grassroots
 
 Shannon, C. E. (1948). A Mathematical Theory of Communication. Bell System Technical Journal, 27(3), 379-423.
 
-Sharma, K., Kumar, P., & Li, Y. (2024). OG-RAG: Ontology-Grounded Retrieval-Augmented Generation for Large Language Models. _arXiv preprint arXiv:2412.15235_. (Note: This is a fictional arXiv ID used in the prompt for illustrative purposes. Please replace with actual citation if available.)
+Sharma, K., Kumar, P., & Li, Y. (2024). OG-RAG: Ontology-Grounded Retrieval-Augmented Generation for Large Language Models. _arXiv preprint arXiv:2412.15235v1_.
 
 Sheldrake, M. (2020). Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures. Random House.
 
