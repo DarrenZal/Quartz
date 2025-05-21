@@ -32,6 +32,7 @@ Percolation theory helps with the first ambition **and** gives a decision signal
 
 > **Analogy to knowledge discovery**   The “Data‑Driven Funding Agency” concept uses the same logic: identify research domains perched at their percolation threshold, where an extra study can weld many disparate findings into a coherent paradigm.
 
+This logic is powerfully exemplified in the proposal for a 'Data‑Driven Funding Agency' (DDF, 2025), which suggests leveraging percolation theory on knowledge graphs composed specifically of *scientific assertions* and their evidential relationships. The effectiveness of such an approach hinges on the **semantic density** of the underlying knowledge graph; a richly interconnected and semantically explicit representation of scientific claims is crucial for the percolation analysis to yield meaningful insights into research domains ripe for impactful funding (SDP, 2025).
 ---
 
 ## 3  Knowledge graphs: sensing the medium
@@ -41,6 +42,8 @@ Percolation theory helps with the first ambition **and** gives a decision signal
 | Node | Soil grain | Project, asset, author |
 | Edge | Pore channel | Payment rail, trust line, citation |
 | Edge weight | Hydraulic conductivity | Liquidity × trust × legal certainty |
+
+For such a 'live KG' to effectively 'sense the medium' of scientific knowledge or financial opportunity, its construction must prioritize **semantic density** (SDP, 2025). This means not just cataloging nodes and edges, but ensuring that relationships are explicit, well-defined through ontologies (as mentioned in the workflow), and carry sufficient semantic weight to make the subsequent percolation analysis robust. For instance, in a knowledge graph of scientific literature, nodes might represent individual *scientific assertions*, and edges their logical or evidential support, forming a dense web whose percolation characteristics reveal the structure of scientific consensus and debate (DDF, 2025).
 
 A **live KG** grows every time value moves or new evidence appears. Nightly analytics:
 
@@ -53,7 +56,7 @@ A **live KG** grows every time value moves or new evidence appears. Nightly ana
 ## 4  Workflow to operationalise
 
 1. **Ingest & harmonise data**  (on‑chain flows, registries, ESG, literature).
-2. **Build ontology**  (FIBO + SDG + domain‑specific vocabularies).
+2. **Build ontology**  (FIBO + SDG + domain‑specific vocabularies) **to ensure high semantic density in the knowledge graph**. This involves defining clear entity types (e.g., projects, assets, *scientific assertions*) and relationship types with explicit semantics, forming the foundation for meaningful edge weighting and percolation analysis.
 3. **Run multiplex percolation**  (NetworkX/igraph + custom ML weights).
 4. **Surface signals**  Liquidity Gap Map, cluster maturity index, percolation centrality leaderboard.
 5. **Policy levers**  Guarantees, bridge AMMs, impact oracles, collateral tokenisation.
@@ -69,7 +72,7 @@ Reaching *p ₍c₎* is like ensuring every root *could* sip groundwater. Ope
 ## 6  Open research questions
 1. **Dynamic *p ₍c₎*** – How do macro shocks or climate extremes shift criticality in coupled financial‑ecological networks?
 2. **Optimal micro‑intervention** – Algorithms for the smallest guarantee set that unlocks the widest flow.
-3. **Semantic saturation** – Where does added complexity collapse hypothesis coherence in knowledge graphs?
+3. **Optimal Semantic Density and Saturation** – While high semantic density is generally beneficial for robust percolation analysis and knowledge representation (SDP, 2025), where does added complexity or an overabundance of poorly differentiated semantic links begin to obscure signal, reduce inferential clarity, or 'collapse hypothesis coherence' in knowledge graphs? Understanding this 'semantic saturation' point is crucial for designing optimally effective KGs.
 4. **Governance** – Polycentric models for adjusting network edges in real time without central bottlenecks.
 
 ---
