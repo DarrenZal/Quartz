@@ -32,7 +32,8 @@ Percolation theory helps with the first ambition **and** gives a decision signal
 
 > **Analogy to knowledge discovery**   The “Data‑Driven Funding Agency” concept uses the same logic: identify research domains perched at their percolation threshold, where an extra study can weld many disparate findings into a coherent paradigm.
 
-This logic is powerfully exemplified in the proposal for a 'Data‑Driven Funding Agency' (DDF, 2025), which suggests leveraging percolation theory on knowledge graphs composed specifically of *scientific assertions* and their evidential relationships. The effectiveness of such an approach hinges on the **semantic density** of the underlying knowledge graph; a richly interconnected and semantically explicit representation of scientific claims is crucial for the percolation analysis to yield meaningful insights into research domains ripe for impactful funding (SDP, 2025).
+This logic is powerfully exemplified in the proposal for a 'Data‑Driven Funding Agency' (DDF, 2025), which suggests leveraging percolation theory on knowledge graphs composed specifically of *scientific assertions* and their evidential relationships. The effectiveness of such an approach hinges on the [[SemanticDensityPrinciple|semantic density]] of the underlying knowledge graph; a richly interconnected and semantically explicit representation of scientific claims is crucial for the percolation analysis to yield meaningful insights into research domains ripe for impactful funding (SDP, 2025).
+
 ---
 
 ## 3  Knowledge graphs: sensing the medium
