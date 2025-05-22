@@ -28,6 +28,7 @@ Knowledge commons can take many forms, including:
 *   **Academic Commons:** Open access journals, institutional repositories, shared research data.
 *   **Cultural Commons:** Digital libraries, archives of traditional knowledge, collaborative art projects.
 *   **Design Commons:** Open-source hardware designs, shared fabrication spaces (makerspaces).
+*   **Place-Based or Bioregional Commons:** Knowledge commons focused on specific geographical areas, integrating ecological, social, and cultural knowledge, such as a [[BioregionalKnowledgeCommons]].
 *   **Implementation Examples:** Can range from large platforms like Wikipedia to specific approaches like federated wikis or open-source markdown libraries managed via version control (e.g., Git) [^opencivics].
 
 ## Relationship to Other Concepts

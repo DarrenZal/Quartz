@@ -21,7 +21,7 @@ This site weaves together several threads, examining the tools, concepts, and ph
 
 **3. Regenerative Systems & Place-Based Action:**
    - **[Cosmo-localism](cosmolocalism.md):** Integrating global knowledge commons with resilient local production ("what is heavy is local, what is light is global").
-   - **[Bioregionalism](BioregionURI.md):** Using natural boundaries (like watersheds) as a basis for ecological stewardship and governance, enabled by standardized identifiers like the proposed [Bioregion URI](BioregionURI.md).
+   - **[Bioregionalism](BioregionURI.md):** Using natural boundaries (like watersheds) as a basis for ecological stewardship and governance, often supported by a [[BioregionalKnowledgeCommons|Bioregional Knowledge Commons]] and enabled by standardized identifiers like the proposed [Bioregion URI](BioregionURI.md).
    - **[Percolation Finance](PercolationFunding.md):** Innovative funding models inspired by physics to identify critical leverage points for systemic impact, often visualized through knowledge graphs.
 
 **4. Foundational Principles:**

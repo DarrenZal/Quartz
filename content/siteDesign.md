@@ -45,6 +45,8 @@ This setup serves as a practical example of how discourse and knowledge graphs c
    - Full-text search capability
    - Visual graph exploration
 
+This approach is particularly relevant for developing specialized knowledge systems, such as a [[BioregionalKnowledgeCommons|Bioregional Knowledge Commons]], which aims to integrate diverse, place-based information.
+
 ## Relevance to Broader Themes
 
 This architecture embodies many of the principles discussed on this site:

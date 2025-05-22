@@ -40,7 +40,7 @@ Effectively responding to the metacrisis requires more than addressing individua
 -   **Regenerative Practices:** Designing systems that restore and enhance ecological and social health, moving beyond mere sustainability.
 -   **[Knowledge Commons](KnowledgeCommons.md) & Collective Intelligence:** Developing shared ways to understand complex issues and coordinate action, leveraging tools like [Discourse Graphs](DiscourseGraphs.md) and [Knowledge Graphs](KnowledgeGraph.md).
 -   **[Open Protocols](OpenProtocols.md) & Decentralization:** Building resilient, adaptable infrastructures that distribute power and foster collaboration.
--   **[Cosmo-localism](cosmolocalism.md):** Balancing global knowledge sharing with place-based, [bioregionally](BioregionURI.md)-attuned solutions.
+-   **[Cosmo-localism](cosmolocalism.md):** Balancing global knowledge sharing with place-based, [[BioregionalKnowledgeCommons|bioregionally-attuned solutions]] (see also [[BioregionURI]]).
 -   **[Semantic Density](SemanticDensityPrinciple.md):** Creating richer, more context-aware knowledge systems capable of handling complexity.
 -   **New Economic & Governance Models:** Shifting from extractive models to ones based on circulation, regeneration, well-being, and distributed wisdom, potentially informed by concepts like [Percolation Finance](PercolationFunding.md).
 -   **Spiritual & Creative Innovation:** Exploring new narratives, artistic expressions, and contemplative practices that foster a deeper connection to reality and meaning.

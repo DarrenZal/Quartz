@@ -97,7 +97,7 @@ Knowledge graphs support this transition by:
     
 - **Tools**: Neo4j, GraphDB, TerminusDB, OriginTrail
     
-- **Use Cases**: Personal wikis, bioregional mapping, protocol development, research synthesis, [[GraphsForDeSci|DeSci]]
+- **Use Cases**: Personal wikis, bioregional mapping, protocol development, research synthesis, [[GraphsForDeSci|DeSci]], [[BioregionalKnowledgeCommons|Bioregional Knowledge Commons]]
     
 - **Integrations**: Web3, AI agents, semantic search, decentralized storage
     

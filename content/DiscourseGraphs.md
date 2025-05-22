@@ -125,7 +125,7 @@ Decentralization of discourse graphs means:
   - **Facilitators:** Help determine directions for exploration
   - **Stewards:** Manage specific knowledge domains or bioregional commons
 - **No Central Authority:** Eliminating centralized control over knowledge synthesis and validation.
-- **Local Autonomy:** Supporting bioregional and domain-specific knowledge commons managed by local experts or communities.
+- **Local Autonomy:** Supporting bioregional (e.g., a [[BioregionalKnowledgeCommons|Bioregional Knowledge Commons]]) and domain-specific knowledge commons managed by local experts or communities.
 
 ## Supporting Progressive Formalization
 

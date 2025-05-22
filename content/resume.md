@@ -99,7 +99,7 @@ I am an entrepreneur, activist, and cosmo-localist with a strong background in s
 ## Additional Interests
 
 - **Open Value Networks & Community Currencies**  
-- **Commoning & Cosmo-localism**  
+- **[[BioregionalKnowledgeCommons|Commoning & Cosmo-localism]]** (see also [[KnowledgeCommons]], [[cosmolocalism]])
 - **Cyber-Physical Systems & Digital Twins**  
 - **Flow Accounting & Living Systems Economics**  
 - **Global Coordination & Metacrisis Response**
@@ -111,4 +111,3 @@ I am an entrepreneur, activist, and cosmo-localist with a strong background in s
 - **GitHub**: [github.com/DarrenZal](https://github.com/DarrenZal)  
 - **LinkedIn**: [linkedin.com/in/zaldarren/](https://www.linkedin.com/in/zaldarren/)  
 - **Twitter**: [twitter.com/zaldarren](https://twitter.com/zaldarren)
-

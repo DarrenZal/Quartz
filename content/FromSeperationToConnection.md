@@ -213,7 +213,7 @@ This relational turn isn't just philosophical—it's already transforming practi
 
 - Modeling complex ecosystems and their interdependencies
 - Tracking cascading effects of interventions across systems
-- Integrating indigenous ecological knowledge with scientific data
+- Integrating indigenous ecological knowledge with scientific data (e.g., within a [[BioregionalKnowledgeCommons|Bioregional Knowledge Commons]])
 
 **Governance**
 

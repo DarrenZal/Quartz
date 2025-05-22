@@ -309,7 +309,7 @@ Beyond scientific domains, discourse graphs enable seamless connection with othe
    - Bridging specialized research with practical applications
    - Evidence-based development of societal infrastructure
    - Bidirectional knowledge flow between experts and practitioners
-   - Transformation of siloed processes into participatory models
+   - Transformation of siloed processes into participatory models, such as a [[BioregionalKnowledgeCommons]]
 
 **2. Professional Knowledge Networks**
    - Integration with practitioner expertise

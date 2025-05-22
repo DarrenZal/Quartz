@@ -109,7 +109,7 @@ Mapping your proposed scheme to these frameworks could enhance its adoption and 
 
 URIs like the one proposed here enable decentralized and collaborative efforts to regenerate bioregions by:
 
-1. **Linking Knowledge**: In knowledge graphs, the URI allows seamless linking of information about bioregions, such as ecological data, restoration projects, and governance models.
+1. **Linking Knowledge**: In knowledge graphs, the URI allows seamless linking of information about bioregions, such as ecological data, restoration projects, and governance models, often managed within a [[BioregionalKnowledgeCommons|Bioregional Knowledge Commons]].
 2. **Enabling Discourse**: Through discourse graphs, URIs anchor conversations, allowing contributors to map discussions back to specific bioregions.
 3. **Driving Scientific Collaboration**: In decentralized science, URIs help researchers share datasets, methods, and findings about bioregions without ambiguity.
 

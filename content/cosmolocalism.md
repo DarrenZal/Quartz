@@ -18,7 +18,7 @@ This principle reflects a key insight about resource use:
    - Focus on local supply chains
    - Distributed manufacturing capabilities
    - Circular economy practices
-   - Bioregional approach to resource management
+   - Bioregional approach to resource management (often facilitated by a [[BioregionalKnowledgeCommons|Bioregional Knowledge Commons]])
 
 2. Global [[KnowledgeCommons|Knowledge Commons]]
    - Open-source designs and technology (see [[SemanticDensityPrinciple|Semantic Density Principle]] for effective representation)
