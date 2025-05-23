@@ -271,6 +271,7 @@ a {
 .footnotes {
   margin-top: 2rem;
   border-top: 1px solid var(--lightgray);
+  background-color: inherit !important;
 }
 
 input[type="checkbox"] {

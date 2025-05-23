@@ -396,20 +396,39 @@ audio::-webkit-media-controls-panel {
 }
 
 
+/* Scrollbar color variables */
+:root {
+  --scrollbar-track: #eadac2;
+  --scrollbar-thumb: #c4a484;
+  --scrollbar-thumb-hover: #a08968;
+}
+
+:root[saved-theme="dark"] {
+  --scrollbar-track: #2d2d2d;
+  --scrollbar-thumb: #555555;
+  --scrollbar-thumb-hover: #777777;
+}
+
 /* For WebKit-based browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 10px; /* Adjust the width if needed */
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #eadac2;
+  background: var(--scrollbar-track) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(36, 25, 25, 0.2); /* Adjust the scrollbar thumb color and transparency */
-  border-radius: 10px; /* Add rounded corners */
+  background: var(--scrollbar-thumb) !important;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.4); /* Darken the thumb when hovered */
+  background: var(--scrollbar-thumb-hover) !important;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
