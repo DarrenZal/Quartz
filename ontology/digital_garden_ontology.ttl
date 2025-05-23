@@ -1,0 +1,86 @@
+@prefix : <http://darrenzal.net/kg/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# Base IRI for your knowledge graph entities (articles/concepts)
+@prefix base: <http://darrenzal.net/kg/resource/> .
+
+# --- Classes ---
+
+:DigitalGardenArticle rdf:type rdfs:Class ;
+    rdfs:label "Digital Garden Article" ;
+    rdfs:comment "A generic article or note within the digital garden." .
+
+:Concept rdf:type rdfs:Class ;
+    rdfs:subClassOf :DigitalGardenArticle ;
+    rdfs:label "Concept" ;
+    rdfs:comment "An abstract idea, theory, or notion." .
+
+:Principle rdf:type rdfs:Class ;
+    rdfs:subClassOf :Concept ;
+    rdfs:label "Principle" ;
+    rdfs:comment "A fundamental truth or proposition that serves as the foundation for a system of belief or behavior or for a chain of reasoning." .
+
+:Technology rdf:type rdfs:Class ;
+    rdfs:subClassOf :DigitalGardenArticle ;
+    rdfs:label "Technology" ;
+    rdfs:comment "A tool, technique, system, organization or method." .
+
+:Theme rdf:type rdfs:Class ;
+    rdfs:subClassOf :Concept ;
+    rdfs:label "Theme" ;
+    rdfs:comment "A main subject or idea that is being discussed or described." .
+
+:PlaceBasedConcept rdf:type rdfs:Class ;
+    rdfs:subClassOf :Concept ;
+    rdfs:label "Place-Based Concept" ;
+    rdfs:comment "A concept related to specific geographical or ecological regions." .
+
+# --- Object Properties (linking resources to resources) ---
+
+:mentions rdf:type rdf:Property ;
+    rdfs:label "mentions" ;
+    rdfs:comment "The subject document mentions the object concept/document. This can be a default for wiki-links." .
+
+:exploresConcept rdf:type rdf:Property ;
+    rdfs:label "explores concept" ;
+    rdfs:comment "The subject document explores the object concept in detail." ;
+    rdfs:domain :DigitalGardenArticle ;
+    rdfs:range :Concept .
+
+:relatedTo rdf:type rdf:Property ;
+    rdfs:label "related to" ;
+    rdfs:comment "A general associative relationship between two concepts or articles." ;
+    skos:relatedMatch schema:relatedLink .
+
+:isa rdf:type rdf:Property ;
+    rdfs:label "is a" ;
+    rdfs:comment "States that the subject is an instance of the object class." .
+
+:usesTechnology rdf:type rdf:Property ;
+    rdfs:label "uses technology" ;
+    rdfs:comment "The subject makes use of the object technology." .
+
+:leverages rdf:type rdf:Property ;
+    rdfs:label "leverages" ;
+    rdfs:comment "The subject utilizes or takes advantage of the object." .
+
+:inspiredBy rdf:type rdf:Property ;
+    rdfs:label "inspired by" ;
+    rdfs:comment "The subject draws inspiration from the object." .
+
+# --- Data Properties (linking resources to literals) ---
+
+:hasAlias rdf:type rdf:Property ;
+    rdfs:label "has alias" ;
+    rdfs:comment "An alternative name or synonym for the subject." ;
+    rdfs:range rdfs:Literal .
+
+:hasSummary rdf:type rdf:Property ;
+    rdfs:label "has summary" ;
+    rdfs:comment "A brief summary of the subject." ;
+    rdfs:range rdfs:Literal .

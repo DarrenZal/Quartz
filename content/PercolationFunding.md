@@ -1,7 +1,56 @@
 ---
 title: "Percolation Finance: Funding at the Critical Frontier"
+type: :Concept
+summary: "Applies percolation theory to impact finance, using knowledge graphs to identify critical thresholds where marginal funding can trigger system-wide cascades and maximize collective value."
+aliases: [percolation finance, critical threshold funding, network finance]
 backlinks: true
 date: 2024-12-01
+
+relationships:
+  - predicate: :leverages
+    object: SemanticDensityPrinciple.md
+    description: "Requires high semantic density in knowledge graphs for robust percolation analysis"
+  - predicate: :relatedTo
+    object: KnowledgeGraph.md
+    description: "Uses knowledge graphs to sense the medium of financial opportunity"
+  - predicate: :enablesCreationOf
+    object: BioregionalKnowledgeCommons.md
+    description: "Bioregional knowledge commons serve as live KGs for place-based initiatives"
+  - predicate: :usesTechnology
+    object: "percolation theory"
+    description: "Applies statistical physics concepts to funding allocation"
+  - predicate: :relatedTo
+    object: "scientific assertions"
+    description: "Constructs knowledge graphs from evidential relationships"
+  - predicate: :leverages
+    object: "network analytics"
+    description: "Uses graph analytics to identify systemic leverage points"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "funding framework"
+  - subject: self
+    predicate: :applies
+    object: "percolation theory"
+  - subject: "critical threshold"
+    predicate: :marks
+    object: "productive frontier"
+  - subject: self
+    predicate: :enables
+    object: "system-wide cascades"
+  - subject: "percolation centrality"
+    predicate: :identifies
+    object: "nodes creating largest systemic lift"
+  - subject: self
+    predicate: :maximizes
+    object: "collective value"
+  - subject: "live knowledge graphs"
+    predicate: :sense
+    object: "financial opportunity medium"
+  - subject: self
+    predicate: :mimics
+    object: "nature's efficient flow"
 ---
 
 ## Why talk about drips, roots and money?

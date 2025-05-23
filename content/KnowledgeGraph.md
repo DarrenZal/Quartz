@@ -1,7 +1,47 @@
 ---
 title: Knowledge Graph
+type: :Technology
+summary: "A structured representation of facts, entities, and their interrelationships stored in a graph format, prioritizing connections, semantics, and contextual richness over traditional tabular schemas."
+aliases: [KG, semantic network, graph-structured knowledge base]
 backlinks: true
 date: 2024-10-10
+
+relationships:
+  - predicate: :relatedTo
+    object: DiscourseGraphs.md
+    description: "Discourse graphs are a specialized form of knowledge graph"
+  - predicate: :relatedTo
+    object: SemanticDensityPrinciple.md
+    description: "Referenced for ontology and reasoning effectiveness"
+  - predicate: :usesTechnology
+    object: OpenProtocols.md
+    description: "Supports development and evolution of open protocols"
+  - predicate: :relatedTo
+    object: GraphsForDeSci.md
+    description: "Applied in decentralized science contexts"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommons.md
+    description: "Used for bioregional mapping and knowledge commons"
+
+semantic_triples:
+  - subject: "wd:Wikidata"
+    predicate: :isa
+    object: self
+  - subject: "wd:Google"
+    predicate: :usesTechnology
+    object: self
+  - subject: DiscourseGraphs.md
+    predicate: :leverages
+    object: self
+  - subject: self
+    predicate: :usesTechnology
+    object: "RDF"
+  - subject: self
+    predicate: :usesTechnology
+    object: "JSON-LD"
+  - subject: self
+    predicate: :usesTechnology
+    object: "SPARQL"
 ---
 
 ## Overview

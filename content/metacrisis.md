@@ -1,9 +1,64 @@
 ---
 title: Understanding the Metacrisis
+type: :Theme
+summary: "The interconnected web of multiple global crises reflecting deeper dysfunctions in our ways of knowing, perceiving, and valuing reality, requiring fundamental transformation in consciousness and culture."
+aliases: [metacrisis, meta-crisis, civilizational crisis]
 description: The interconnected web of global challenges demanding a fundamental shift in our systems and worldview.
 tags: [metacrisis, systems thinking, complexity, regeneration, collective intelligence]
 backlinks: true
 date: 2024-09-30
+
+relationships:
+  - predicate: :relatedTo
+    object: FromSeperationToConnection.md
+    description: "Requires shift from separation to interconnectedness"
+  - predicate: :relatedTo
+    object: KnowledgeCommons.md
+    description: "Addressed through knowledge commons and collective intelligence"
+  - predicate: :mentions
+    object: DiscourseGraphs.md
+    description: "Discourse graphs support collective sensemaking for metacrisis"
+  - predicate: :mentions
+    object: KnowledgeGraph.md
+    description: "Knowledge graphs enable understanding complex interconnections"
+  - predicate: :relatedTo
+    object: OpenProtocols.md
+    description: "Open protocols provide decentralized infrastructure solutions"
+  - predicate: :relatedTo
+    object: cosmolocalism.md
+    description: "Cosmo-localism balances global knowledge with place-based solutions"
+  - predicate: :mentions
+    object: BioregionalKnowledgeCommons.md
+    description: "Bioregional approaches offer place-based solutions"
+  - predicate: :relatedTo
+    object: SemanticDensityPrinciple.md
+    description: "Semantic density helps handle complexity"
+  - predicate: :mentions
+    object: PercolationFunding.md
+    description: "New economic models needed for regenerative systems"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "existential crisis"
+  - subject: self
+    predicate: :requires
+    object: "metanoia"
+  - subject: self
+    predicate: :encompasses
+    object: "polycrisis"
+  - subject: self
+    predicate: :demands
+    object: "systems thinking"
+  - subject: self
+    predicate: :requires
+    object: "collective intelligence"
+  - subject: "climate change"
+    predicate: :isa
+    object: "symptom of metacrisis"
+  - subject: "economic inequality"
+    predicate: :isa
+    object: "symptom of metacrisis"
 ---
 
 ## What is the Metacrisis?

@@ -1,0 +1,240 @@
+# Enhanced SPARQL Queries for Digital Garden Knowledge Graph
+# Updated based on rich semantic data with relationships and semantic triples
+
+# Set up common prefixes
+PREFIX : <http://darrenzal.net/kg/ontology/>
+PREFIX base: <http://darrenzal.net/kg/resource/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# ===== BASIC EXPLORATION QUERIES =====
+
+# Query 1: Content overview - types and counts
+SELECT ?type (COUNT(?article) as ?count) WHERE {
+  ?article rdf:type ?type .
+  FILTER(STRSTARTS(STR(?type), "http://darrenzal.net/kg/ontology/"))
+}
+GROUP BY ?type
+ORDER BY DESC(?count)
+
+# Query 2: All bioregional knowledge content
+SELECT ?article ?title ?summary WHERE {
+  ?article dcterms:title ?title ;
+           :hasSummary ?summary .
+  FILTER(CONTAINS(LCASE(CONCAT(?title, " ", ?summary)), "bioregional"))
+}
+ORDER BY ?title
+
+# Query 3: Technologies and their applications
+SELECT ?tech ?title ?summary WHERE {
+  ?tech rdf:type :Technology ;
+        dcterms:title ?title ;
+        :hasSummary ?summary .
+}
+ORDER BY ?title
+
+# ===== RELATIONSHIP ANALYSIS QUERIES =====
+
+# Query 4: Knowledge Graph connection network
+SELECT ?source_title ?relationship ?target_title ?context WHERE {
+  base:KnowledgeGraph ?pred ?target .
+  ?source dcterms:title ?source_title .
+  ?target dcterms:title ?target_title .
+  OPTIONAL { ?pred rdfs:comment ?context }
+  BIND(STRAFTER(STR(?pred), "http://darrenzal.net/kg/ontology/") AS ?relationship)
+  FILTER(?source = base:KnowledgeGraph)
+  FILTER(STRSTARTS(STR(?pred), "http://darrenzal.net/kg/ontology/"))
+}
+
+# Query 5: Discourse Graphs leveraging relationships
+SELECT ?target_title ?context WHERE {
+  base:DiscourseGraphs :leverages ?target .
+  OPTIONAL { ?target dcterms:title ?target_title }
+  OPTIONAL { base:DiscourseGraphs ?pred ?target . ?pred rdfs:comment ?context }
+}
+
+# Query 6: Cross-references and knowledge flow
+SELECT ?source_title ?predicate ?target_title ?description WHERE {
+  ?source ?pred ?target .
+  ?source dcterms:title ?source_title .
+  ?target dcterms:title ?target_title .
+  OPTIONAL { ?pred rdfs:comment ?description }
+  BIND(STRAFTER(STR(?pred), "http://darrenzal.net/kg/ontology/") AS ?predicate)
+  FILTER(STRSTARTS(STR(?pred), "http://darrenzal.net/kg/ontology/"))
+  FILTER(?pred != :hasSummary && ?pred != :hasAlias)
+}
+ORDER BY ?source_title ?predicate
+
+# ===== SEMANTIC TRIPLE EXPLORATION =====
+
+# Query 7: Semantic assertions and factual relationships
+SELECT ?subject_title ?predicate ?object_value WHERE {
+  ?article ?semantic_pred ?object_value .
+  ?article dcterms:title ?subject_title .
+  BIND(STRAFTER(STR(?semantic_pred), "http://darrenzal.net/kg/ontology/") AS ?predicate)
+  FILTER(STRSTARTS(STR(?semantic_pred), "http://darrenzal.net/kg/ontology/"))
+  FILTER(?semantic_pred NOT IN (:hasSummary, :hasAlias, :relatedTo))
+  FILTER(!ISIRI(?object_value))  # Only get literal values
+}
+ORDER BY ?subject_title ?predicate
+
+# Query 8: Technology usage patterns
+SELECT ?article_title ?technology WHERE {
+  ?article :usesTechnology ?tech .
+  ?article dcterms:title ?article_title .
+  OPTIONAL { ?tech dcterms:title ?technology }
+  FILTER(BOUND(?technology) || !ISIRI(?tech))
+  BIND(IF(BOUND(?technology), ?technology, STR(?tech)) AS ?tech_name)
+}
+ORDER BY ?article_title
+
+# ===== ADVANCED ANALYTICAL QUERIES =====
+
+# Query 9: Central hub analysis - most connected concepts
+SELECT ?concept ?title (COUNT(?connection) as ?connection_count) WHERE {
+  {
+    ?concept ?pred ?target .
+    ?concept dcterms:title ?title .
+    FILTER(STRSTARTS(STR(?pred), "http://darrenzal.net/kg/ontology/"))
+    BIND(?target AS ?connection)
+  }
+  UNION
+  {
+    ?source ?pred ?concept .
+    ?concept dcterms:title ?title .
+    FILTER(STRSTARTS(STR(?pred), "http://darrenzal.net/kg/ontology/"))
+    BIND(?source AS ?connection)
+  }
+}
+GROUP BY ?concept ?title
+HAVING (COUNT(?connection) > 3)
+ORDER BY DESC(?connection_count)
+
+# Query 10: Knowledge domains and themes
+SELECT ?domain (COUNT(?article) as ?article_count) WHERE {
+  ?article rdf:type ?domain .
+  FILTER(STRSTARTS(STR(?domain), "http://darrenzal.net/kg/ontology/"))
+}
+GROUP BY ?domain
+ORDER BY DESC(?article_count)
+
+# ===== SPECIFIC DOMAIN QUERIES =====
+
+# Query 11: Metacrisis-related content and connections
+SELECT ?article ?title ?relationship ?connected_concept WHERE {
+  ?article ?pred base:metacrisis .
+  ?article dcterms:title ?title .
+  BIND(STRAFTER(STR(?pred), "http://darrenzal.net/kg/ontology/") AS ?relationship)
+  OPTIONAL { base:metacrisis dcterms:title ?connected_concept }
+}
+
+# Query 12: Protocol and technology ecosystem
+SELECT ?article_title ?protocol_tech ?relationship WHERE {
+  ?article ?pred ?target .
+  ?article dcterms:title ?article_title .
+  FILTER(CONTAINS(LCASE(?article_title), "protocol") || 
+         CONTAINS(LCASE(STR(?target)), "protocol"))
+  BIND(STRAFTER(STR(?pred), "http://darrenzal.net/kg/ontology/") AS ?relationship)
+  BIND(STR(?target) AS ?protocol_tech)
+}
+
+# Query 13: Semantic density principle applications
+SELECT ?article_title ?application_type ?description WHERE {
+  ?article ?pred base:SemanticDensityPrinciple .
+  ?article dcterms:title ?article_title .
+  OPTIONAL { ?pred rdfs:comment ?description }
+  BIND(STRAFTER(STR(?pred), "http://darrenzal.net/kg/ontology/") AS ?application_type)
+}
+
+# ===== KNOWLEDGE DISCOVERY QUERIES =====
+
+# Query 14: Potential missing links - articles that could be connected
+SELECT ?article1_title ?article2_title ?shared_concept WHERE {
+  ?article1 ?pred1 ?shared .
+  ?article2 ?pred2 ?shared .
+  ?article1 dcterms:title ?article1_title .
+  ?article2 dcterms:title ?article2_title .
+  FILTER(?article1 != ?article2)
+  FILTER(!EXISTS { ?article1 ?direct_pred ?article2 })
+  FILTER(!EXISTS { ?article2 ?direct_pred ?article1 })
+  BIND(STR(?shared) AS ?shared_concept)
+}
+LIMIT 10
+
+# Query 15: Alias and alternative names analysis
+SELECT ?article_title ?aliases WHERE {
+  ?article dcterms:title ?article_title ;
+           :hasAlias ?aliases .
+}
+ORDER BY ?article_title
+
+# ===== VALIDATION AND QUALITY QUERIES =====
+
+# Query 16: Articles without relationships (potential orphans)
+SELECT ?article ?title WHERE {
+  ?article dcterms:title ?title .
+  FILTER NOT EXISTS {
+    ?article ?pred ?target .
+    FILTER(STRSTARTS(STR(?pred), "http://darrenzal.net/kg/ontology/"))
+    FILTER(?pred NOT IN (:hasSummary, :hasAlias))
+  }
+  FILTER NOT EXISTS {
+    ?source ?pred ?article .
+    FILTER(STRSTARTS(STR(?pred), "http://darrenzal.net/kg/ontology/"))
+  }
+}
+
+# Query 17: Most referenced external entities
+SELECT ?external_ref (COUNT(?article) as ?reference_count) WHERE {
+  ?article ?pred ?external_ref .
+  FILTER(!STRSTARTS(STR(?external_ref), "http://darrenzal.net/kg/resource/"))
+  FILTER(STRSTARTS(STR(?pred), "http://darrenzal.net/kg/ontology/"))
+  FILTER(!ISIRI(?external_ref) || STRSTARTS(STR(?external_ref), "http"))
+}
+GROUP BY ?external_ref
+HAVING (COUNT(?article) > 1)
+ORDER BY DESC(?reference_count)
+
+# ===== GRAPH STATISTICS AND INSIGHTS =====
+
+# Query 18: Knowledge graph statistics summary
+SELECT 
+  (COUNT(DISTINCT ?article) as ?total_articles)
+  (COUNT(DISTINCT ?type) as ?content_types)
+  (COUNT(?relationship) as ?total_relationships)
+WHERE {
+  ?article rdf:type ?type .
+  ?article ?pred ?target .
+  FILTER(STRSTARTS(STR(?type), "http://darrenzal.net/kg/ontology/"))
+  FILTER(STRSTARTS(STR(?pred), "http://darrenzal.net/kg/ontology/"))
+  FILTER(?pred NOT IN (:hasSummary, :hasAlias))
+  BIND(?pred AS ?relationship)
+}
+
+# Query 19: Relationship type distribution
+SELECT ?relationship_type (COUNT(*) as ?usage_count) WHERE {
+  ?source ?pred ?target .
+  BIND(STRAFTER(STR(?pred), "http://darrenzal.net/kg/ontology/") AS ?relationship_type)
+  FILTER(STRSTARTS(STR(?pred), "http://darrenzal.net/kg/ontology/"))
+  FILTER(?pred NOT IN (:hasSummary, :hasAlias))
+}
+GROUP BY ?relationship_type
+ORDER BY DESC(?usage_count)
+
+# Query 20: Complex knowledge paths (3-hop connections)
+SELECT ?start_title ?hop1_rel ?middle_title ?hop2_rel ?end_title WHERE {
+  ?start ?rel1 ?middle .
+  ?middle ?rel2 ?end .
+  ?start dcterms:title ?start_title .
+  ?middle dcterms:title ?middle_title .
+  ?end dcterms:title ?end_title .
+  BIND(STRAFTER(STR(?rel1), "http://darrenzal.net/kg/ontology/") AS ?hop1_rel)
+  BIND(STRAFTER(STR(?rel2), "http://darrenzal.net/kg/ontology/") AS ?hop2_rel)
+  FILTER(?start != ?end)
+  FILTER(STRSTARTS(STR(?rel1), "http://darrenzal.net/kg/ontology/"))
+  FILTER(STRSTARTS(STR(?rel2), "http://darrenzal.net/kg/ontology/"))
+  FILTER(?rel1 NOT IN (:hasSummary, :hasAlias))
+  FILTER(?rel2 NOT IN (:hasSummary, :hasAlias))
+}
+LIMIT 15

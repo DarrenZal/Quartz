@@ -1,7 +1,53 @@
 ---
 title: A Proposed URI Scheme for Bioregions
+type: :Technology
+summary: "A standardized URI scheme for identifying bioregions using names and geospatial coordinates, enabling interoperability in linked data, discourse graphs, and decentralized science platforms."
+aliases: [bioregion URI, bioregion identifier scheme, geospatial bioregion URIs]
 backlinks: true
 date: 2024-12-15
+
+relationships:
+  - predicate: :relatedTo
+    object: DiscourseGraphs.md
+    description: "URIs anchor conversations in discourse graphs mapping discussions to specific bioregions"
+  - predicate: :relatedTo
+    object: GraphsForDeSci.md
+    description: "Enables scientific collaboration through standardized bioregion references"
+  - predicate: :relatedTo
+    object: KnowledgeGraph.md
+    description: "Provides consistent identifiers for bioregional entities in knowledge graphs"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommons.md
+    description: "Enables linking and sharing information about bioregions in knowledge commons"
+  - predicate: :usesTechnology
+    object: "GIS"
+    description: "Uses GIS tools for centroid calculation and boundary definition"
+  - predicate: :leverages
+    object: "linked data principles"
+    description: "Built on linked data principles for semantic web compatibility"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "identification scheme"
+  - subject: self
+    predicate: :enables
+    object: "bioregional interoperability"
+  - subject: self
+    predicate: :usesTechnology
+    object: "WGS 84 coordinates"
+  - subject: self
+    predicate: :supports
+    object: "hierarchical naming"
+  - subject: "One Earth Bioregions Framework"
+    predicate: :isa
+    object: "reference framework"
+  - subject: "centroid calculation"
+    predicate: :requires
+    object: "GIS tools"
+  - subject: self
+    predicate: :facilitates
+    object: "decentralized collaboration"
 ---
 
 In the face of ecological challenges, the concept of bioregions—areas defined by natural boundaries like watersheds—offers a powerful framework for fostering local stewardship and environmental regeneration. To collaborate effectively across diverse communities and organizations, we need a standard way to reference and share information about these regions. This is where a **URI** (Uniform Resource Identifier) comes in.

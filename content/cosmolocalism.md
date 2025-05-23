@@ -1,7 +1,59 @@
 ---
 title: Cosmo-Localism
+type: :Concept
+summary: "A paradigm combining globally distributed knowledge and design commons with localized production capabilities, where 'what is heavy should be local, what is light should be global and shared' to enable resilient communities and sustainable resource use."
+aliases: [cosmo-localism, cosmolocalism, glocalization, global-local commons]
 backlinks: true
 date: 2024-09-15
+
+relationships:
+  - predicate: :leverages
+    object: KnowledgeCommons.md
+    description: "Relies on global knowledge commons for shared designs"
+  - predicate: :leverages
+    object: SemanticDensityPrinciple.md
+    description: "Uses effective representation for knowledge sharing"
+  - predicate: :usesTechnology
+    object: OpenProtocols.md
+    description: "Employs transnational cooperation protocols"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommons.md
+    description: "Implements bioregional approach to resource management"
+  - predicate: :exploresConcept
+    object: metacrisis.md
+    description: "Offers alternative paradigm for addressing global challenges"
+
+semantic_triples:
+  - subject: self
+    predicate: :embodies
+    object: "inversion of traditional manufacturing logic"
+  - subject: self
+    predicate: :promotes
+    object: "globally shared knowledge"
+  - subject: self
+    predicate: :promotes
+    object: "localized production"
+  - subject: self
+    predicate: :balances
+    object: "global and local needs"
+  - subject: "physical resources"
+    predicate: :shouldBe
+    object: "local"
+  - subject: "knowledge resources"
+    predicate: :shouldBe
+    object: "global and shared"
+  - subject: self
+    predicate: :enables
+    object: "community resilience"
+  - subject: self
+    predicate: :reduces
+    object: "environmental impact"
+  - subject: "Web3"
+    predicate: :enables
+    object: self
+  - subject: "maker movement"
+    predicate: :drives
+    object: self
 ---
 
 ## Core Definition

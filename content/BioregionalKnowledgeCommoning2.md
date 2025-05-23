@@ -1,6 +1,194 @@
 ---
 title: "Bioregional Knowledge Commoning - Part 2: Technical Architecture for Sovereignty and Engagement"
+type: :Technology
+summary: "Details technical architecture for implementing bioregional knowledge commons using decentralized technologies, semantic processing, and agent-centric systems while maintaining data sovereignty."
+aliases: [BKC Part 2, bioregional architecture, decentralized knowledge systems]
 backlinks: true
+date: 2025-05-22
+
+relationships:
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommoning1.md
+    description: "Part 1 covers foundational concepts and ontology design"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommoning3.md
+    description: "Part 3 explores governance and sustainability models"
+  - predicate: :usesTechnology
+    object: KnowledgeGraph.md
+    description: "Employs knowledge graphs as core data structure"
+  - predicate: :usesTechnology
+    object: DiscourseGraphs.md
+    description: "Uses discourse graph methodologies for structuring"
+  - predicate: :relatedTo
+    object: SemanticDensityPrinciple.md
+    description: "Applies semantic density principles to multimedia processing"
+  - predicate: :leverages
+    object: "Holochain"
+    description: "Uses agent-centric architecture for data sovereignty"
+  - predicate: :leverages
+    object: "IPFS"
+    description: "Distributed storage and content addressing"
+  - predicate: :leverages
+    object: "semantic embeddings"
+    description: "Vector representations for enhanced search and discovery"
+  - predicate: :leverages
+    object: "AD4M"
+    description: "Protocol adapters for sophisticated interoperability"
+  - predicate: :usesTechnology
+    object: "hREA"
+    description: "Holochain Resource Event Agent for economic coordination"
+  - predicate: :leverages
+    object: "Data Commons"
+    description: "Demonstrates power of KGs for organizing extensive datasets"
+  - predicate: :usesTechnology
+    object: "EIKE embeddings"
+    description: "Advanced knowledge embedding for extensional and intensional capture"
+  - predicate: :leverages
+    object: "NLP techniques"
+    description: "Natural Language Processing for entity extraction"
+  - predicate: :usesTechnology
+    object: "vision-language models"
+    description: "AI models for multimedia content analysis"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "technical framework"
+  - subject: self
+    predicate: :enables
+    object: "data sovereignty"
+  - subject: "agent-centric architectures"
+    predicate: :supports
+    object: "bioregional principles"
+  - subject: self
+    predicate: :implements
+    object: "local-first computing"
+  - subject: "multimedia processing pipelines"
+    predicate: :transforms
+    object: "unstructured content"
+  - subject: "VideoRAG"
+    predicate: :processes
+    object: "long-context videos"
+  - subject: "Holochain"
+    predicate: :provides
+    object: "agent-centric model"
+  - subject: "IPFS"
+    predicate: :enables
+    object: "distributed storage"
+  - subject: self
+    predicate: :embodies
+    object: "philosophical commitment to decentralization"
+  - subject: "decentralized technologies"
+    predicate: :shift_control_away_from
+    object: "central authorities"
+  - subject: "decentralized technologies"
+    predicate: :empower
+    object: "individuals and communities"
+  - subject: "IDSov"
+    predicate: :acts_as
+    object: "unifying driver for architectural choices"
+  - subject: "knowledge graphs"
+    predicate: :integrate
+    object: "structured and unstructured data"
+  - subject: "knowledge graphs"
+    predicate: :support
+    object: "complex queries"
+  - subject: "knowledge graphs"
+    predicate: :facilitate
+    object: "knowledge discovery"
+  - subject: "knowledge graphs"
+    predicate: :reveal
+    object: "hidden connections"
+  - subject: "semantic embeddings"
+    predicate: :represent
+    object: "concepts as dense vectors"
+  - subject: "semantic embeddings"
+    predicate: :enable
+    object: "semantic similarity calculations"
+  - subject: "semantic embeddings"
+    predicate: :enable
+    object: "link prediction"
+  - subject: "semantic embeddings"
+    predicate: :enhance
+    object: "search and recommendation"
+  - subject: "EIKE embeddings"
+    predicate: :capture
+    object: "extensional knowledge"
+  - subject: "EIKE embeddings"
+    predicate: :capture
+    object: "intensional knowledge"
+  - subject: "multimedia knowledge"
+    predicate: :exists_in
+    object: "photographs, videos, audio recordings"
+  - subject: "multimedia knowledge"
+    predicate: :includes
+    object: "oral histories and Indigenous languages"
+  - subject: "semantic processing pipelines"
+    predicate: :transform
+    object: "living knowledge into structured assets"
+  - subject: "data preprocessing"
+    predicate: :extracts
+    object: "basic information and metadata"
+  - subject: "chunking"
+    predicate: :breaks_down
+    object: "large multimedia files"
+  - subject: "knowledge extraction"
+    predicate: :employs
+    object: "AI and machine learning models"
+  - subject: "vision-language models"
+    predicate: :identify
+    object: "objects, scenes, and activities"
+  - subject: "vision-language models"
+    predicate: :transcribe
+    object: "spoken audio to text"
+  - subject: "vision-language models"
+    predicate: :extract
+    object: "named entities and relationships"
+  - subject: "VideoRAG"
+    predicate: :features
+    object: "dual-channel architecture"
+  - subject: "VideoRAG"
+    predicate: :integrates
+    object: "graph-based textual knowledge grounding"
+  - subject: "VideoRAG"
+    predicate: :integrates
+    object: "multi-modal context encoding"
+  - subject: "VideoRAG"
+    predicate: :processes
+    object: "videos of unlimited length"
+  - subject: "VideoRAG"
+    predicate: :constructs
+    object: "precise knowledge graphs"
+  - subject: "VideoRAG"
+    predicate: :maintains
+    object: "semantic dependencies"
+  - subject: "Holochain"
+    predicate: :operates_on
+    object: "agent-centric model"
+  - subject: "Holochain"
+    predicate: :provides
+    object: "immutable source chains"
+  - subject: "Holochain"
+    predicate: :uses
+    object: "distributed hash table mechanism"
+  - subject: "Holochain"
+    predicate: :enables
+    object: "peer validation"
+  - subject: "Holochain"
+    predicate: :ensures
+    object: "data integrity through cryptographic signatures"
+  - subject: "Holochain"
+    predicate: :avoids
+    object: "global consensus requirements"
+  - subject: "Holochain"
+    predicate: :provides
+    object: "greater scalability and efficiency"
+  - subject: "hREA"
+    predicate: :implements
+    object: "Valueflows specification"
+  - subject: "hREA"
+    predicate: :enables
+    object: "economic network coordination"
 ---
 
 *This is Part 2 of a 3-part series on Bioregional Knowledge Commoning. [[BioregionalKnowledgeCommoning1|Part 1]] covered Foundations and Participatory Ontology Design. [[BioregionalKnowledgeCommoning3|Part 3]] will explore Governance, Sustainability, and Implementation.*

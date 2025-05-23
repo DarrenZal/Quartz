@@ -1,9 +1,66 @@
 @use "../../styles/variables.scss" as *;
 
 .graph {
-  & > h3 {
-    font-size: 1rem;
-    margin: 0;
+  .graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    
+    & > h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+  
+  .graph-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .graph-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    
+    .toggle-label {
+      font-size: 0.8rem;
+      color: var(--gray);
+      user-select: none;
+    }
+    
+    input[type="checkbox"] {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      appearance: none;
+      background-color: var(--lightgray);
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      
+      &:checked {
+        background-color: var(--secondary);
+      }
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+      }
+      
+      &:checked::after {
+        transform: translateX(20px);
+      }
+    }
   }
 
   & > .graph-outer {

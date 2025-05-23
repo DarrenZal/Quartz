@@ -1,7 +1,47 @@
 ---
 title: "Semantic Density as a Foundation for Knowledge Networks"
+type: :Principle
+summary: "A formal framework quantifying the representational efficiency of knowledge systems as the ratio of machine-inferable propositions to computational resources, essential for addressing planetary-scale challenges."
+aliases: [Semantic Density Principle, semantic density, knowledge representation efficiency]
 backlinks: true
 date: 2025-05-21
+
+relationships:
+  - predicate: :relatedTo
+    object: KnowledgeGraph.md
+    description: "Knowledge graphs exemplify systems with high semantic density"
+  - predicate: :relatedTo
+    object: DiscourseGraphs.md
+    description: "Discourse graphs integrate with semantic web standards"
+  - predicate: :relatedTo
+    object: OpenProtocols.md
+    description: "Effective documentation aids protocol implementation"
+  - predicate: :relatedTo
+    object: cosmolocalism.md
+    description: "Supports cosmo-local models through effective representation"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommons.md
+    description: "Enables effective bioregional knowledge organization"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "foundational framework"
+  - subject: self
+    predicate: :measures
+    object: "representational efficiency"
+  - subject: self
+    predicate: :enablesEffectiveApplication
+    object: "planetary-scale challenges"
+  - subject: "OWL systems"
+    predicate: :achieves
+    object: "high explicit semantic density"
+  - subject: "LLMs"
+    predicate: :achieves
+    object: "medium implicit semantic density"
+  - subject: "hybrid systems"
+    predicate: :optimizes
+    object: "total semantic density"
 ---
 ## Toward Effective Representation in Interconnected Systems
 

@@ -1,0 +1,58 @@
+
+
+> @elizaos/plugin-obsidian@0.1.9 build /Users/darrenzal/GAIA/packages/plugin-obsidian
+> tsup --format esm --dts
+
+[34mCLI[39m Building entry: src/index.ts
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v8.3.5
+[34mCLI[39m Using tsup config: /Users/darrenzal/GAIA/packages/plugin-obsidian/tsup.config.ts
+[34mCLI[39m Target: node20
+[34mCLI[39m Cleaning output folder
+[34mESM[39m Build start
+
+[90m[[90m12:13:57 PM[90m][39m [43m[30m WARN [39m[49m [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUse "src/helper/RDFmanager.ts" instead of "src/helper/rdfManager.ts" to avoid issues with case-sensitive file systems[0m [different-path-case]
+
+    src/actions/loadRDF.ts:11:30:
+[37m      11 │ import { getRdfManager } from [32m'../helper/rdfManager'[37m;
+         ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+
+
+[90m[[90m12:13:57 PM[90m][39m [43m[30m WARN [39m[49m [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUse "src/helper/RDFmanager.ts" instead of "src/helper/rdfManager.ts" to avoid issues with case-sensitive file systems[0m [different-path-case]
+
+    src/actions/search.ts:14:30:
+[37m      14 │ import { getRdfManager } from [32m'../helper/rdfManager'[37m;
+         ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+
+
+[90m[[90m12:13:57 PM[90m][39m [43m[30m WARN [39m[49m [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUse "src/helper/RDFmanager.ts" instead of "src/helper/rdfManager.ts" to avoid issues with case-sensitive file systems[0m [different-path-case]
+
+    src/actions/viewRDFGraph.ts:10:30:
+[37m      10 │ import { getRdfManager } from [32m'../helper/rdfManager'[37m;
+         ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+
+
+[90m[[90m12:13:57 PM[90m][39m [43m[30m WARN [39m[49m [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUse "src/helper/RDFmanager.ts" instead of "src/helper/rdfManager.ts" to avoid issues with case-sensitive file systems[0m [different-path-case]
+
+    src/helper/generateOntologyTtl.ts:2:30:
+[37m      2 │ import { getRdfManager } from [32m'./rdfManager'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~[0m
+
+
+
+[32mESM[39m [1mdist/arweaveUploader-GRGSHLMK.js     [22m[32m4.63 KB[39m
+[32mESM[39m [1mdist/chunk-G3PMV62Z.js               [22m[32m1.50 KB[39m
+[32mESM[39m [1mdist/arweaveUploader-GRGSHLMK.js.map [22m[32m10.12 KB[39m
+[32mESM[39m [1mdist/chunk-G3PMV62Z.js.map           [22m[32m71.00 B[39m
+[32mESM[39m [1mdist/index.js                        [22m[32m590.92 KB[39m
+[32mESM[39m [1mdist/index.js.map                    [22m[32m1.24 MB[39m
+[32mESM[39m ⚡️ Build success in 114ms
+DTS Build start
+DTS ⚡️ Build success in 1929ms
+DTS dist/index.d.ts 285.00 B

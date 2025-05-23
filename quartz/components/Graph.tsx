@@ -18,6 +18,7 @@ export interface D3Config {
   removeTags: string[]
   showTags: boolean
   focusOnHover?: boolean
+  showKnowledgeGraph?: boolean
 }
 
 interface GraphOptions {
@@ -53,6 +54,7 @@ const defaultOptions: GraphOptions = {
     showTags: true,
     removeTags: [],
     focusOnHover: true,
+    showKnowledgeGraph: false,
   },
 }
 
@@ -62,7 +64,16 @@ export default ((opts?: GraphOptions) => {
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (
       <div class={classNames(displayClass, "graph")}>
-        <h3>{i18n(cfg.locale).components.graph.title}</h3>
+        <div class="graph-header">
+          <h3>{i18n(cfg.locale).components.graph.title}</h3>
+          <div class="graph-controls">
+            <label class="graph-toggle">
+              <input type="checkbox" id="knowledge-graph-toggle" />
+              <span class="toggle-slider"></span>
+              <span class="toggle-label">Knowledge Graph</span>
+            </label>
+          </div>
+        </div>
         <div class="graph-outer">
           <div id="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
           <button id="global-graph-icon" aria-label="Global Graph">

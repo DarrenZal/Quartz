@@ -1,6 +1,53 @@
 ---
 title: "Resume"
+type: :DigitalGardenArticle
+summary: "Professional resume of Darren Zal, entrepreneur and systems architect focused on regenerative technologies, AI development, and decentralized systems for ecological and economic transformation."
+aliases: [CV, professional profile, Darren Zal resume]
+backlinks: true
 date: 2024-08-15
+
+relationships:
+  - predicate: :mentions
+    object: cosmolocalism.md
+    description: "Identifies as cosmo-localist focused on systems transformation"
+  - predicate: :relatedTo
+    object: "AI development"
+    description: "Current work involves building interoperable AI agents"
+  - predicate: :relatedTo
+    object: "regenerative finance"
+    description: "Expertise in developing token-economic models"
+  - predicate: :relatedTo
+    object: "systems architecture"
+    description: "Focus on complex decentralized systems design"
+  - predicate: :mentions
+    object: "forest stewardship"
+    description: "Work on Living Forest investment systems"
+
+semantic_triples:
+  - subject: "Darren Zal"
+    predicate: :isa
+    object: "entrepreneur"
+  - subject: "Darren Zal"
+    predicate: :isa
+    object: "activist"
+  - subject: "Darren Zal"
+    predicate: :isa
+    object: "cosmo-localist"
+  - subject: "Darren Zal"
+    predicate: :specializes_in
+    object: "AI & software architecture"
+  - subject: "Darren Zal"
+    predicate: :specializes_in
+    object: "regenerative finance"
+  - subject: "Darren Zal"
+    predicate: :specializes_in
+    object: "token engineering"
+  - subject: "Darren Zal"
+    predicate: :focuses_on
+    object: "systems transformation"
+  - subject: "Gaia AI"
+    predicate: :develops
+    object: "interoperable AI agents"
 ---
 
 # Darren Zal

@@ -1,7 +1,59 @@
 ---
 title: "Bioregional Knowledge Commoning: Summary"
+type: :PlaceBasedConcept
+summary: "A community-stewarded, decentralized knowledge ecosystem focused on a specific bioregion, integrating ecological, social, and cultural knowledge through participatory ontology commoning and Indigenous Data Sovereignty principles."
+aliases: [Bioregional Knowledge Commons, BKC, bioregional commons, place-based commons]
 backlinks: true
-date: 2025-05-25
+date: 2025-05-23
+
+relationships:
+  - predicate: :leverages
+    object: KnowledgeCommons.md
+    description: "Applies knowledge commons framework to bioregional context"
+  - predicate: :usesTechnology
+    object: KnowledgeGraph.md
+    description: "Uses knowledge graphs as core data structure"
+  - predicate: :relatedTo
+    object: cosmolocalism.md
+    description: "Implements bioregional approach to resource management"
+  - predicate: :leverages
+    object: SemanticDensityPrinciple.md
+    description: "Enables effective bioregional knowledge organization"
+  - predicate: :usesTechnology
+    object: OpenProtocols.md
+    description: "Uses decentralized technologies for data sovereignty"
+
+semantic_triples:
+  - subject: self
+    predicate: :synthesizes
+    object: "bioregion concept"
+  - subject: self
+    predicate: :synthesizes
+    object: "knowledge commons concept"
+  - subject: self
+    predicate: :empowers
+    object: "bioregional communities"
+  - subject: self
+    predicate: :integrates
+    object: "Indigenous Knowledge Systems"
+  - subject: self
+    predicate: :employs
+    object: "ontology commoning"
+  - subject: self
+    predicate: :upholds
+    object: "Indigenous Data Sovereignty"
+  - subject: self
+    predicate: :uses
+    object: "participatory design"
+  - subject: self
+    predicate: :enables
+    object: "collaborative learning"
+  - subject: self
+    predicate: :supports
+    object: "bioregioning process"
+  - subject: self
+    predicate: :requires
+    object: "phased implementation"
 ---
 
 This article provides a brief overview of the core concepts, technical approaches, and governance considerations for developing a **Bioregional Knowledge Commons (BKC)**, distilled from a three-part series on the topic [^1]. A BKC is envisioned as a **community-stewarded, decentralized knowledge ecosystem** focused on a specific "life-place" [^1].

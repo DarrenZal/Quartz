@@ -1,6 +1,179 @@
 ---
 title: "Bioregional Knowledge Commoning - Part 1: Foundations and Participatory Ontology Design"
+type: :Concept
+summary: "Explores foundational concepts for building community-stewarded bioregional knowledge commons through participatory ontology design, Indigenous knowledge integration, and ontological pluralism."
+aliases: [BKC Part 1, bioregional ontology design, participatory knowledge commons]
 backlinks: true
+date: 2025-05-22
+
+relationships:
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommoning2.md
+    description: "Part 2 covers technical architecture for implementing BKC systems"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommoning3.md
+    description: "Part 3 explores governance and sustainability models"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommonsSummary.md
+    description: "Summarizes key concepts from all three parts"
+  - predicate: :exploresConcept
+    object: KnowledgeCommons.md
+    description: "Builds on knowledge commons principles for bioregional contexts"
+  - predicate: :relatedTo
+    object: SemanticDensityPrinciple.md
+    description: "Applies semantic density principles to ontology design"
+  - predicate: :relatedTo
+    object: BioregionURI.md
+    description: "Uses standardized URI schemes for bioregion identification"
+  - predicate: :relatedTo
+    object: GraphsForDeSci.md
+    description: "Incorporates DeSci graph methodologies for research management"
+  - predicate: :relatedTo
+    object: cosmolocalism.md
+    description: "Aligns with cosmo-local principles for knowledge accessibility"
+  - predicate: :relatedTo
+    object: FromSeperationToConnection.md
+    description: "Emphasizes relational approaches to data and knowledge"
+  - predicate: :leverages
+    object: "ACCIO methodology"
+    description: "Uses ACCIO project methods for participatory ontology engineering"
+  - predicate: :leverages
+    object: "HCOME methodology"
+    description: "Employs Human-Centered Ontology Engineering approaches"
+  - predicate: :mentions
+    object: "UNESCO Biosphere Reserves"
+    description: "BKC aligns with learning places for sustainable development"
+  - predicate: :mentions
+    object: "One Earth initiative"
+    description: "Uses scientific framework for bioregion delineation"
+  - predicate: :mentions
+    object: "Elinor Ostrom"
+    description: "Builds on Nobel Prize-winning commons governance research"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "foundational framework"
+  - subject: self
+    predicate: :enables
+    object: "participatory ontology design"
+  - subject: "bioregional knowledge commons"
+    predicate: :integrates
+    object: "ecological and cultural knowledge"
+  - subject: "ontology commoning"
+    predicate: :isa
+    object: "collaborative process"
+  - subject: self
+    predicate: :supports
+    object: "Indigenous data sovereignty"
+  - subject: self
+    predicate: :embraces
+    object: "ontological pluralism"
+  - subject: "FPIC"
+    predicate: :isa
+    object: "ethical prerequisite"
+  - subject: "CARE principles"
+    predicate: :guides
+    object: "Indigenous data governance"
+  - subject: "bioregions"
+    predicate: :isa
+    object: "life-places"
+  - subject: "bioregions"
+    predicate: :defined_by
+    object: "watersheds and hydrological systems"
+  - subject: "bioregions"
+    predicate: :encompasses
+    object: "human settlements and cultures"
+  - subject: "bioregionalism"
+    predicate: :emphasizes
+    object: "interconnectedness and interbeing"
+  - subject: "knowledge commons"
+    predicate: :enables
+    object: "community-led management"
+  - subject: "knowledge commons"
+    predicate: :provides
+    object: "shared governance mechanisms"
+  - subject: "BKC"
+    predicate: :encompasses
+    object: "ecological data"
+  - subject: "BKC"
+    predicate: :encompasses
+    object: "Indigenous knowledge"
+  - subject: "BKC"
+    predicate: :encompasses
+    object: "cultural heritage"
+  - subject: "BKC"
+    predicate: :encompasses
+    object: "scientific research"
+  - subject: "BKC"
+    predicate: :encompasses
+    object: "community-generated data"
+  - subject: "BKC"
+    predicate: :supports
+    object: "reinhabitation"
+  - subject: "BKC"
+    predicate: :facilitates
+    object: "collaborative learning"
+  - subject: "ontology"
+    predicate: :provides
+    object: "semantic backbone"
+  - subject: "ontology"
+    predicate: :enables
+    object: "semantic interoperability"
+  - subject: "ontology"
+    predicate: :facilitates
+    object: "knowledge discovery and reasoning"
+  - subject: "domain ontologies"
+    predicate: :covers
+    object: "local ecology"
+  - subject: "domain ontologies"
+    predicate: :covers
+    object: "sustainable development"
+  - subject: "domain ontologies"
+    predicate: :covers
+    object: "Indigenous Knowledge Systems"
+  - subject: "upper ontologies"
+    predicate: :provides
+    object: "foundational structure"
+  - subject: "ACCIO methodology"
+    predicate: :involves
+    object: "social scientists, ontology engineers, stakeholders"
+  - subject: "ACCIO methodology"
+    predicate: :includes
+    object: "workshops, observations, interviews"
+  - subject: "ACCIO methodology"
+    predicate: :uses
+    object: "mind maps and scenarios"
+  - subject: "community workshops"
+    predicate: :enable
+    object: "collaborative meaning-making"
+  - subject: "OCAP principles"
+    predicate: :ensures
+    object: "Indigenous data control"
+  - subject: "IDSov"
+    predicate: :isa
+    object: "inherent right of Indigenous Peoples"
+  - subject: "ontological pluralism"
+    predicate: :acknowledges
+    object: "multiple valid worldviews"
+  - subject: "standpoint logic"
+    predicate: :enables
+    object: "multi-perspective representation"
+  - subject: "LLMs"
+    predicate: :assists_with
+    object: "ontology requirements engineering"
+  - subject: "LLMs"
+    predicate: :supports
+    object: "ontology enrichment and mapping"
+  - subject: "OG-RAG"
+    predicate: :enhances
+    object: "LLM responses through ontology grounding"
+  - subject: "knowledge graphs"
+    predicate: :represent
+    object: "entities and relationships"
+  - subject: "ontology embeddings"
+    predicate: :enable
+    object: "semantic similarity calculations"
 ---
 
 *This is Part 1 of a 3-part series on Bioregional Knowledge Commoning. [[BioregionalKnowledgeCommoning2|Part 2]] covers Technical Architecture for Sovereignty and Engagement. [[BioregionalKnowledgeCommoning3|Part 3]] explores Governance, Sustainability, and Implementation.*

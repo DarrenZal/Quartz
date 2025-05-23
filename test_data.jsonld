@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "@vocab": "http://darrenzal.net/kg/ontology/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  },
+  "@graph": [
+    {
+      "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+      "@type": "http://darrenzal.net/kg/ontology/Technology",
+      "dcterms:title": "Knowledge Graph",
+      "http://darrenzal.net/kg/ontology/hasSummary": "A structured representation of facts, entities, and their interrelationships stored in a graph format."
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+      "@type": "http://darrenzal.net/kg/ontology/Technology", 
+      "dcterms:title": "Discourse Graphs for Civic Knowledge Commons",
+      "http://darrenzal.net/kg/ontology/leverages": {
+        "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph"
+      }
+    }
+  ]
+}

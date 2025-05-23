@@ -1,7 +1,50 @@
 ---
 title: Discourse Graphs for Civic Knowledge Commons
+type: :Technology
+summary: "A specialized form of knowledge graph that models questions, claims, evidence, and their logical relationships to support collective sensemaking, civic deliberation, and protocol development in decentralized knowledge commons."
+aliases: [discourse graphs, decentralized discourse graphs, civic knowledge graphs]
 backlinks: true
 date: 2024-11-20
+
+relationships:
+  - predicate: :leverages
+    object: KnowledgeGraph.md
+    description: "Discourse graphs are a specialized form of knowledge graph"
+  - predicate: :exploresConcept
+    object: metacrisis.md
+    description: "Addresses the metacrisis through collective sensemaking"
+  - predicate: :usesTechnology
+    object: OpenProtocols.md
+    description: "Supports development and implementation of open protocols"
+  - predicate: :relatedTo
+    object: GraphsForDeSci.md
+    description: "Highly complementary with DeSci frameworks"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommons.md
+    description: "Supports bioregional knowledge commons"
+  - predicate: :usesTechnology
+    object: SemanticDensityPrinciple.md
+    description: "Integrates with semantic web standards"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: KnowledgeGraph.md
+  - subject: self
+    predicate: :leverages
+    object: "progressive formalization"
+  - subject: self
+    predicate: :supports
+    object: "collective intelligence"
+  - subject: "The Society Library"
+    predicate: :usesTechnology
+    object: self
+  - subject: self
+    predicate: :enables
+    object: "decentralized contribution"
+  - subject: self
+    predicate: :supports
+    object: "role diversification"
 ---
 
 ## Executive Summary

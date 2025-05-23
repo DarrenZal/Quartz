@@ -1,6 +1,64 @@
 ---
 title: Knowledge Commons
+type: :Concept
+summary: "Shared resources of information, data, and content that are collectively owned and managed by a community of users, characterized by non-subtractible access and collaborative governance frameworks."
+aliases: [knowledge commons, commons, knowledge sharing, collective intelligence]
 date: 2024-10-15
+
+relationships:
+  - predicate: :relatedTo
+    object: OpenProtocols.md
+    description: "Relies on enabling institutions like open protocols"
+  - predicate: :leverages
+    object: SemanticDensityPrinciple.md
+    description: "Benefits from effective representation for accessibility"
+  - predicate: :relatedTo
+    object: PercolationFunding.md
+    description: "May use percolation funding for sustainability"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommonsSummary.md
+    description: "Implemented in place-based and bioregional contexts"
+  - predicate: :relatedTo
+    object: KnowledgeGraph.md
+    description: "Knowledge graphs serve as infrastructure for commons"
+  - predicate: :relatedTo
+    object: DiscourseGraphs.md
+    description: "Discourse graphs map collective understanding"
+  - predicate: :relatedTo
+    object: GraphsForDeSci.md
+    description: "DeSci initiatives build knowledge commons for research"
+  - predicate: :relatedTo
+    object: cosmolocalism.md
+    description: "Intersects through globally shared knowledge"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "shared resource"
+  - subject: self
+    predicate: :isCharacterizedBy
+    object: "non-subtractible access"
+  - subject: self
+    predicate: :requires
+    object: "community governance"
+  - subject: self
+    predicate: :enables
+    object: "collaborative creation"
+  - subject: self
+    predicate: :promotes
+    object: "equitable access"
+  - subject: "Wikipedia"
+    predicate: :isa
+    object: self
+  - subject: "open-source software"
+    predicate: :isa
+    object: self
+  - subject: self
+    predicate: :faces
+    object: "enclosure challenges"
+  - subject: self
+    predicate: :requires
+    object: "sustainable governance models"
 ---
 
 A **Knowledge Commons** refers to shared resources of information, data, and content that are collectively owned and managed by a community of users. A key characteristic, particularly for digital resources, is that they are **non-subtractible** (or non-rivalrous), meaning multiple users can access the same resources without affecting their quantity or quality[^wiki]. The concept builds upon the traditional idea of the commons (like shared land or water resources) but applies it to the realm of intellectual and cultural works.

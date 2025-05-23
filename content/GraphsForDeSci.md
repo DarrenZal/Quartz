@@ -1,7 +1,62 @@
 ---
 title: Discourse Graphs for DeSci
+type: :Technology
+summary: "Explores how discourse graphs can transform decentralized science by structuring scientific knowledge, enabling transparent collaboration, and integrating AI-powered discovery with decentralized funding mechanisms."
+aliases: [DeSci graphs, scientific discourse graphs, graph-based science]
 backlinks: true
 date: 2024-11-25
+
+relationships:
+  - predicate: :leverages
+    object: DiscourseGraphs.md
+    description: "Uses discourse graph framework for scientific knowledge structuring"
+  - predicate: :relatedTo
+    object: KnowledgeGraph.md
+    description: "Builds on knowledge graph infrastructure for scientific data"
+  - predicate: :relatedTo
+    object: SemanticDensityPrinciple.md
+    description: "Structured representation enhances scientific knowledge effectiveness"
+  - predicate: :usesTechnology
+    object: "impact certificates"
+    description: "Enables funding markets through tokenized research outcomes"
+  - predicate: :enablesCreationOf
+    object: BioregionalKnowledgeCommons.md
+    description: "Supports participatory bioregional knowledge creation"
+  - predicate: :relatedTo
+    object: OpenProtocols.md
+    description: "Provides open protocols for scientific coordination"
+  - predicate: :relatedTo
+    object: "AI integration"
+    description: "Combines with AI for automated knowledge processing"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "scientific framework"
+  - subject: self
+    predicate: :addresses
+    object: "traditional science challenges"
+  - subject: "discourse graphs"
+    predicate: :structures
+    object: "questions, claims, evidence"
+  - subject: self
+    predicate: :enables
+    object: "decentralized collaboration"
+  - subject: self
+    predicate: :supports
+    object: "cross-domain integration"
+  - subject: "impact certificates"
+    predicate: :creates
+    object: "funding markets"
+  - subject: self
+    predicate: :facilitates
+    object: "transparent attribution"
+  - subject: "AI services"
+    predicate: :processes
+    object: "papers into graphs"
+  - subject: self
+    predicate: :enables
+    object: "collective intelligence"
 ---
 
 Decentralized Science (DeSci) seeks to address issues in traditional scientific practices around funding, publishing, and collaboration. Discourse graphs provide an elegant framework that can support the full spectrum of scientific work - from synthesizing existing research to mapping out and funding new frontiers.

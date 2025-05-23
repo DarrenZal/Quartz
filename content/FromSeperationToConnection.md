@@ -1,8 +1,67 @@
 ---
 title: From Separation to Connection — Rethinking Data in a Relational Age
+type: :Concept
+summary: "Explores the civilizational shift from separation to relationality and how data systems must evolve from tabular isolation to graph-based connection, embodying relational consciousness and systems thinking."
+aliases: [relational data, separation to connection, graph thinking, relational paradigm]
 description: We are moving from a culture of separation to one of relationship. Our data and knowledge systems must evolve with us.
 tags: [linked data, semantic web, relationality, knowledge graphs, systems thinking]
+backlinks: true
 date: 2025-04-09
+
+relationships:
+  - predicate: :relatedTo
+    object: KnowledgeGraph.md
+    description: "Knowledge graphs exemplify relational data paradigms"
+  - predicate: :relatedTo
+    object: DiscourseGraphs.md
+    description: "Discourse graphs enable participatory sensemaking across stakeholder groups"
+  - predicate: :relatedTo
+    object: OpenProtocols.md
+    description: "Open protocols enable semantic interoperability and coordination"
+  - predicate: :relatedTo
+    object: GraphsForDeSci.md
+    description: "DeSci demonstrates relational knowledge transformation in science"
+  - predicate: :relatedTo
+    object: cosmolocalism.md
+    description: "Cosmo-local production balances global knowledge sharing with local production"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommons.md
+    description: "Bioregional knowledge commons integrate diverse ways of knowing"
+  - predicate: :exploresConcept
+    object: "indigenous wisdom"
+    description: "Indigenous cultures maintain relational knowledge practices"
+  - predicate: :leverages
+    object: "systems thinking"
+    description: "Emphasizes understanding relationships between things"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "paradigm shift"
+  - subject: self
+    predicate: :enables
+    object: "relational consciousness"
+  - subject: "graph databases"
+    predicate: :prioritizes
+    object: "relationships as first-class citizens"
+  - subject: "tabular databases"
+    predicate: :reflects
+    object: "worldview of fragmentation"
+  - subject: "linked data"
+    predicate: :embodies
+    object: "relational paradigm"
+  - subject: "indigenous knowledge"
+    predicate: :emphasizes
+    object: "context over isolation"
+  - subject: self
+    predicate: :supports
+    object: "fractal knowledge ecosystems"
+  - subject: "quantum-inspired knowledge"
+    predicate: :represents
+    object: "entangled relationships"
+  - subject: self
+    predicate: :enables
+    object: "civilizational reorientation"
 ---
 # From Separation to Connection — Rethinking Data in a Relational Age
 

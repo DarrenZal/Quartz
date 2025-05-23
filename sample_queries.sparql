@@ -1,0 +1,204 @@
+# Sample SPARQL Queries for Digital Garden Knowledge Graph
+# These queries demonstrate the capabilities of the semantic knowledge graph
+
+# Set up common prefixes
+PREFIX : <http://darrenzal.net/kg/ontology/>
+PREFIX base: <http://darrenzal.net/kg/resource/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# ===== BASIC EXPLORATION QUERIES =====
+
+# Query 1: List all article types and their counts
+SELECT ?type (COUNT(?article) as ?count) WHERE {
+  ?article rdf:type ?type .
+  FILTER(?type != owl:Thing)
+}
+GROUP BY ?type
+ORDER BY DESC(?count)
+
+# Query 2: Find all articles classified as Concepts
+SELECT ?concept ?title ?summary WHERE {
+  ?concept rdf:type :Concept ;
+           dcterms:title ?title ;
+           :hasSummary ?summary .
+}
+ORDER BY ?title
+
+# Query 3: Get all Technologies and their descriptions
+SELECT ?tech ?title ?summary WHERE {
+  ?tech rdf:type :Technology ;
+        dcterms:title ?title ;
+        :hasSummary ?summary .
+}
+ORDER BY ?title
+
+# ===== RELATIONSHIP QUERIES =====
+
+# Query 4: Find what Knowledge Graph is related to
+SELECT ?predicate ?relatedThing ?title WHERE {
+  base:KnowledgeGraph ?predicate ?relatedThing .
+  ?relatedThing dcterms:title ?title .
+  FILTER(STRSTARTS(STR(?predicate), "http://darrenzal.net/kg/ontology/"))
+}
+
+# Query 5: Find all articles that mention or relate to the metacrisis
+SELECT ?article ?title ?relationship WHERE {
+  ?article ?predicate base:metacrisis ;
+           dcterms:title ?title .
+  BIND(STRAFTER(STR(?predicate), "http://darrenzal.net/kg/ontology/") as ?relationship)
+}
+
+# Query 6: Discover leveraging relationships
+SELECT ?subject ?subjectTitle ?object ?objectTitle WHERE {
+  ?subject :leverages ?object ;
+           dcterms:title ?subjectTitle .
+  ?object dcterms:title ?objectTitle .
+}
+
+# ===== SEMANTIC TRIPLE EXPLORATION =====
+
+# Query 7: Find all "uses technology" relationships
+SELECT ?subject ?subjectTitle ?technology WHERE {
+  ?subject :usesTechnology ?technology ;
+           dcterms:title ?subjectTitle .
+}
+
+# Query 8: Explore "enables" relationships
+SELECT ?enabler ?enablerTitle ?enabled WHERE {
+  ?enabler :enables ?enabled ;
+           dcterms:title ?enablerTitle .
+}
+
+# Query 9: Find principles and what they measure or enable
+SELECT ?principle ?title ?action ?target WHERE {
+  ?principle rdf:type :Principle ;
+             dcterms:title ?title ;
+             ?action ?target .
+  FILTER(?action IN (:measures, :enables, :enablesEffectiveApplication))
+}
+
+# ===== COMPLEX ANALYTICAL QUERIES =====
+
+# Query 10: Find central concepts (most connected nodes)
+SELECT ?concept ?title (COUNT(?connection) as ?connectionCount) WHERE {
+  ?concept dcterms:title ?title .
+  {
+    ?concept ?predicate ?connection .
+    FILTER(STRSTARTS(STR(?predicate), "http://darrenzal.net/kg/ontology/"))
+  } UNION {
+    ?connection ?predicate ?concept .
+    FILTER(STRSTARTS(STR(?predicate), "http://darrenzal.net/kg/ontology/"))
+  }
+}
+GROUP BY ?concept ?title
+ORDER BY DESC(?connectionCount)
+
+# Query 11: Trace knowledge flow paths (concepts that relate to other concepts)
+SELECT ?start ?startTitle ?middle ?middleTitle ?end ?endTitle WHERE {
+  ?start :relatedTo ?middle ;
+         dcterms:title ?startTitle .
+  ?middle :relatedTo ?end ;
+          dcterms:title ?middleTitle .
+  ?end dcterms:title ?endTitle .
+  FILTER(?start != ?end)
+}
+LIMIT 20
+
+# Query 12: Find technologies and the concepts they support
+SELECT ?tech ?techTitle ?concept ?conceptTitle ?relationship WHERE {
+  ?tech rdf:type :Technology ;
+        dcterms:title ?techTitle ;
+        ?predicate ?concept .
+  ?concept rdf:type :Concept ;
+           dcterms:title ?conceptTitle .
+  BIND(STRAFTER(STR(?predicate), "http://darrenzal.net/kg/ontology/") as ?relationship)
+}
+
+# ===== DOMAIN-SPECIFIC QUERIES =====
+
+# Query 13: Explore bioregional and place-based concepts
+SELECT ?concept ?title ?summary WHERE {
+  ?concept rdf:type :PlaceBasedConcept ;
+           dcterms:title ?title ;
+           :hasSummary ?summary .
+}
+
+# Query 14: Find concepts related to knowledge commons
+SELECT ?concept ?title ?relationship WHERE {
+  ?concept ?predicate base:KnowledgeCommons ;
+           dcterms:title ?title .
+  BIND(STRAFTER(STR(?predicate), "http://darrenzal.net/kg/ontology/") as ?relationship)
+}
+
+# Query 15: Discover the ecosystem around discourse graphs
+SELECT ?related ?title ?relationshipType WHERE {
+  {
+    base:DiscourseGraphs ?predicate ?related .
+    ?related dcterms:title ?title .
+    BIND("outgoing" as ?relationshipType)
+  } UNION {
+    ?related ?predicate base:DiscourseGraphs .
+    ?related dcterms:title ?title .
+    BIND("incoming" as ?relationshipType)
+  }
+  FILTER(STRSTARTS(STR(?predicate), "http://darrenzal.net/kg/ontology/"))
+}
+
+# ===== VALIDATION AND QUALITY QUERIES =====
+
+# Query 16: Find articles without summaries
+SELECT ?article ?title WHERE {
+  ?article dcterms:title ?title .
+  FILTER NOT EXISTS { ?article :hasSummary ?summary }
+}
+
+# Query 17: Count aliases across the knowledge base
+SELECT ?article ?title (COUNT(?alias) as ?aliasCount) WHERE {
+  ?article dcterms:title ?title ;
+           :hasAlias ?alias .
+}
+GROUP BY ?article ?title
+ORDER BY DESC(?aliasCount)
+
+# Query 18: Find orphaned concepts (no incoming or outgoing relationships)
+SELECT ?article ?title WHERE {
+  ?article dcterms:title ?title .
+  FILTER NOT EXISTS {
+    { ?article ?predicate ?other . FILTER(STRSTARTS(STR(?predicate), "http://darrenzal.net/kg/ontology/")) }
+    UNION
+    { ?other ?predicate ?article . FILTER(STRSTARTS(STR(?predicate), "http://darrenzal.net/kg/ontology/")) }
+  }
+}
+
+# ===== EMERGENT INSIGHT QUERIES =====
+
+# Query 19: Find potential knowledge clusters (concepts sharing multiple relationships)
+SELECT ?concept1 ?title1 ?concept2 ?title2 (COUNT(?sharedConnection) as ?sharedCount) WHERE {
+  ?concept1 dcterms:title ?title1 ;
+            ?predicate1 ?sharedConnection .
+  ?concept2 dcterms:title ?title2 ;
+            ?predicate2 ?sharedConnection .
+  FILTER(?concept1 != ?concept2)
+  FILTER(STRSTARTS(STR(?predicate1), "http://darrenzal.net/kg/ontology/"))
+  FILTER(STRSTARTS(STR(?predicate2), "http://darrenzal.net/kg/ontology/"))
+}
+GROUP BY ?concept1 ?title1 ?concept2 ?title2
+HAVING (?sharedCount > 1)
+ORDER BY DESC(?sharedCount)
+
+# Query 20: Comprehensive knowledge graph statistics
+SELECT 
+  (COUNT(DISTINCT ?node) as ?totalNodes)
+  (COUNT(DISTINCT ?type) as ?uniqueTypes) 
+  (COUNT(?relationship) as ?totalRelationships)
+WHERE {
+  ?node dcterms:title ?title .
+  OPTIONAL { ?node rdf:type ?type }
+  OPTIONAL { 
+    ?node ?predicate ?target . 
+    FILTER(STRSTARTS(STR(?predicate), "http://darrenzal.net/kg/ontology/"))
+    BIND(?predicate as ?relationship)
+  }
+}

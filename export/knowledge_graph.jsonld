@@ -1,0 +1,1735 @@
+{
+  "@context": {
+    "@vocab": "http://darrenzal.net/kg/ontology/",
+    "base": "http://darrenzal.net/kg/resource/",
+    "@base": "http://darrenzal.net/kg/resource/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "schema": "http://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "title": "dcterms:title",
+    "date": "dcterms:date",
+    "summary": "hasSummary",
+    "aliases": {
+      "@id": "hasAlias",
+      "@container": "@list"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://darrenzal.net/kg/resource/OWL_systems",
+      "http://darrenzal.net/kg/ontology/achieves": [
+        "high explicit semantic density"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/LLMs",
+      "http://darrenzal.net/kg/ontology/achieves": [
+        "medium implicit semantic density"
+      ],
+      "http://darrenzal.net/kg/ontology/assists_with": [
+        "ontology requirements engineering"
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        "ontology enrichment and mapping"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/hybrid_systems",
+      "http://darrenzal.net/kg/ontology/optimizes": [
+        "total semantic density"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+      "dcterms:title": "Semantic Density as a Foundation for Knowledge Networks",
+      "dcterms:date": "2025-05-21",
+      "http://darrenzal.net/kg/ontology/hasSummary": "A formal framework quantifying the representational efficiency of knowledge systems as the ratio of machine-inferable propositions to computational resources, essential for addressing planetary-scale challenges.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "Semantic Density Principle",
+        "semantic density",
+        "knowledge representation efficiency"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Principle",
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Knowledge graphs exemplify systems with high semantic density"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+          "rdfs:comment": "Discourse graphs integrate with semantic web standards"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Effective documentation aids protocol implementation"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism",
+          "rdfs:comment": "Supports cosmo-local models through effective representation"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Enables effective bioregional knowledge organization"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "foundational framework"
+      ],
+      "http://darrenzal.net/kg/ontology/measures": [
+        "representational efficiency"
+      ],
+      "http://darrenzal.net/kg/ontology/enablesEffectiveApplication": [
+        "planetary-scale challenges"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/critical_threshold",
+      "http://darrenzal.net/kg/ontology/marks": [
+        "productive frontier"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/percolation_centrality",
+      "http://darrenzal.net/kg/ontology/identifies": [
+        "nodes creating largest systemic lift"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/live_knowledge_graphs",
+      "http://darrenzal.net/kg/ontology/sense": [
+        "financial opportunity medium"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/PercolationFunding",
+      "dcterms:title": "Percolation Finance: Funding at the Critical Frontier",
+      "dcterms:date": "2024-12-01",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Applies percolation theory to impact finance, using knowledge graphs to identify critical thresholds where marginal funding can trigger system-wide cascades and maximize collective value.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "percolation finance",
+        "critical threshold funding",
+        "network finance"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Concept",
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Requires high semantic density in knowledge graphs for robust percolation analysis"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/network_analytics",
+          "rdfs:comment": "Uses graph analytics to identify systemic leverage points"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Uses knowledge graphs to sense the medium of financial opportunity"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/scientific_assertions",
+          "rdfs:comment": "Constructs knowledge graphs from evidential relationships"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/enablesCreationOf": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Bioregional knowledge commons serve as live KGs for place-based initiatives"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/percolation_theory",
+          "rdfs:comment": "Applies statistical physics concepts to funding allocation"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "funding framework"
+      ],
+      "http://darrenzal.net/kg/ontology/applies": [
+        "percolation theory"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "system-wide cascades"
+      ],
+      "http://darrenzal.net/kg/ontology/maximizes": [
+        "collective value"
+      ],
+      "http://darrenzal.net/kg/ontology/mimics": [
+        "nature's efficient flow"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/discourse_graphs",
+      "http://darrenzal.net/kg/ontology/structures": [
+        "questions, claims, evidence"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/impact_certificates",
+      "http://darrenzal.net/kg/ontology/creates": [
+        "funding markets"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/AI_services",
+      "http://darrenzal.net/kg/ontology/processes": [
+        "papers into graphs"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/GraphsForDeSci",
+      "dcterms:title": "Discourse Graphs for DeSci",
+      "dcterms:date": "2024-11-25",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Explores how discourse graphs can transform decentralized science by structuring scientific knowledge, enabling transparent collaboration, and integrating AI-powered discovery with decentralized funding mechanisms.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "DeSci graphs",
+        "scientific discourse graphs",
+        "graph-based science"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Technology",
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+          "rdfs:comment": "Uses discourse graph framework for scientific knowledge structuring"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Builds on knowledge graph infrastructure for scientific data"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Structured representation enhances scientific knowledge effectiveness"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Provides open protocols for scientific coordination"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/AI_integration",
+          "rdfs:comment": "Combines with AI for automated knowledge processing"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/impact_certificates",
+          "rdfs:comment": "Enables funding markets through tokenized research outcomes"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/enablesCreationOf": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Supports participatory bioregional knowledge creation"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "scientific framework"
+      ],
+      "http://darrenzal.net/kg/ontology/addresses": [
+        "traditional science challenges"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "decentralized collaboration",
+        "collective intelligence"
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        "cross-domain integration"
+      ],
+      "http://darrenzal.net/kg/ontology/facilitates": [
+        "transparent attribution"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/physical_resources",
+      "http://darrenzal.net/kg/ontology/shouldBe": [
+        "local"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/knowledge_resources",
+      "http://darrenzal.net/kg/ontology/shouldBe": [
+        "global and shared"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/Web3",
+      "http://darrenzal.net/kg/ontology/enables": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism"
+        }
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/maker_movement",
+      "http://darrenzal.net/kg/ontology/drives": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism"
+        }
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/cosmolocalism",
+      "dcterms:title": "Cosmo-Localism",
+      "dcterms:date": "2024-09-15",
+      "http://darrenzal.net/kg/ontology/hasSummary": "A paradigm combining globally distributed knowledge and design commons with localized production capabilities, where 'what is heavy should be local, what is light should be global and shared' to enable resilient communities and sustainable resource use.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "cosmo-localism",
+        "cosmolocalism",
+        "glocalization",
+        "global-local commons"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Concept",
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeCommons",
+          "rdfs:comment": "Relies on global knowledge commons for shared designs"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Uses effective representation for knowledge sharing"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Employs transnational cooperation protocols"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Implements bioregional approach to resource management"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/exploresConcept": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/metacrisis",
+          "rdfs:comment": "Offers alternative paradigm for addressing global challenges"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/embodies": [
+        "inversion of traditional manufacturing logic"
+      ],
+      "http://darrenzal.net/kg/ontology/promotes": [
+        "globally shared knowledge",
+        "localized production"
+      ],
+      "http://darrenzal.net/kg/ontology/balances": [
+        "global and local needs"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "community resilience"
+      ],
+      "http://darrenzal.net/kg/ontology/reduces": [
+        "environmental impact"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/climate_change",
+      "http://darrenzal.net/kg/ontology/isa": [
+        "symptom of metacrisis"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/economic_inequality",
+      "http://darrenzal.net/kg/ontology/isa": [
+        "symptom of metacrisis"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/metacrisis",
+      "dcterms:title": "Understanding the Metacrisis",
+      "dcterms:date": "2024-09-30",
+      "http://darrenzal.net/kg/ontology/hasSummary": "The interconnected web of multiple global crises reflecting deeper dysfunctions in our ways of knowing, perceiving, and valuing reality, requiring fundamental transformation in consciousness and culture.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "metacrisis",
+        "meta-crisis",
+        "civilizational crisis"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Theme",
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/FromSeperationToConnection",
+          "rdfs:comment": "Requires shift from separation to interconnectedness"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeCommons",
+          "rdfs:comment": "Addressed through knowledge commons and collective intelligence"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Open protocols provide decentralized infrastructure solutions"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism",
+          "rdfs:comment": "Cosmo-localism balances global knowledge with place-based solutions"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Semantic density helps handle complexity"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/mentions": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+          "rdfs:comment": "Discourse graphs support collective sensemaking for metacrisis"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Knowledge graphs enable understanding complex interconnections"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Bioregional approaches offer place-based solutions"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/PercolationFunding",
+          "rdfs:comment": "New economic models needed for regenerative systems"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "existential crisis"
+      ],
+      "http://darrenzal.net/kg/ontology/requires": [
+        "metanoia",
+        "collective intelligence"
+      ],
+      "http://darrenzal.net/kg/ontology/encompasses": [
+        "polycrisis"
+      ],
+      "http://darrenzal.net/kg/ontology/demands": [
+        "systems thinking"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/One_Earth_Bioregions_Framework",
+      "http://darrenzal.net/kg/ontology/isa": [
+        "reference framework"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/centroid_calculation",
+      "http://darrenzal.net/kg/ontology/requires": [
+        "GIS tools"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/BioregionURI",
+      "dcterms:title": "A Proposed URI Scheme for Bioregions",
+      "dcterms:date": "2024-12-15",
+      "http://darrenzal.net/kg/ontology/hasSummary": "A standardized URI scheme for identifying bioregions using names and geospatial coordinates, enabling interoperability in linked data, discourse graphs, and decentralized science platforms.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "bioregion URI",
+        "bioregion identifier scheme",
+        "geospatial bioregion URIs"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Technology",
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+          "rdfs:comment": "URIs anchor conversations in discourse graphs mapping discussions to specific bioregions"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/GraphsForDeSci",
+          "rdfs:comment": "Enables scientific collaboration through standardized bioregion references"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Provides consistent identifiers for bioregional entities in knowledge graphs"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Enables linking and sharing information about bioregions in knowledge commons"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/GIS",
+          "rdfs:comment": "Uses GIS tools for centroid calculation and boundary definition"
+        },
+        "WGS 84 coordinates"
+      ],
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/linked_data_principles",
+          "rdfs:comment": "Built on linked data principles for semantic web compatibility"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "identification scheme"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "bioregional interoperability"
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        "hierarchical naming"
+      ],
+      "http://darrenzal.net/kg/ontology/facilitates": [
+        "decentralized collaboration"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/bioregional_knowledge_commons",
+      "http://darrenzal.net/kg/ontology/integrates": [
+        "ecological and cultural knowledge"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/ontology_commoning",
+      "http://darrenzal.net/kg/ontology/isa": [
+        "collaborative process"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/FPIC",
+      "http://darrenzal.net/kg/ontology/isa": [
+        "ethical prerequisite"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/CARE_principles",
+      "http://darrenzal.net/kg/ontology/guides": [
+        "Indigenous data governance"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/bioregions",
+      "http://darrenzal.net/kg/ontology/isa": [
+        "life-places"
+      ],
+      "http://darrenzal.net/kg/ontology/defined_by": [
+        "watersheds and hydrological systems"
+      ],
+      "http://darrenzal.net/kg/ontology/encompasses": [
+        "human settlements and cultures"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/bioregionalism",
+      "http://darrenzal.net/kg/ontology/emphasizes": [
+        "interconnectedness and interbeing"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/knowledge_commons",
+      "http://darrenzal.net/kg/ontology/enables": [
+        "community-led management"
+      ],
+      "http://darrenzal.net/kg/ontology/provides": [
+        "shared governance mechanisms"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/BKC",
+      "http://darrenzal.net/kg/ontology/encompasses": [
+        "ecological data",
+        "Indigenous knowledge",
+        "cultural heritage",
+        "scientific research",
+        "community-generated data"
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        "reinhabitation"
+      ],
+      "http://darrenzal.net/kg/ontology/facilitates": [
+        "collaborative learning"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/ontology",
+      "http://darrenzal.net/kg/ontology/provides": [
+        "semantic backbone"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "semantic interoperability"
+      ],
+      "http://darrenzal.net/kg/ontology/facilitates": [
+        "knowledge discovery and reasoning"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/domain_ontologies",
+      "http://darrenzal.net/kg/ontology/covers": [
+        "local ecology",
+        "sustainable development",
+        "Indigenous Knowledge Systems"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/upper_ontologies",
+      "http://darrenzal.net/kg/ontology/provides": [
+        "foundational structure"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/ACCIO_methodology",
+      "http://darrenzal.net/kg/ontology/involves": [
+        "social scientists, ontology engineers, stakeholders"
+      ],
+      "http://darrenzal.net/kg/ontology/includes": [
+        "workshops, observations, interviews"
+      ],
+      "http://darrenzal.net/kg/ontology/uses": [
+        "mind maps and scenarios"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/community_workshops",
+      "http://darrenzal.net/kg/ontology/enable": [
+        "collaborative meaning-making"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/OCAP_principles",
+      "http://darrenzal.net/kg/ontology/ensures": [
+        "Indigenous data control"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/IDSov",
+      "http://darrenzal.net/kg/ontology/isa": [
+        "inherent right of Indigenous Peoples"
+      ],
+      "http://darrenzal.net/kg/ontology/acts_as": [
+        "unifying driver for architectural choices"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/ontological_pluralism",
+      "http://darrenzal.net/kg/ontology/acknowledges": [
+        "multiple valid worldviews"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/standpoint_logic",
+      "http://darrenzal.net/kg/ontology/enables": [
+        "multi-perspective representation"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/OG-RAG",
+      "http://darrenzal.net/kg/ontology/enhances": [
+        "LLM responses through ontology grounding"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/knowledge_graphs",
+      "http://darrenzal.net/kg/ontology/represent": [
+        "entities and relationships"
+      ],
+      "http://darrenzal.net/kg/ontology/integrate": [
+        "structured and unstructured data"
+      ],
+      "http://darrenzal.net/kg/ontology/support": [
+        "complex queries"
+      ],
+      "http://darrenzal.net/kg/ontology/facilitate": [
+        "knowledge discovery"
+      ],
+      "http://darrenzal.net/kg/ontology/reveal": [
+        "hidden connections"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/ontology_embeddings",
+      "http://darrenzal.net/kg/ontology/enable": [
+        "semantic similarity calculations"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommoning1",
+      "dcterms:title": "Bioregional Knowledge Commoning - Part 1: Foundations and Participatory Ontology Design",
+      "dcterms:date": "2024-12-15",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Explores foundational concepts for building community-stewarded bioregional knowledge commons through participatory ontology design, Indigenous knowledge integration, and ontological pluralism.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "BKC Part 1",
+        "bioregional ontology design",
+        "participatory knowledge commons"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Concept",
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommoning2",
+          "rdfs:comment": "Part 2 covers technical architecture for implementing BKC systems"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommoning3",
+          "rdfs:comment": "Part 3 explores governance and sustainability models"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommonsSummary",
+          "rdfs:comment": "Summarizes key concepts from all three parts"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Applies semantic density principles to ontology design"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionURI",
+          "rdfs:comment": "Uses standardized URI schemes for bioregion identification"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/GraphsForDeSci",
+          "rdfs:comment": "Incorporates DeSci graph methodologies for research management"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism",
+          "rdfs:comment": "Aligns with cosmo-local principles for knowledge accessibility"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/FromSeperationToConnection",
+          "rdfs:comment": "Emphasizes relational approaches to data and knowledge"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/exploresConcept": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeCommons",
+          "rdfs:comment": "Builds on knowledge commons principles for bioregional contexts"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/ACCIO_methodology",
+          "rdfs:comment": "Uses ACCIO project methods for participatory ontology engineering"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/HCOME_methodology",
+          "rdfs:comment": "Employs Human-Centered Ontology Engineering approaches"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/mentions": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/UNESCO_Biosphere_Reserves",
+          "rdfs:comment": "BKC aligns with learning places for sustainable development"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/One_Earth_initiative",
+          "rdfs:comment": "Uses scientific framework for bioregion delineation"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/Elinor_Ostrom",
+          "rdfs:comment": "Builds on Nobel Prize-winning commons governance research"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "foundational framework"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "participatory ontology design"
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        "Indigenous data sovereignty"
+      ],
+      "http://darrenzal.net/kg/ontology/embraces": [
+        "ontological pluralism"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/Darren_Zal",
+      "http://darrenzal.net/kg/ontology/isa": [
+        "entrepreneur",
+        "activist",
+        "cosmo-localist"
+      ],
+      "http://darrenzal.net/kg/ontology/specializes_in": [
+        "AI & software architecture",
+        "regenerative finance",
+        "token engineering"
+      ],
+      "http://darrenzal.net/kg/ontology/focuses_on": [
+        "systems transformation"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/Gaia_AI",
+      "http://darrenzal.net/kg/ontology/develops": [
+        "interoperable AI agents"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/resume",
+      "dcterms:title": "Resume",
+      "dcterms:date": "2024-08-15",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Professional resume of Darren Zal, entrepreneur and systems architect focused on regenerative technologies, AI development, and decentralized systems for ecological and economic transformation.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "CV",
+        "professional profile",
+        "Darren Zal resume"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/DigitalGardenArticle",
+      "http://darrenzal.net/kg/ontology/mentions": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism",
+          "rdfs:comment": "Identifies as cosmo-localist focused on systems transformation"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/forest_stewardship",
+          "rdfs:comment": "Work on Living Forest investment systems"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/AI_development",
+          "rdfs:comment": "Current work involves building interoperable AI agents"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/regenerative_finance",
+          "rdfs:comment": "Expertise in developing token-economic models"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/systems_architecture",
+          "rdfs:comment": "Focus on complex decentralized systems design"
+        }
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommonsSummary",
+      "dcterms:title": "Bioregional Knowledge Commoning: Summary",
+      "dcterms:date": "2025-05-25",
+      "http://darrenzal.net/kg/ontology/hasSummary": "A community-stewarded, decentralized knowledge ecosystem focused on a specific bioregion, integrating ecological, social, and cultural knowledge through participatory ontology commoning and Indigenous Data Sovereignty principles.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "Bioregional Knowledge Commons",
+        "BKC",
+        "bioregional commons",
+        "place-based commons"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/PlaceBasedConcept",
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeCommons",
+          "rdfs:comment": "Applies knowledge commons framework to bioregional context"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Enables effective bioregional knowledge organization"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Uses knowledge graphs as core data structure"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Uses decentralized technologies for data sovereignty"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism",
+          "rdfs:comment": "Implements bioregional approach to resource management"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/synthesizes": [
+        "bioregion concept",
+        "knowledge commons concept"
+      ],
+      "http://darrenzal.net/kg/ontology/empowers": [
+        "bioregional communities"
+      ],
+      "http://darrenzal.net/kg/ontology/integrates": [
+        "Indigenous Knowledge Systems"
+      ],
+      "http://darrenzal.net/kg/ontology/employs": [
+        "ontology commoning"
+      ],
+      "http://darrenzal.net/kg/ontology/upholds": [
+        "Indigenous Data Sovereignty"
+      ],
+      "http://darrenzal.net/kg/ontology/uses": [
+        "participatory design"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "collaborative learning"
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        "bioregioning process"
+      ],
+      "http://darrenzal.net/kg/ontology/requires": [
+        "phased implementation"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/agent-centric_architectures",
+      "http://darrenzal.net/kg/ontology/supports": [
+        "bioregional principles"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/multimedia_processing_pipelines",
+      "http://darrenzal.net/kg/ontology/transforms": [
+        "unstructured content"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/VideoRAG",
+      "http://darrenzal.net/kg/ontology/processes": [
+        "long-context videos",
+        "videos of unlimited length"
+      ],
+      "http://darrenzal.net/kg/ontology/features": [
+        "dual-channel architecture"
+      ],
+      "http://darrenzal.net/kg/ontology/integrates": [
+        "graph-based textual knowledge grounding",
+        "multi-modal context encoding"
+      ],
+      "http://darrenzal.net/kg/ontology/constructs": [
+        "precise knowledge graphs"
+      ],
+      "http://darrenzal.net/kg/ontology/maintains": [
+        "semantic dependencies"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/Holochain",
+      "http://darrenzal.net/kg/ontology/provides": [
+        "agent-centric model",
+        "immutable source chains",
+        "greater scalability and efficiency"
+      ],
+      "http://darrenzal.net/kg/ontology/operates_on": [
+        "agent-centric model"
+      ],
+      "http://darrenzal.net/kg/ontology/uses": [
+        "distributed hash table mechanism"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "peer validation"
+      ],
+      "http://darrenzal.net/kg/ontology/ensures": [
+        "data integrity through cryptographic signatures"
+      ],
+      "http://darrenzal.net/kg/ontology/avoids": [
+        "global consensus requirements"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/IPFS",
+      "http://darrenzal.net/kg/ontology/enables": [
+        "distributed storage"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/decentralized_technologies",
+      "http://darrenzal.net/kg/ontology/shift_control_away_from": [
+        "central authorities"
+      ],
+      "http://darrenzal.net/kg/ontology/empower": [
+        "individuals and communities"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/semantic_embeddings",
+      "http://darrenzal.net/kg/ontology/represent": [
+        "concepts as dense vectors"
+      ],
+      "http://darrenzal.net/kg/ontology/enable": [
+        "semantic similarity calculations",
+        "link prediction"
+      ],
+      "http://darrenzal.net/kg/ontology/enhance": [
+        "search and recommendation"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/EIKE_embeddings",
+      "http://darrenzal.net/kg/ontology/capture": [
+        "extensional knowledge",
+        "intensional knowledge"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/multimedia_knowledge",
+      "http://darrenzal.net/kg/ontology/exists_in": [
+        "photographs, videos, audio recordings"
+      ],
+      "http://darrenzal.net/kg/ontology/includes": [
+        "oral histories and Indigenous languages"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/semantic_processing_pipelines",
+      "http://darrenzal.net/kg/ontology/transform": [
+        "living knowledge into structured assets"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/data_preprocessing",
+      "http://darrenzal.net/kg/ontology/extracts": [
+        "basic information and metadata"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/chunking",
+      "http://darrenzal.net/kg/ontology/breaks_down": [
+        "large multimedia files"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/knowledge_extraction",
+      "http://darrenzal.net/kg/ontology/employs": [
+        "AI and machine learning models"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/vision-language_models",
+      "http://darrenzal.net/kg/ontology/identify": [
+        "objects, scenes, and activities"
+      ],
+      "http://darrenzal.net/kg/ontology/transcribe": [
+        "spoken audio to text"
+      ],
+      "http://darrenzal.net/kg/ontology/extract": [
+        "named entities and relationships"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/hREA",
+      "http://darrenzal.net/kg/ontology/implements": [
+        "Valueflows specification"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "economic network coordination"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommoning2",
+      "dcterms:title": "Bioregional Knowledge Commoning - Part 2: Technical Architecture for Sovereignty and Engagement",
+      "dcterms:date": "2024-12-15",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Details technical architecture for implementing bioregional knowledge commons using decentralized technologies, semantic processing, and agent-centric systems while maintaining data sovereignty.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "BKC Part 2",
+        "bioregional architecture",
+        "decentralized knowledge systems"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Technology",
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommoning1",
+          "rdfs:comment": "Part 1 covers foundational concepts and ontology design"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommoning3",
+          "rdfs:comment": "Part 3 explores governance and sustainability models"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Applies semantic density principles to multimedia processing"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Employs knowledge graphs as core data structure"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+          "rdfs:comment": "Uses discourse graph methodologies for structuring"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/hREA",
+          "rdfs:comment": "Holochain Resource Event Agent for economic coordination"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/EIKE_embeddings",
+          "rdfs:comment": "Advanced knowledge embedding for extensional and intensional capture"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/vision-language_models",
+          "rdfs:comment": "AI models for multimedia content analysis"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/Holochain",
+          "rdfs:comment": "Uses agent-centric architecture for data sovereignty"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/IPFS",
+          "rdfs:comment": "Distributed storage and content addressing"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/semantic_embeddings",
+          "rdfs:comment": "Vector representations for enhanced search and discovery"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/AD4M",
+          "rdfs:comment": "Protocol adapters for sophisticated interoperability"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/Data_Commons",
+          "rdfs:comment": "Demonstrates power of KGs for organizing extensive datasets"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/NLP_techniques",
+          "rdfs:comment": "Natural Language Processing for entity extraction"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "technical framework"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "data sovereignty"
+      ],
+      "http://darrenzal.net/kg/ontology/implements": [
+        "local-first computing"
+      ],
+      "http://darrenzal.net/kg/ontology/embodies": [
+        "philosophical commitment to decentralization"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/index",
+      "dcterms:title": "Exploring Protocols for Regenerative Global Civilization",
+      "dcterms:date": "2024-08-01"
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/collaborative_governance",
+      "http://darrenzal.net/kg/ontology/emphasizes": [
+        "shared responsibility"
+      ],
+      "http://darrenzal.net/kg/ontology/includes": [
+        "diverse stakeholders"
+      ],
+      "http://darrenzal.net/kg/ontology/ensures": [
+        "transparency in decision-making"
+      ],
+      "http://darrenzal.net/kg/ontology/promotes": [
+        "mutual respect"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/DAOs",
+      "http://darrenzal.net/kg/ontology/provides": [
+        "distributed governance mechanisms"
+      ],
+      "http://darrenzal.net/kg/ontology/leverage": [
+        "blockchain technology"
+      ],
+      "http://darrenzal.net/kg/ontology/use": [
+        "smart contracts"
+      ],
+      "http://darrenzal.net/kg/ontology/facilitate": [
+        "collective decision-making"
+      ],
+      "http://darrenzal.net/kg/ontology/distribute": [
+        "governance rights through tokens"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/sustainability_frameworks",
+      "http://darrenzal.net/kg/ontology/ensures": [
+        "resource resilience"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/participatory_governance",
+      "http://darrenzal.net/kg/ontology/implements": [
+        "citizen engagement mechanisms"
+      ],
+      "http://darrenzal.net/kg/ontology/ensures": [
+        "inclusivity and diversity"
+      ],
+      "http://darrenzal.net/kg/ontology/maintains": [
+        "transparency and accountability"
+      ],
+      "http://darrenzal.net/kg/ontology/fosters": [
+        "collaborative decision-making"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/citizen_engagement",
+      "http://darrenzal.net/kg/ontology/includes": [
+        "public consultations",
+        "online forums",
+        "citizen assemblies",
+        "participatory budgeting"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/Wikipedia",
+      "http://darrenzal.net/kg/ontology/demonstrates": [
+        "community collaboration"
+      ],
+      "http://darrenzal.net/kg/ontology/maintains": [
+        "transparent record-keeping"
+      ],
+      "http://darrenzal.net/kg/ontology/involves": [
+        "community norms and elected administrators"
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeCommons"
+        }
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/Social.coop",
+      "http://darrenzal.net/kg/ontology/operates_as": [
+        "user-owned cooperative"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "collective infrastructure funding"
+      ],
+      "http://darrenzal.net/kg/ontology/shapes": [
+        "platform policies collaboratively"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/Meet.coop",
+      "http://darrenzal.net/kg/ontology/utilizes": [
+        "sociocratic principles"
+      ],
+      "http://darrenzal.net/kg/ontology/ensures": [
+        "consensual decision-making"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/cooperative_models",
+      "http://darrenzal.net/kg/ontology/embed": [
+        "democratic control"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/BKC_governance",
+      "http://darrenzal.net/kg/ontology/must_reflect": [
+        "distributed community-centric nature"
+      ],
+      "http://darrenzal.net/kg/ontology/must_honor": [
+        "Indigenous sovereignty"
+      ],
+      "http://darrenzal.net/kg/ontology/must_bridge": [
+        "diverse knowledge systems"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/governance_challenges",
+      "http://darrenzal.net/kg/ontology/present": [
+        "opportunities for collective stewardship"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/governance_frameworks",
+      "http://darrenzal.net/kg/ontology/determine": [
+        "BKC success and sustainability"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/non-technical_aspects",
+      "http://darrenzal.net/kg/ontology/are_as_vital_as": [
+        "technological infrastructure"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommoning3",
+      "dcterms:title": "Bioregional Knowledge Commoning - Part 3: Governance, Sustainability, and Implementation",
+      "dcterms:date": "2024-12-15",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Explores governance models, sustainability frameworks, and implementation strategies for bioregional knowledge commons, emphasizing Indigenous sovereignty, participatory decision-making, and long-term resilience.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "BKC Part 3",
+        "bioregional governance",
+        "knowledge commons sustainability"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Concept",
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommoning1",
+          "rdfs:comment": "Part 1 covers foundational concepts and ontology design"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommoning2",
+          "rdfs:comment": "Part 2 details technical architecture and engagement"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommonsSummary",
+          "rdfs:comment": "Summarizes key concepts from all three parts"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/collaborative_governance",
+          "rdfs:comment": "Emphasizes shared stewardship and participatory decision-making"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/exploresConcept": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeCommons",
+          "rdfs:comment": "Applies knowledge commons governance principles"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/cooperative_models",
+          "rdfs:comment": "Draws from digital cooperative governance examples"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/DAOs",
+          "rdfs:comment": "Decentralized Autonomous Organizations for distributed governance"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/Indigenous_data_sovereignty",
+          "rdfs:comment": "Upholds Indigenous rights and self-determination"
+        },
+        "long-term sustainability"
+      ],
+      "http://darrenzal.net/kg/ontology/mentions": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/Wikipedia",
+          "rdfs:comment": "Examples of digital commons governance through community collaboration"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/Social.coop",
+          "rdfs:comment": "User-owned cooperative model for platform governance"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/Meet.coop",
+          "rdfs:comment": "Sociocratic principles for consensual decision-making"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/citizen_assemblies",
+          "rdfs:comment": "Mechanisms for community input and decision-making"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/participatory_budgeting",
+          "rdfs:comment": "Community-driven resource allocation processes"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "governance framework"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "participatory decision-making"
+      ],
+      "http://darrenzal.net/kg/ontology/protects": [
+        "Indigenous sovereignty"
+      ],
+      "http://darrenzal.net/kg/ontology/models": [
+        "collective stewardship"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/open-source_software",
+      "http://darrenzal.net/kg/ontology/isa": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeCommons"
+        }
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/KnowledgeCommons",
+      "dcterms:title": "Knowledge Commons",
+      "dcterms:date": "2024-10-15",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Shared resources of information, data, and content that are collectively owned and managed by a community of users, characterized by non-subtractible access and collaborative governance frameworks.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "knowledge commons",
+        "commons",
+        "knowledge sharing",
+        "collective intelligence"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Concept",
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Relies on enabling institutions like open protocols"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/PercolationFunding",
+          "rdfs:comment": "May use percolation funding for sustainability"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommonsSummary",
+          "rdfs:comment": "Implemented in place-based and bioregional contexts"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Knowledge graphs serve as infrastructure for commons"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+          "rdfs:comment": "Discourse graphs map collective understanding"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/GraphsForDeSci",
+          "rdfs:comment": "DeSci initiatives build knowledge commons for research"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism",
+          "rdfs:comment": "Intersects through globally shared knowledge"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Benefits from effective representation for accessibility"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "shared resource"
+      ],
+      "http://darrenzal.net/kg/ontology/isCharacterizedBy": [
+        "non-subtractible access"
+      ],
+      "http://darrenzal.net/kg/ontology/requires": [
+        "community governance",
+        "sustainable governance models"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "collaborative creation"
+      ],
+      "http://darrenzal.net/kg/ontology/promotes": [
+        "equitable access"
+      ],
+      "http://darrenzal.net/kg/ontology/faces": [
+        "enclosure challenges"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Discourse graphs are a specialized form of knowledge graph"
+        },
+        "progressive formalization"
+      ],
+      "dcterms:title": "Discourse Graphs for Civic Knowledge Commons",
+      "dcterms:date": "2024-11-20",
+      "http://darrenzal.net/kg/ontology/hasSummary": "A specialized form of knowledge graph that models questions, claims, evidence, and their logical relationships to support collective sensemaking, civic deliberation, and protocol development in decentralized knowledge commons.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "discourse graphs",
+        "decentralized discourse graphs",
+        "civic knowledge graphs"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Technology",
+      "http://darrenzal.net/kg/ontology/exploresConcept": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/metacrisis",
+          "rdfs:comment": "Addresses the metacrisis through collective sensemaking"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Supports development and implementation of open protocols"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Integrates with semantic web standards"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/GraphsForDeSci",
+          "rdfs:comment": "Highly complementary with DeSci frameworks"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Supports bioregional knowledge commons"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        "collective intelligence",
+        "role diversification"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "decentralized contribution"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+      "dcterms:title": "Knowledge Graph",
+      "dcterms:date": "2024-10-10",
+      "http://darrenzal.net/kg/ontology/hasSummary": "A structured representation of facts, entities, and their interrelationships stored in a graph format, prioritizing connections, semantics, and contextual richness over traditional tabular schemas.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "KG",
+        "semantic network",
+        "graph-structured knowledge base"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Technology",
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+          "rdfs:comment": "Discourse graphs are a specialized form of knowledge graph"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Referenced for ontology and reasoning effectiveness"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/GraphsForDeSci",
+          "rdfs:comment": "Applied in decentralized science contexts"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Used for bioregional mapping and knowledge commons"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Supports development and evolution of open protocols"
+        },
+        "RDF",
+        "JSON-LD",
+        "SPARQL"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/graph_databases",
+      "http://darrenzal.net/kg/ontology/prioritizes": [
+        "relationships as first-class citizens"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/tabular_databases",
+      "http://darrenzal.net/kg/ontology/reflects": [
+        "worldview of fragmentation"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/linked_data",
+      "http://darrenzal.net/kg/ontology/embodies": [
+        "relational paradigm"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/indigenous_knowledge",
+      "http://darrenzal.net/kg/ontology/emphasizes": [
+        "context over isolation"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/quantum-inspired_knowledge",
+      "http://darrenzal.net/kg/ontology/represents": [
+        "entangled relationships"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/FromSeperationToConnection",
+      "dcterms:title": "From Separation to Connection — Rethinking Data in a Relational Age",
+      "dcterms:date": "2025-04-09",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Explores the civilizational shift from separation to relationality and how data systems must evolve from tabular isolation to graph-based connection, embodying relational consciousness and systems thinking.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "relational data",
+        "separation to connection",
+        "graph thinking",
+        "relational paradigm"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Concept",
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Knowledge graphs exemplify relational data paradigms"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+          "rdfs:comment": "Discourse graphs enable participatory sensemaking across stakeholder groups"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Open protocols enable semantic interoperability and coordination"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/GraphsForDeSci",
+          "rdfs:comment": "DeSci demonstrates relational knowledge transformation in science"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism",
+          "rdfs:comment": "Cosmo-local production balances global knowledge sharing with local production"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Bioregional knowledge commons integrate diverse ways of knowing"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/exploresConcept": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/indigenous_wisdom",
+          "rdfs:comment": "Indigenous cultures maintain relational knowledge practices"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/systems_thinking",
+          "rdfs:comment": "Emphasizes understanding relationships between things"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "paradigm shift"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "relational consciousness",
+        "civilizational reorientation"
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        "fractal knowledge ecosystems"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/The_Society_Library",
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs"
+        }
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/SMTP",
+      "http://darrenzal.net/kg/ontology/isa": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols"
+        }
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/HTTP",
+      "http://darrenzal.net/kg/ontology/isa": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols"
+        }
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/IRC",
+      "http://darrenzal.net/kg/ontology/isa": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols"
+        }
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+      "dcterms:title": "Open Protocols",
+      "dcterms:date": "2024-09-30",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Openly documented guidelines that enable decentralized, democratic infrastructure by distributing power to network edges rather than concentrating it in centralized platforms, embodying principles of non-rivalry, composability, and self-determination.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "protocols",
+        "open protocols",
+        "decentralized protocols",
+        "civic protocols"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Technology",
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/SemanticDensityPrinciple",
+          "rdfs:comment": "Effective documentation aids protocol implementation"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/DiscourseGraphs",
+          "rdfs:comment": "Documented in discourse graphs for collaborative workflows"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Enable bioregional knowledge commons infrastructure"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/cosmolocalism",
+          "rdfs:comment": "Support cosmo-local cooperation through transnational protocols"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/exploresConcept": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/metacrisis",
+          "rdfs:comment": "Provides decentralized infrastructure solutions for metacrisis"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "decentralized networks",
+        "asynchronous collaboration",
+        "remote collaboration"
+      ],
+      "http://darrenzal.net/kg/ontology/embodies": [
+        "non-rivalry principle",
+        "composability principle"
+      ],
+      "http://darrenzal.net/kg/ontology/distributes": [
+        "power to network edges"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/Quartz",
+      "http://darrenzal.net/kg/ontology/converts": [
+        "knowledge graph to website"
+      ]
+    },
+    {
+      "@id": "http://darrenzal.net/kg/resource/siteDesign",
+      "dcterms:title": "About This Site",
+      "dcterms:date": "2024-08-05",
+      "http://darrenzal.net/kg/ontology/hasSummary": "Details the design principles and technical architecture of this digital garden, built using open-source tools like Quartz and Obsidian to demonstrate decentralized knowledge systems in practice.",
+      "http://darrenzal.net/kg/ontology/hasAlias": [
+        "site architecture",
+        "digital garden setup",
+        "knowledge graph implementation"
+      ],
+      "@type": "http://darrenzal.net/kg/ontology/Technology",
+      "http://darrenzal.net/kg/ontology/usesTechnology": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/KnowledgeGraph",
+          "rdfs:comment": "Implements knowledge graph principles through bidirectional links"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/Quartz",
+          "rdfs:comment": "Publishing framework for converting knowledge graph to website"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/Obsidian",
+          "rdfs:comment": "Tool for networked thought and visual graph exploration"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/relatedTo": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/BioregionalKnowledgeCommons",
+          "rdfs:comment": "Serves as template for specialized knowledge systems"
+        },
+        {
+          "@id": "http://darrenzal.net/kg/resource/OpenProtocols",
+          "rdfs:comment": "Uses open protocols for knowledge sharing"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/leverages": [
+        {
+          "@id": "http://darrenzal.net/kg/resource/decentralized_tools",
+          "rdfs:comment": "Built using open-source, decentralized architecture"
+        }
+      ],
+      "http://darrenzal.net/kg/ontology/isa": [
+        "digital garden"
+      ],
+      "http://darrenzal.net/kg/ontology/demonstrates": [
+        "decentralized knowledge principles"
+      ],
+      "http://darrenzal.net/kg/ontology/uses": [
+        "markdown files"
+      ],
+      "http://darrenzal.net/kg/ontology/enables": [
+        "distributed contribution"
+      ],
+      "http://darrenzal.net/kg/ontology/supports": [
+        "organic linking"
+      ],
+      "http://darrenzal.net/kg/ontology/embodies": [
+        "open source principles"
+      ],
+      "http://darrenzal.net/kg/ontology/provides": [
+        "template for knowledge graphs"
+      ]
+    }
+  ]
+}

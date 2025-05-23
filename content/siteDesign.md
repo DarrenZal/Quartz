@@ -1,7 +1,56 @@
 ---
 title: About This Site
+type: :Technology
+summary: "Details the design principles and technical architecture of this digital garden, built using open-source tools like Quartz and Obsidian to demonstrate decentralized knowledge systems in practice."
+aliases: [site architecture, digital garden setup, knowledge graph implementation]
 backlinks: true
 date: 2024-08-05
+
+relationships:
+  - predicate: :usesTechnology
+    object: KnowledgeGraph.md
+    description: "Implements knowledge graph principles through bidirectional links"
+  - predicate: :relatedTo
+    object: BioregionalKnowledgeCommons.md
+    description: "Serves as template for specialized knowledge systems"
+  - predicate: :relatedTo
+    object: OpenProtocols.md
+    description: "Uses open protocols for knowledge sharing"
+  - predicate: :usesTechnology
+    object: "Quartz"
+    description: "Publishing framework for converting knowledge graph to website"
+  - predicate: :usesTechnology
+    object: "Obsidian"
+    description: "Tool for networked thought and visual graph exploration"
+  - predicate: :leverages
+    object: "decentralized tools"
+    description: "Built using open-source, decentralized architecture"
+
+semantic_triples:
+  - subject: self
+    predicate: :isa
+    object: "digital garden"
+  - subject: self
+    predicate: :demonstrates
+    object: "decentralized knowledge principles"
+  - subject: self
+    predicate: :uses
+    object: "markdown files"
+  - subject: self
+    predicate: :enables
+    object: "distributed contribution"
+  - subject: "Quartz"
+    predicate: :converts
+    object: "knowledge graph to website"
+  - subject: self
+    predicate: :supports
+    object: "organic linking"
+  - subject: self
+    predicate: :embodies
+    object: "open source principles"
+  - subject: self
+    predicate: :provides
+    object: "template for knowledge graphs"
 ---
 
 This site itself is an example of the principles it discusses - it's built as a digital garden and knowledge graph using open-source, decentralized tools:
