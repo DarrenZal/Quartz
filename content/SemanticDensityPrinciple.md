@@ -1,6 +1,7 @@
 ---
 title: "Semantic Density as a Foundation for Knowledge Networks"
 backlinks: true
+date: 2025-05-21
 ---
 ## Toward Effective Representation in Interconnected Systems
 

@@ -1,6 +1,7 @@
 ---
 title: Discourse Graphs for DeSci
 backlinks: true
+date: 2024-11-25
 ---
 
 Decentralized Science (DeSci) seeks to address issues in traditional scientific practices around funding, publishing, and collaboration. Discourse graphs provide an elegant framework that can support the full spectrum of scientific work - from synthesizing existing research to mapping out and funding new frontiers.

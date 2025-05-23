@@ -3,6 +3,7 @@ title: Understanding the Metacrisis
 description: The interconnected web of global challenges demanding a fundamental shift in our systems and worldview.
 tags: [metacrisis, systems thinking, complexity, regeneration, collective intelligence]
 backlinks: true
+date: 2024-09-30
 ---
 
 ## What is the Metacrisis?

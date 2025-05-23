@@ -1,6 +1,7 @@
 ---
 title: Discourse Graphs for Civic Knowledge Commons
 backlinks: true
+date: 2024-11-20
 ---
 
 ## Executive Summary

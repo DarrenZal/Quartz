@@ -1,6 +1,7 @@
 ---
 title: "Percolation Finance: Funding at the Critical Frontier"
 backlinks: true
+date: 2024-12-01
 ---
 
 ## Why talk about drips, roots and money?

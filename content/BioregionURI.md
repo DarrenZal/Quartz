@@ -1,6 +1,7 @@
 ---
 title: A Proposed URI Scheme for Bioregions
 backlinks: true
+date: 2024-12-15
 ---
 
 In the face of ecological challenges, the concept of bioregions—areas defined by natural boundaries like watersheds—offers a powerful framework for fostering local stewardship and environmental regeneration. To collaborate effectively across diverse communities and organizations, we need a standard way to reference and share information about these regions. This is where a **URI** (Uniform Resource Identifier) comes in.

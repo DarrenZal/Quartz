@@ -1,5 +1,6 @@
 ---
 title: "Resume"
+date: 2024-08-15
 ---
 
 # Darren Zal

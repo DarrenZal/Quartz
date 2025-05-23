@@ -1,6 +1,7 @@
 ---
 title: Bioregional Knowledge Commoning
 backlinks: true
+date: 2025-05-22
 ---
 
 ## Section 1: Conceptual Foundations of the Bioregional Knowledge Commons (BKC)

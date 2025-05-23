@@ -1,6 +1,7 @@
 ---
 title: Cosmo-Localism
 backlinks: true
+date: 2024-09-15
 ---
 
 ## Core Definition

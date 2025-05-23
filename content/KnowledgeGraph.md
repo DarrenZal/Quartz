@@ -1,6 +1,7 @@
 ---
 title: Knowledge Graph
 backlinks: true
+date: 2024-10-10
 ---
 
 ## Overview

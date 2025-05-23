@@ -1,5 +1,6 @@
 ---
 title: Knowledge Commons
+date: 2024-10-15
 ---
 
 A **Knowledge Commons** refers to shared resources of information, data, and content that are collectively owned and managed by a community of users. A key characteristic, particularly for digital resources, is that they are **non-subtractible** (or non-rivalrous), meaning multiple users can access the same resources without affecting their quantity or quality[^wiki]. The concept builds upon the traditional idea of the commons (like shared land or water resources) but applies it to the realm of intellectual and cultural works.

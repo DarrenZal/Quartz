@@ -1,6 +1,7 @@
 ---
 title: About This Site
 backlinks: true
+date: 2024-08-05
 ---
 
 This site itself is an example of the principles it discusses - it's built as a digital garden and knowledge graph using open-source, decentralized tools:

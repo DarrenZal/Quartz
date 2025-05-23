@@ -1,6 +1,7 @@
 ---
 title: Open Protocols
 backlinks: true
+date: 2024-09-30
 ---
 
 Open protocols are openly documented guidelines that anyone can use, implement, and modify (see [[SemanticDensityPrinciple|Semantic Density Principle]] for how effective documentation aids this). Developed collaboratively among multiple stakeholders, they are critical in transitioning from traditional top down institutions to decentralized bottoms up networks. They embody principles of non-rivalry, non-enclosability, self-determination, stigmergy, and composability. Unlike centralized platforms controlled by single entities, protocols enable a more democratic and innovative internet where multiple implementations can compete to provide better services while maintaining interoperability. The key advantage of protocols is that they push power and decision-making to the edges of the network rather than concentrating it in a few powerful platforms<sup>[1]</sup>.

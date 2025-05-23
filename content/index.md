@@ -1,5 +1,6 @@
 ---
 title: Exploring Protocols for Regenerative Global Civilization
+date: 2024-08-01
 ---
 Welcome! This digital garden explores the interconnectedness of decentralized technologies, collective intelligence, and regenerative practices. It delves into how we might build more resilient, adaptive, and equitable social, ecological, and economic systems capable of addressing the [metacrisis](metacrisis.md).
 
