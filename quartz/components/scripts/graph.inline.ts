@@ -111,56 +111,57 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
   const validLinks = new Set(data.keys())
 
   const tweens = new Map<string, TweenNode>()
-  for (const [source, details] of data.entries()) {
-    if (isKnowledgeGraphMode) {
-      // Knowledge graph mode: use semantic relationships from YAML frontmatter
-      if (details.frontmatter?.relationships) {
-        for (const rel of details.frontmatter.relationships) {
+  
+  if (isKnowledgeGraphMode) {
+    // Knowledge graph mode: only process current page's structured data
+    const currentPageData = data.get(slug)
+    if (currentPageData) {
+      // Process relationships from current page
+      if (currentPageData.frontmatter?.relationships) {
+        for (const rel of currentPageData.frontmatter.relationships) {
           const targetSlug = simplifySlug(rel.object?.replace(/\.md$/, "") as FullSlug)
-          // In knowledge graph mode, include all relationships, even to non-file entities
           links.push({ 
-            source: source, 
+            source: slug, 
             target: targetSlug,
             label: rel.predicate || "relatedTo",
             type: "relationship"
           })
-          
         }
       }
       
-      if (details.frontmatter?.semantic_triples) {
-        for (const triple of details.frontmatter.semantic_triples) {
+      // Process semantic triples from current page
+      if (currentPageData.frontmatter?.semantic_triples) {
+        for (const triple of currentPageData.frontmatter.semantic_triples) {
           let sourceSlug: SimpleSlug | undefined
           let targetSlug: SimpleSlug | undefined
           
           if (triple.subject === "self") {
             // Self-referential triples where this document is the subject
-            sourceSlug = source
+            sourceSlug = slug
             if (triple.object?.endsWith?.('.md')) {
               targetSlug = simplifySlug(triple.object.replace(/\.md$/, "") as FullSlug)
-            } else if (triple.object && !triple.object.includes(' ')) {
-              // Simple entity names without spaces
-              targetSlug = simplifySlug(triple.object as FullSlug)
+            } else if (triple.object) {
+              // Convert entity names to valid slugs (handle spaces)
+              targetSlug = simplifySlug(triple.object.toLowerCase().replace(/\s+/g, '-') as FullSlug)
             }
           } else if (triple.object === "self") {
             // Triples where this document is the object
-            targetSlug = source
+            targetSlug = slug
             if (triple.subject?.endsWith?.('.md')) {
               sourceSlug = simplifySlug(triple.subject.replace(/\.md$/, "") as FullSlug)
-            } else if (triple.subject && !triple.subject.includes(' ')) {
-              // Simple entity names without spaces
-              sourceSlug = simplifySlug(triple.subject as FullSlug)
+            } else if (triple.subject) {
+              // Convert entity names to valid slugs (handle spaces)
+              sourceSlug = simplifySlug(triple.subject.toLowerCase().replace(/\s+/g, '-') as FullSlug)
             }
           } else {
-            // Triples between other entities
+            // Triples between other entities mentioned in current page
             if (triple.subject?.endsWith?.('.md') && triple.object?.endsWith?.('.md')) {
               sourceSlug = simplifySlug(triple.subject.replace(/\.md$/, "") as FullSlug)
               targetSlug = simplifySlug(triple.object.replace(/\.md$/, "") as FullSlug)
-            } else if (triple.subject && triple.object && 
-                      !triple.subject.includes(' ') && !triple.object.includes(' ')) {
-              // Simple entity names without spaces
-              sourceSlug = simplifySlug(triple.subject as FullSlug)
-              targetSlug = simplifySlug(triple.object as FullSlug)
+            } else if (triple.subject && triple.object) {
+              // Convert entity names to valid slugs
+              sourceSlug = simplifySlug(triple.subject.toLowerCase().replace(/\s+/g, '-') as FullSlug)
+              targetSlug = simplifySlug(triple.object.toLowerCase().replace(/\s+/g, '-') as FullSlug)
             }
           }
           
@@ -171,12 +172,13 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
               label: triple.predicate || "relatedTo",
               type: "semantic_triple"
             })
-            
           }
         }
       }
-    } else {
-      // Standard mode: use wiki-style links
+    }
+  } else {
+    // Standard mode: use wiki-style links from all pages
+    for (const [source, details] of data.entries()) {
       const outgoing = details.links ?? []
 
       for (const dest of outgoing) {
@@ -184,17 +186,17 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
           links.push({ source: source, target: dest, type: "wikilink" })
         }
       }
-    }
 
-    if (showTags && !isKnowledgeGraphMode) {
-      const localTags = details.tags
-        .filter((tag) => !removeTags.includes(tag))
-        .map((tag) => simplifySlug(("tags/" + tag) as FullSlug))
+      if (showTags) {
+        const localTags = details.tags
+          .filter((tag) => !removeTags.includes(tag))
+          .map((tag) => simplifySlug(("tags/" + tag) as FullSlug))
 
-      tags.push(...localTags.filter((tag) => !tags.includes(tag)))
+        tags.push(...localTags.filter((tag) => !tags.includes(tag)))
 
-      for (const tag of localTags) {
-        links.push({ source: source, target: tag, type: "tag" })
+        for (const tag of localTags) {
+          links.push({ source: source, target: tag, type: "tag" })
+        }
       }
     }
   }
@@ -203,40 +205,11 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
   const neighbourhood = new Set<SimpleSlug>()
   
   if (isKnowledgeGraphMode) {
-    // In knowledge graph mode, include all nodes that are connected by semantic relationships
+    // In knowledge graph mode, include only nodes connected to current page
     neighbourhood.add(slug) // Always include current page
     for (const link of links) {
       neighbourhood.add(link.source)
       neighbourhood.add(link.target)
-    }
-    
-    // Also add semantic entities that don't have corresponding files
-    for (const [source, details] of data.entries()) {
-      if (details.frontmatter?.relationships) {
-        for (const rel of details.frontmatter.relationships) {
-          const targetSlug = simplifySlug(rel.object?.replace(/\.md$/, "") as FullSlug)
-          neighbourhood.add(source)
-          neighbourhood.add(targetSlug) // Add even if not a valid link
-        }
-      }
-      
-      if (details.frontmatter?.semantic_triples) {
-        for (const triple of details.frontmatter.semantic_triples) {
-          if (triple.subject === "self") {
-            neighbourhood.add(source)
-            if (triple.object && !triple.object.includes(' ')) { // Simple entities only
-              const targetSlug = simplifySlug(triple.object.replace(/\.md$/, "") as FullSlug)
-              neighbourhood.add(targetSlug)
-            }
-          } else if (triple.object === "self") {
-            neighbourhood.add(source)
-            if (triple.subject && !triple.subject.includes(' ')) { // Simple entities only
-              const sourceSlug = simplifySlug(triple.subject.replace(/\.md$/, "") as FullSlug)
-              neighbourhood.add(sourceSlug)
-            }
-          }
-        }
-      }
     }
   } else {
     // Standard mode: use depth-based neighbourhood calculation
@@ -271,7 +244,11 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       text = nodeData.title
     } else {
       // For semantic entities without files, use a cleaned-up version of the slug
-      text = url.replace(/-/g, ' ').replace(/([a-z])([A-Z])/g, '$1 $2')
+      text = url.replace(/-/g, ' ')
+        .replace(/([a-z])([A-Z])/g, '$1 $2')
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
     }
     
     return {
@@ -402,6 +379,23 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
 
       l.color = l.active ? computedStyleMap["--gray"] : computedStyleMap["--lightgray"]
       tweenGroup.add(new Tweened<LinkRenderData>(l).to({ alpha }, 200))
+      
+      // Make edge labels more visible when link is active/hovered
+      if (l.labelText) {
+        const labelAlpha = l.active ? 1.0 : (hoveredNodeId ? 0.3 : 0.7)
+        const labelScale = l.active ? 1.2 : 1.0
+        l.labelText.alpha = labelAlpha
+        l.labelText.scale.set((1 / scale) * labelScale)
+        
+        // Change label color when active
+        if (l.active) {
+          l.labelText.style.fill = computedStyleMap["--dark"]
+          l.labelText.style.fontWeight = "bold"
+        } else {
+          l.labelText.style.fill = computedStyleMap["--gray"]
+          l.labelText.style.fontWeight = "normal"
+        }
+      }
     }
 
     tweenGroup.getAll().forEach((tw) => tw.start())
@@ -710,14 +704,49 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       
       if (hasValidCoords) {
         validCoords++
-        l.gfx.moveTo(linkData.source.x! + width / 2, linkData.source.y! + height / 2)
-        l.gfx
-          .lineTo(linkData.target.x! + width / 2, linkData.target.y! + height / 2)
-          .stroke({ 
+        const sourceX = linkData.source.x! + width / 2
+        const sourceY = linkData.source.y! + height / 2
+        const targetX = linkData.target.x! + width / 2
+        const targetY = linkData.target.y! + height / 2
+        
+        // Draw the main line
+        l.gfx.moveTo(sourceX, sourceY)
+        l.gfx.lineTo(targetX, targetY)
+        l.gfx.stroke({ 
+          alpha: l.alpha, 
+          width: 2,
+          color: l.color 
+        })
+        
+        // Add arrowhead for semantic triples to show direction (subject → object)
+        if (l.simulationData.type === "semantic_triple" || l.simulationData.type === "relationship") {
+          const angle = Math.atan2(targetY - sourceY, targetX - sourceX)
+          const arrowSize = 8
+          const arrowAngle = Math.PI / 6 // 30 degrees
+          
+          // Calculate arrowhead position (slightly back from target to account for node radius)
+          const targetNodeRadius = nodeRadius(linkData.target) + 2 // Add small padding
+          const arrowX = targetX - Math.cos(angle) * targetNodeRadius
+          const arrowY = targetY - Math.sin(angle) * targetNodeRadius
+          
+          // Draw arrowhead
+          l.gfx.moveTo(arrowX, arrowY)
+          l.gfx.lineTo(
+            arrowX - arrowSize * Math.cos(angle - arrowAngle),
+            arrowY - arrowSize * Math.sin(angle - arrowAngle)
+          )
+          l.gfx.moveTo(arrowX, arrowY)
+          l.gfx.lineTo(
+            arrowX - arrowSize * Math.cos(angle + arrowAngle),
+            arrowY - arrowSize * Math.sin(angle + arrowAngle)
+          )
+          l.gfx.stroke({ 
             alpha: l.alpha, 
-            width: 2, // Always use thick lines for debugging
+            width: 2,
             color: l.color 
           })
+        }
+        
         renderedLinks++
       }
       
@@ -739,18 +768,26 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
   window.addCleanup(() => cancelAnimationFrame(graphAnimationFrameHandle))
 }
 
+// Store the current toggle handler to properly remove it
+let currentToggleHandler: (() => void) | null = null
+
 document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const slug = e.detail.url
   addToVisited(simplifySlug(slug))
   
-  // Add toggle event listener first
+  // Set up toggle event listener for the current page
   const toggleElement = document.getElementById("knowledge-graph-toggle") as HTMLInputElement
   if (toggleElement) {
-    // Remove any existing listeners to avoid duplicates
-    toggleElement.removeEventListener("change", () => {})
-    toggleElement.addEventListener("change", () => {
+    // Remove previous handler if it exists
+    if (currentToggleHandler) {
+      toggleElement.removeEventListener("change", currentToggleHandler)
+    }
+    
+    // Create new handler for this page
+    currentToggleHandler = () => {
       renderGraph("graph-container", slug)
-    })
+    }
+    toggleElement.addEventListener("change", currentToggleHandler)
   }
   
   await renderGraph("graph-container", slug)
@@ -763,9 +800,14 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   // event listener for theme change
   document.addEventListener("themechange", handleThemeChange)
 
-  // cleanup for the event listener
+  // cleanup for the event listeners
   window.addCleanup(() => {
     document.removeEventListener("themechange", handleThemeChange)
+    // Clean up toggle handler
+    const toggleElement = document.getElementById("knowledge-graph-toggle") as HTMLInputElement
+    if (toggleElement && currentToggleHandler) {
+      toggleElement.removeEventListener("change", currentToggleHandler)
+    }
   })
 
   const container = document.getElementById("global-graph-outer")
