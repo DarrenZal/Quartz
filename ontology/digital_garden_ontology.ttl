@@ -40,6 +40,44 @@
     rdfs:label "Place-Based Concept" ;
     rdfs:comment "A concept related to specific geographical or ecological regions." .
 
+# --- Discourse Graph Classes (Research Structure) ---
+
+:Claim rdf:type rdfs:Class ;
+    rdfs:label "Claim" ;
+    rdfs:comment "An assertion or statement put forward for consideration or debate in research discourse." .
+
+:Evidence rdf:type rdfs:Class ;
+    rdfs:label "Evidence" ;
+    rdfs:comment "Data, studies, observations, or empirical support that validates or refutes claims." .
+
+:Question rdf:type rdfs:Class ;
+    rdfs:label "Question" ;
+    rdfs:comment "An inquiry, research question, or problem raised for investigation." .
+
+:Source rdf:type rdfs:Class ;
+    rdfs:label "Source" ;
+    rdfs:comment "Original research, papers, reports, or materials that substantiate evidence." .
+
+:Problem rdf:type rdfs:Class ;
+    rdfs:label "Problem" ;
+    rdfs:comment "A challenge, issue, or difficulty identified in research or practice." .
+
+:Solution rdf:type rdfs:Class ;
+    rdfs:label "Solution" ;
+    rdfs:comment "A proposed method, technology, or approach to address identified problems." .
+
+:Method rdf:type rdfs:Class ;
+    rdfs:label "Method" ;
+    rdfs:comment "A systematic procedure, technique, or process for accomplishing research or practical goals." .
+
+:Finding rdf:type rdfs:Class ;
+    rdfs:label "Finding" ;
+    rdfs:comment "A result, outcome, or discovery from research, analysis, or implementation." .
+
+:Recommendation rdf:type rdfs:Class ;
+    rdfs:label "Recommendation" ;
+    rdfs:comment "A suggested course of action, policy, or intervention based on analysis and evidence." .
+
 # --- Object Properties (linking resources to resources) ---
 
 :mentions rdf:type rdf:Property ;
@@ -72,6 +110,44 @@
 :inspiredBy rdf:type rdf:Property ;
     rdfs:label "inspired by" ;
     rdfs:comment "The subject draws inspiration from the object." .
+
+# --- Discourse Graph Properties ---
+
+:supports rdf:type rdf:Property ;
+    rdfs:label "supports" ;
+    rdfs:comment "Evidence supports a claim, or a claim supports another claim." .
+
+:opposes rdf:type rdf:Property ;
+    rdfs:label "opposes" ;
+    rdfs:comment "Evidence opposes a claim, or a claim opposes another claim." .
+
+:substantiates rdf:type rdf:Property ;
+    rdfs:label "substantiates" ;
+    rdfs:comment "A source provides evidence for evidence nodes." .
+
+:informs rdf:type rdf:Property ;
+    rdfs:label "informs" ;
+    rdfs:comment "Evidence or claims inform or generate new questions." .
+
+:generates rdf:type rdf:Property ;
+    rdfs:label "generates" ;
+    rdfs:comment "Questions, claims, or research generate new elements." .
+
+:addresses rdf:type rdf:Property ;
+    rdfs:label "addresses" ;
+    rdfs:comment "A solution, method, or claim addresses a specific problem or question." .
+
+:implements rdf:type rdf:Property ;
+    rdfs:label "implements" ;
+    rdfs:comment "A method or technology implements a proposed solution." .
+
+:validates rdf:type rdf:Property ;
+    rdfs:label "validates" ;
+    rdfs:comment "Evidence or findings validate a claim, method, or solution." .
+
+:refutes rdf:type rdf:Property ;
+    rdfs:label "refutes" ;
+    rdfs:comment "Evidence or findings refute or contradict a claim." .
 
 # --- Data Properties (linking resources to literals) ---
 
