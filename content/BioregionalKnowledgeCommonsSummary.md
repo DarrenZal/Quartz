@@ -65,11 +65,11 @@ This article provides a brief overview of the core concepts, technical approache
 A Bioregional Knowledge Commons synthesizes two main concepts: the **bioregion** and the **knowledge commons** [^2].
 
 * A **bioregion** is an integrated area defined by ecological features (like watersheds or ecosystems) and inhabited by communities with unique social and cultural dimensions [^2]. It is often referred to as a "life-place" [^3].
-* A **knowledge commons** is a framework for the community governance and sharing of intellectual and cultural resources, including information, data, and diverse forms of knowledge [^5]. Key principles include shared governance, accessibility for collective benefit, and evidence-based policymaking [^6].
+* A **knowledge commons** is a framework for the community governance and sharing of intellectual and cultural resources, including information, data, and diverse forms of knowledge [^5]. Key principles include shared governance, accessibility for collective benefit, and evidence-based policymaking.
 
 A **Bioregional Knowledge Commons (BKC)** is a knowledge commons specifically dedicated to the ecological, social, and cultural knowledge of a particular bioregion [^3]. Its vision is to empower bioregional communities with shared, accessible, and co-created knowledge to foster a deeper understanding of their environment and heritage, promote sustainable practices, enhance resilience, and cultivate a stronger connection to place [^7]. This supports the concept of "reinhabitation" and the active process of "bioregioning" (living regeneratively within a bioregion) [^4].
 
-The scope of knowledge within a BKC is broad, encompassing **ecological data, local and Indigenous Knowledge, historical information**, and more [^8]. The potential of a BKC includes facilitating collaborative learning and problem-solving, serving as a platform for "bioregioning," and supporting initiatives like UNESCO Biosphere Reserves [^9]. The nature of bioregionalism naturally aligns with knowledge commons principles, making the BKC a logical extension where bioregional knowledge becomes the shared resource [^4].
+The scope of knowledge within a BKC is broad, encompassing **ecological data, local and Indigenous Knowledge, historical information**, and more. The potential of a BKC includes facilitating collaborative learning and problem-solving, serving as a platform for "bioregioning," and supporting initiatives like UNESCO Biosphere Reserves. The nature of bioregionalism naturally aligns with knowledge commons principles, making the BKC a logical extension where bioregional knowledge becomes the shared resource.
 
 ---
 
@@ -79,7 +79,7 @@ The semantic structure that organizes the diverse knowledge within a BKC is its 
 
 Developing this ontology is a **participatory approach called 'ontology commoning'** [^11], emphasizing collaborative, community-driven development and shared ownership of semantic structures. This ensures the ontology reflects diverse local perspectives and forms of knowledge, leveraging methodologies like Human-Centered Ontology Engineering (HCOME) and the ACCIO Project Methodology.
 
-Integrating **Indigenous Knowledge Systems (IKS)** is critical and requires a respectful, ethical approach built on **Indigenous Data Sovereignty (IDSov)** [^13], which is the inherent right of Indigenous Peoples to govern their data [^14]. Key principles include Free, Prior, and Informed Consent (FPIC), community ownership and control (OCAP®), and culturally appropriate methods [^13]. The CARE principles [^17] and the WIPO GRATK Treaty [^17] further guide ethical IKS integration and protection.
+Integrating **Indigenous Knowledge Systems (IKS)** is critical and requires a respectful, ethical approach built on **Indigenous Data Sovereignty (IDSov)** [^13], which is the inherent right of Indigenous Peoples to govern their data. Key principles include Free, Prior, and Informed Consent (FPIC), community ownership and control (OCAP®), and culturally appropriate methods. The CARE principles and the WIPO GRATK Treaty further guide ethical IKS integration and protection.
 
 **Advanced AI tools** can augment ontology development, assisting in requirements engineering, enrichment, and mapping using Large Language Models (LLMs) [^19]. Ontology-Grounded Retrieval-Augmented Generation (OG-RAG) enhances LLM responses by grounding them in domain-specific ontologies. Knowledge Graphs (KGs) represent entities and relationships [^21], with Graph Neural Networks (GNNs) offering potential for enhanced ontology alignment. Ontology embeddings enable semantic similarity calculations. Ethical considerations are paramount, ensuring AI supports community-led commoning and respects diverse ontologies.
 
@@ -91,22 +91,22 @@ A foundational principle is **embracing ontological pluralism** [^20], acknowled
 
 The technical choices for the BKC must embody its values, prioritizing **data sovereignty** and **interoperability** [^15].
 
-The core data structure will likely be a **Knowledge Graph (KG)**, which can represent diverse bioregional entities and their relationships, integrating structured and unstructured data [^21]. KGs support complex queries and knowledge discovery. Semantic processing pipelines are necessary to transform multimedia content (like photos, audio, video) into structured data linked to the ontology [^22]. Technologies like VideoRAG can help process lengthy video content [^23].
+The core data structure will likely be a **Knowledge Graph (KG)**, which can represent diverse bioregional entities and their relationships, integrating structured and unstructured data [^21]. KGs support complex queries and knowledge discovery. Semantic processing pipelines are necessary to transform multimedia content (like photos, audio, video) into structured data linked to the ontology [^22]. Technologies like VideoRAG can help process lengthy video content.
 
-**Decentralized technologies** are crucial for ensuring data sovereignty and resilience [^24]. Technologies like Holochain, with its agent-centric architecture, allows users to host their own data and enables peer-to-peer interactions, providing strong agent sovereignty and resilience [^25]. Ad4M (Agent-centric Distributed Application Meta-Ontology) complements this by providing a framework for semantic interoperability between different data sources and applications using "Languages" and "Perspectives" [^26]. Distributed storage technologies like IPFS ensure knowledge persistence and accessibility [^27]. These technologies support **local-first principles**, allowing users to access data offline, improving performance, increasing privacy, and reinforcing data sovereignty by keeping data local [^28]. Edge computing can also support local data processing [^29]. A federated architecture could allow multiple BKCs to connect and share information while maintaining local control [^30].
+**Decentralized technologies** are crucial for ensuring data sovereignty and resilience [^24]. Technologies like Holochain, with its agent-centric architecture, allows users to host their own data and enables peer-to-peer interactions, providing strong agent sovereignty and resilience. Ad4M (Agent-centric Distributed Application Meta-Ontology) complements this by providing a framework for semantic interoperability between different data sources and applications using "Languages" and "Perspectives". Distributed storage technologies like IPFS ensure knowledge persistence and accessibility. These technologies support **local-first principles**, allowing users to access data offline, improving performance, increasing privacy, and reinforcing data sovereignty by keeping data local [^28]. Edge computing can also support local data processing. A federated architecture could allow multiple BKCs to connect and share information while maintaining local control [^30].
 
 ---
 
 ## User Interaction and Engagement
 
-The success of a BKC depends on designing user interfaces (UI) and user experiences (UX) that facilitate diverse contributions and foster collaboration [^31]. This requires understanding diverse user needs through research [^32].
+The success of a BKC depends on designing user interfaces (UI) and user experiences (UX) that facilitate diverse contributions and foster collaboration [^31]. This requires understanding diverse user needs through research.
 
 The interface must support **multiple modalities for contribution**, including text, multimedia, and geospatial data [^33]. It should enable sharing of both **explicit knowledge** (codified data) and **tacit knowledge** (experiential wisdom), using tools like discussion forums or storytelling platforms. Community-based processes for knowledge curation and validation are also needed [^35].
 
 Key interface tools include:
-* **Interactive Mapping Solutions** to visualize, explore, and contribute place-based data and stories [^36].
-* **Conversational AI (RAG-based)** interfaces, allowing users to query the knowledge graph using natural language and receive contextually relevant, attributed answers [^37].
-* **Community Tools** like Wikis and Forums for collaborative documentation, discussion, and co-creation [^38].
+* **Interactive Mapping Solutions** to visualize, explore, and contribute place-based data and stories.
+* **Conversational AI (RAG-based)** interfaces, allowing users to query the knowledge graph using natural language and receive contextually relevant, attributed answers.
+* **Community Tools** like Wikis and Forums for collaborative documentation, discussion, and co-creation.
 
 Designing for accessibility, clarity, trust, and relationality is vital for engagement [^40].
 
@@ -116,11 +116,11 @@ Designing for accessibility, clarity, trust, and relationality is vital for enga
 
 Long-term success requires robust governance and sustainability frameworks [^42].
 
-**Governance** should be collaborative and participatory, emphasizing shared responsibility among diverse stakeholders, transparency, and active engagement [^43]. **Indigenous Data Governance (IDGov)**, built on IDSov principles (CARE, OCAP®), must be fundamentally upheld in all governance structures related to IKS [^44].
+**Governance** should be collaborative and participatory, emphasizing shared responsibility among diverse stakeholders, transparency, and active engagement. **Indigenous Data Governance (IDGov)**, built on IDSov principles (CARE, OCAP®), must be fundamentally upheld in all governance structures related to IKS [^44].
 
-A clear and nuanced **licensing framework** is essential [^45]. While Creative Commons (CC) licenses like CC BY-SA may be suitable for general community contributions, they are often inappropriate for IKS [^46]. Specialized **Traditional Knowledge (TK) Licenses and Labels** are necessary to respect cultural protocols and ensure IKS is used according to community wishes [^48]. Data licenses may also be used for specific datasets [^50].
+A clear and nuanced **licensing framework** is essential [^45]. While Creative Commons (CC) licenses like CC BY-SA may be suitable for general community contributions, they are often inappropriate for IKS [^46]. Specialized **Traditional Knowledge (TK) Licenses and Labels** are necessary to respect cultural protocols and ensure IKS is used according to community wishes [^47]. Data licenses may also be used for specific datasets [^50].
 
-**Sustainable resource models** are needed for long-term viability across financial, social, and technical dimensions [^51]. Financial models could include grants, value-added services, public-cooperative partnerships, or innovative approaches linking to regenerative economic activities like Ecosystem Stewardship Certifications [^52]. Technical sustainability involves using open-source technologies and maintaining comprehensive documentation [^54].
+**Sustainable resource models** are needed for long-term viability across financial, social, and technical dimensions [^51]. Financial models could include grants, value-added services, public-cooperative partnerships, or innovative approaches linking to regenerative economic activities like Ecosystem Stewardship Certifications. Technical sustainability involves using open-source technologies and maintaining comprehensive documentation.
 
 Protecting the commons from enclosure or co-option requires strategies like using copyleft licenses (CC BY-SA) and implementing specific TK protocols for Indigenous Knowledge [^55].
 
@@ -130,7 +130,7 @@ Implementing a BKC requires a **phased roadmap** [^57]. The crucial first phase 
 
 ## Conclusion
 
-The Bioregional Knowledge Commons offers a powerful vision for stewarding place-based knowledge [^67]. Its successful realization depends on integrating conceptual understanding, participatory design, sovereign technical architecture, engaging user experiences, and adaptive governance. **Ontology commoning is foundational**, ensuring the semantic structure reflects diverse voices and respects Indigenous knowledge [^68]. Prioritizing Indigenous Data Sovereignty is paramount [^69]. Leveraging agent-centric, local-first technologies provides the technical foundation for data sovereignty and resilience [^70]. The BKC is seen as a **living system**, emphasizing **Process Over Product**, with the ultimate goal of contributing to the **regeneration of bioregional ecosystems, cultures, and communities** [^72].
+The Bioregional Knowledge Commons offers a powerful vision for stewarding place-based knowledge [^67]. Its successful realization depends on integrating conceptual understanding, participatory design, sovereign technical architecture, engaging user experiences, and adaptive governance. **Ontology commoning is foundational**, ensuring the semantic structure reflects diverse voices and respects Indigenous knowledge. Prioritizing Indigenous Data Sovereignty is paramount. Leveraging agent-centric, local-first technologies provides the technical foundation for data sovereignty and resilience. The BKC is seen as a **living system**, emphasizing **Process Over Product**, with the ultimate goal of contributing to the **regeneration of bioregional ecosystems, cultures, and communities**.
 
 ---
 
