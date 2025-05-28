@@ -542,34 +542,8 @@ The pipeline can be broken into modular steps that combine:
 | Interactive UI                        | Streamlit, Gradio, Jupyter + D3.js for graph vis                       |
 | Persistent storage                    | TerminusDB, Neo4j, GraphDB, or RDF triple store (e.g., Blazegraph)     |
 
-### 3.3. Example Output (from AI)
 
-**Story:**
-“When everyone contributes to chores, I feel safe and connected.”
-
-**Beliefs:**
-- Shared responsibility creates emotional safety
-- Belonging arises from mutual contribution
-
-**Ontology fragment:**
-```turtle
-@prefix : <https://example.org/ontology#> .
-@prefix schema: <http://schema.org/> .
-
-:Person a owl:Class .
-:Chore a owl:Class .
-:feelsSafeIn a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Community .
-
-:contributesTo a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Chore .
-
-:Community a owl:Class .
-```
-
-### 3.4. How to Start a Prototype Project
+### 3.3. How to Start a Prototype Project
 
 - **Small pilot:** Start with 3–5 people sharing real stories in a shared context (e.g., co-living, ecological collaboration).
 - **Human-in-the-loop AI:** Use AI to generate belief systems and ontologies, then refine via human review.
@@ -578,7 +552,7 @@ The pipeline can be broken into modular steps that combine:
 
 This project could become the basis of an Ontology Commons Toolkit — blending AI, participatory design, and meaning-making in a fragmented world.
 
-### 3.5. Closing Thought
+### 3.4. Closing Thought
 
 Regenerating narratives requires deep listening. AI, properly designed, can help hold the space — not by replacing human meaning-making, but by scaffolding our collective movement from fragmentation toward shared understanding.
 
