@@ -98,8 +98,6 @@ semantic_triples:
     object: "overarching recommendation"
 ---
 
-**The PFAS and Microplastic Crisis in Modern Waste Streams: An Evaluation of Pyrolysis as an Integrated Circular Economy Solution**
-
 **Section 1: The Scope of the Contamination Crisis**
 
 The pervasive presence of microplastics (MPs) and per- and polyfluoroalkyl substances (PFAS) in modern waste streams represents a complex and escalating environmental crisis. These anthropogenic pollutants, originating from a multitude of urban and industrial activities, navigate complex pathways into wastewater systems. Wastewater treatment plants (WWTPs), while designed to safeguard aquatic environments, inadvertently become concentration points for these persistent substances, particularly within the sewage sludge they generate. This section defines these pollutants, traces their journey into wastewater, and explains their accumulation in sewage, setting the stage for understanding the broader ecological and health implications.
