@@ -2,7 +2,7 @@
 title: Exploring Protocols for Regenerative Global Civilization
 date: 2024-08-01
 ---
-Welcome! This digital garden explores the interconnectedness of decentralized technologies, collective intelligence, and regenerative practices. It delves into how we might build more resilient, adaptive, and equitable social, ecological, and economic systems capable of addressing the [metacrisis](metacrisis.md).
+Welcome! This [[KnowledgeGarden|knowledge garden]] explores the interconnectedness of decentralized technologies, collective intelligence, and regenerative practices. It delves into how we might build more resilient, adaptive, and equitable social, ecological, and economic systems capable of addressing the [metacrisis](metacrisis.md).
 
 The core theme is the shift [From Separation to Connection](FromSeperationToConnection.md)—moving from siloed, centralized structures towards networked, relational approaches inspired by natural systems like mycelial networks. This involves rethinking how we manage knowledge, coordinate action, and steward resources.
 
@@ -39,4 +39,4 @@ These explorations aim to contribute to the development of practical tools and c
 
 ## About This Site
 
-This site itself embodies many of the principles it explores - it's built as a living knowledge graph using decentralized, open-source tools for content creation, publishing, and collaboration. The [architecture of this site](siteDesign.md) demonstrates in practice how discourse graphs and decentralized knowledge networks can be implemented, serving as both a working example and a template for similar projects.
+This site itself embodies many of the principles it explores - it's built as a living [[KnowledgeGarden|knowledge garden]] and graph using decentralized, open-source tools for content creation, publishing, and collaboration. The [architecture of this site](siteDesign.md) demonstrates in practice how discourse graphs and decentralized knowledge networks can be implemented, serving as both a working example and a template for similar projects.

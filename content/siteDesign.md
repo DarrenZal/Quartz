@@ -1,8 +1,8 @@
 ---
 title: About This Site
 type: :Technology
-summary: "Details the design principles and technical architecture of this digital garden, built using open-source tools like Quartz and Obsidian to demonstrate decentralized knowledge systems in practice."
-aliases: [site architecture, digital garden setup, knowledge graph implementation]
+summary: "Details the design principles and technical architecture of this knowledge garden, built using open-source tools like Quartz and Obsidian to demonstrate decentralized knowledge systems in practice."
+aliases: [site architecture, knowledge garden setup, knowledge graph implementation]
 backlinks: true
 date: 2024-08-05
 
@@ -16,6 +16,9 @@ relationships:
   - predicate: :relatedTo
     object: OpenProtocols.md
     description: "Uses open protocols for knowledge sharing"
+  - predicate: :exploresConcept
+    object: KnowledgeGarden.md
+    description: "Explains the philosophy and practice of knowledge gardens"
   - predicate: :usesTechnology
     object: "Quartz"
     description: "Publishing framework for converting knowledge graph to website"
@@ -29,7 +32,7 @@ relationships:
 semantic_triples:
   - subject: self
     predicate: :isa
-    object: "digital garden"
+    object: "knowledge garden"
   - subject: self
     predicate: :demonstrates
     object: "decentralized knowledge principles"
@@ -53,7 +56,7 @@ semantic_triples:
     object: "template for knowledge graphs"
 ---
 
-This site itself is an example of the principles it discusses - it's built as a digital garden and knowledge graph using open-source, decentralized tools:
+This site itself is an example of the principles it discusses - it's built as a [[KnowledgeGarden|knowledge garden]] and knowledge graph using open-source, decentralized tools:
 
 - **Content Creation**: Markdown files edited with tools like Obsidian (for networked thought) and VS Code
 - **Publishing**: [Quartz](https://quartz.jzhao.xyz/) for converting the knowledge graph into a browsable website
