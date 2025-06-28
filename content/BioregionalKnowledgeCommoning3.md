@@ -187,6 +187,8 @@ The BKC should be guided by principles of collaborative governance, which emphas
 - Citizen Engagement: Implementing diverse mechanisms for community input, such as public consultations (both online and offline), online forums integrated into the BKC platform, citizen assemblies for key decisions, and potentially participatory budgeting for BKC development or related bioregional projects.
     
 - Inclusivity and Diversity: Proactively ensuring that marginalized and underrepresented groups within the bioregion have equitable opportunities to participate and have their voices heard and influence decisions.
+
+- Support for Adaptive Learning: The governance framework should explicitly support the **learning spirals** discussed in Parts 1 and 2. This means creating and protecting spaces for experimentation with new practices and protocols, and establishing clear pathways for the insights from these experiments to inform the evolution of the commons' rules, structures, and shared knowledge base.
     
 - Transparency and Accountability: Maintaining open processes, making information about BKC operations and decisions readily accessible to all members, and establishing clear lines of accountability for those in governance roles.
     

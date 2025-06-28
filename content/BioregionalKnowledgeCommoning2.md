@@ -236,9 +236,14 @@ The BKC will employ sophisticated methods to represent and process the diverse f
 - Enhanced Search and Recommendation: Improving the relevance of search results and enabling the recommendation of related content, experts, or projects within the BKC.
     
 - Integration with Machine Learning: Providing a format for ontological knowledge that can be readily consumed by machine learning models for advanced analytics, such as predictive modeling or anomaly detection relevant to bioregional phenomena. Advanced embedding approaches like EIKE (Extensional and Intensional Knowledge Embedding) aim to create richer representations by capturing both extensional knowledge (concerning specific instances and their concept memberships) and intensional knowledge (detailing the inherent properties, characteristics, and semantic associations among concepts).[^59]
-    
 
-#### 3.2.2. Multimedia to Structured Data: Semantic Processing Pipelines
+#### 3.2.2. Implementing Learning Spirals with Discourse Graphs
+
+As introduced in Part 1, a core function of the BKC is to facilitate **learning spirals**. The technical implementation for these learning loops can be achieved using [[DiscourseGraphs|Discourse Graphs]], a specialized form of knowledge graph designed to map the relationships between claims, evidence, and questions.
+
+By adapting the discourse graph model, the BKC can formally represent the process of harvesting patterns from practice and evolving them into reusable protocols. This creates a transparent and auditable trail of collective learning. For instance, the implementation of an [[OpenProtocols|open source civic protocol]] can be documented as an "experiment" within the graph. The outcomes, observations, and data generated from this implementation serve as "results," which in turn support or challenge "conclusions" about the protocol's effectiveness. These conclusions can lead to new "hypotheses" or suggested modifications, feeding back into the next iteration of the protocol or its application in a new context. This structure makes the learning process itself a visible and navigable part of the knowledge commons.
+
+#### 3.2.3. Multimedia to Structured Data: Semantic Processing Pipelines
 
 A significant portion of bioregional knowledge is not textual but exists in rich multimedia formats: photographs and videos of local flora, fauna, and ecological processes; audio recordings of oral histories, Indigenous languages, and traditional songs; and visual documentation of community practices or environmental changes. The BKC's technical architecture must therefore include robust semantic processing pipelines to transform this "living knowledge" into structured, discoverable, and analyzable assets within the commons. [^72] This is a critical bridge for ensuring holistic knowledge capture.
 

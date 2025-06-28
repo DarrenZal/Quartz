@@ -231,7 +231,33 @@ The scope of a BKC is necessarily broad and inclusive, reflecting the multifacet
 
 The potential and purpose of a BKC are manifold, offering significant benefits to its community:
 
-- It can facilitate collaborative learning and problem-solving by providing a shared platform where diverse stakeholders can access information, share insights, and work together to address complex bioregional challenges, such as climate change adaptation or resource management.
+- It can facilitate collaborative learning and problem-solving by providing a shared platform where diverse stakeholders can access information, share insights, and work together to address complex bioregional challenges, such as climate change adaptation or resource management. A core function in this regard is the facilitation of **learning spirals**—iterative learning loops where useful patterns are harvested from local practices and adapted for new contexts, a process detailed in [[DiscourseGraphs|Discourse Graphs for Civic Knowledge Commons]]. This cycle typically involves:
+	- **Harvesting Patterns from Practices:** Local practices, which emerge within their own unique ontological and cultural frameworks, are observed and documented.
+	- **Encoding in Protocols:** Useful patterns from these practices are encoded into more generalized protocols that aim to preserve, rather than extract, their essential meaning.
+	- **Adapting in New Contexts:** Other communities or contexts can then adapt these protocols according to their own ways of knowing, governance structures, and specific needs, thus initiating a new cycle of practice and learning.
+
+	This learning spiral can be visualized as follows, adapting a model from scientific inquiry to the realm of civic and ecological practices:
+	```mermaid
+	graph BT
+	    E[Experiment/Practice]
+	    R[Result/Observation]
+	    H[Hypothesis/Pattern]
+	    C[Conclusion/Protocol]
+	    M[Model/Theory]
+
+	    E --> R
+	    R --> C
+	    C --> H
+	    C --> M
+	    H -->|"learning loop"| E
+	    
+	    style H fill:#ffd700,color:#000
+	    style C fill:#00cc99,color:#000
+	    style R fill:#ff1493,color:#000
+	    style E fill:#ffffff,color:#000
+	    style M fill:#00CED1,color:#000
+	    linkStyle 0,1,2,4 stroke:#ffd700,stroke-width:4px
+	```
     
 - It can support sustainable development and resource management that are aligned with the unique characteristics and carrying capacities of the bioregion.[^1]
     
@@ -321,7 +347,7 @@ Incorporating community workshop insights is a cornerstone of ontology commoning
 - Facilitate dialogue to resolve differing viewpoints, negotiate meanings, and achieve a degree of consensus on how knowledge should be represented, thereby fostering a truly shared semantic framework.
     
 
-This commitment to ontology commoning ensures that the BKC's semantic structure is not an abstract technical artifact but a living reflection of the bioregion's collective intelligence and diverse ways of knowing. Such a process is fundamental for the BKC's success, as it directly addresses the need for legitimacy, trust, and the genuine co-creation of shared understanding, particularly when integrating sensitive and diverse knowledge forms like Indigenous Knowledge. It shifts the power dynamic from expert-led design to a more democratic and culturally attuned co-construction of meaning within the commons.
+This commitment to ontology commoning ensures that the BKC's semantic structure is not an abstract technical artifact but a living reflection of the bioregion's collective intelligence and diverse ways of knowing. Such a process is fundamental for the BKC's success, as it directly addresses the need for legitimacy, trust, and the genuine co-creation of shared understanding, particularly when integrating sensitive and diverse knowledge forms like Indigenous Knowledge. It shifts the power dynamic from expert-led design to a more democratic and culturally attuned co-construction of meaning within the commons. Furthermore, it's important to recognize that the very process of abstracting patterns from contextual processes and then re-applying them to other contexts is, itself, a protocol and a pattern that can be documented, shared, and refined within the commons.
 
 ### 2.3. Integrating Indigenous Knowledge Systems (IKS): Protocols, Ethics, and Ontological Respect
 
