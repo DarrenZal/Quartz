@@ -217,15 +217,10 @@ The vision for a BKC is to empower bioregional communities by providing them wit
 The scope of a BKC is necessarily broad and inclusive, reflecting the multifaceted nature of a bioregion. It would encompass a wide array of knowledge types, including:
 
 - Ecological Data: Detailed information on flora, fauna, water systems, soil types, climate patterns, and geological features specific to the bioregion.[^1]
-    
 - Local and Indigenous Knowledge: Place-based wisdom, traditional ecological knowledge (TEK), sustainable land management practices, and cultural narratives passed down through generations.[^1]
-    
 - Cultural Heritage: Documentation of stories, songs, traditional pathways, historical landmarks, and other culturally significant sites and practices that define the bioregion's human dimension.[^1]
-    
 - Scientific Research: Findings from academic studies, environmental assessments, and other scientific investigations relevant to the bioregion, potentially managed using [[GraphsForDeSci|DeSci graph methodologies]].
-    
 - Community-Generated Data: Information collected by citizen scientists, local groups, and individuals through participatory monitoring or mapping projects.
-    
 - Historical Information: Archival records, oral histories, and other materials that illuminate the bioregion's past.
     
 
@@ -316,21 +311,13 @@ Several methodologies for participatory ontology engineering can inform the BKC'
     
 
 - Key stakeholder engagement techniques from the ACCIO methodology include[^17]:
-    
-
-- Forming representative stakeholder groups that reflect the community's diversity.
-    
-- Conducting hands-on workshops to build a shared understanding of ontology concepts and collaboratively define initial requirements.
-    
-- Performing ethnographic observations of daily practices and conducting interviews to capture existing knowledge and workflows.
-    
-- Utilizing mind maps to systematically organize and represent observations for community validation.
-    
-- Developing "sunny-day scenarios" (ideal use cases) and personas (representative user profiles) to clearly define the scope and user requirements for the ontology.
-    
-- Organizing role-play co-design workshops where stakeholders enact scenarios to collaboratively build the conceptual model of the ontology.
-    
-- Holding decision-tree co-design workshops to formalize complex decision-making processes and extract rules for the ontology.
+    - Forming representative stakeholder groups that reflect the community's diversity.
+    - Conducting hands-on workshops to build a shared understanding of ontology concepts and collaboratively define initial requirements.
+    - Performing ethnographic observations of daily practices and conducting interviews to capture existing knowledge and workflows.
+    - Utilizing mind maps to systematically organize and represent observations for community validation.
+    - Developing "sunny-day scenarios" (ideal use cases) and personas (representative user profiles) to clearly define the scope and user requirements for the ontology.
+    - Organizing role-play co-design workshops where stakeholders enact scenarios to collaboratively build the conceptual model of the ontology.
+    - Holding decision-tree co-design workshops to formalize complex decision-making processes and extract rules for the ontology.
     
 
 - Community-Based Ontology Development Tools: The emergence of platforms designed for collaborative ontology work is also significant. For example, Ontokiwi, an extension of the MediaWiki software (the engine behind Wikipedia), aims to support community-wide ontology annotation and development by leveraging familiar wiki-style collaboration features.[^31] Similarly, WebProtégé is a web-based tool that facilitates collaborative ontology editing by multiple users simultaneously.[^32]
@@ -339,11 +326,8 @@ Several methodologies for participatory ontology engineering can inform the BKC'
 Incorporating community workshop insights is a cornerstone of ontology commoning. Workshops, designed using techniques like those from the ACCIO project, will be crucial throughout the BKC ontology development lifecycle. These workshops will serve to:
 
 - Collectively identify the key entities, concepts, attributes, and relationships that are most relevant and meaningful to the bioregion and its inhabitants.
-    
 - Collaboratively define terms and their nuanced meanings from local and Indigenous perspectives, ensuring the ontology's vocabulary is grounded in community understanding.
-    
 - Provide a forum for validating, reviewing, and iteratively refining ontology components as they are developed.
-    
 - Facilitate dialogue to resolve differing viewpoints, negotiate meanings, and achieve a degree of consensus on how knowledge should be represented, thereby fostering a truly shared semantic framework.
     
 
@@ -440,17 +424,11 @@ These techniques translate ontological components into dense vector representati
 - Methods like EIKE (Extensional and Intensional Knowledge Embedding) aim to capture both the extensional knowledge (about specific instances belonging to concepts) and intensional knowledge (about the inherent properties, characteristics, and semantic associations among concepts) within these embeddings.[^59]
     
 - These vector representations enable a range of valuable functionalities within the BKC[^60]:
-    
-
-- Calculating semantic similarity between concepts, entities, or documents.
-    
-- Predicting new or missing links (relationships) within the knowledge graph.
-    
-- Enhancing search and recommendation systems (e.g., suggesting related knowledge resources or community members with relevant expertise).
-    
-- Integrating the ontological knowledge with machine learning models for more advanced analytical tasks, such as trend prediction or impact assessment within the bioregion.
-    
-- Crucially, these embeddings can also aid in **suggesting merges, alignments, or translations** between different ontological modules, supporting the principles of ontological pluralism.
+    - Calculating semantic similarity between concepts, entities, or documents.
+    - Predicting new or missing links (relationships) within the knowledge graph.
+    - Enhancing search and recommendation systems (e.g., suggesting related knowledge resources or community members with relevant expertise).
+    - Integrating the ontological knowledge with machine learning models for more advanced analytical tasks, such as trend prediction or impact assessment within the bioregion.
+    - Crucially, these embeddings can also aid in **suggesting merges, alignments, or translations** between different ontological modules, supporting the principles of ontological pluralism.
 
 Ethical Considerations for AI in Ontology Development:
 

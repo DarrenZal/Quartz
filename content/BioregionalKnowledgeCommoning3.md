@@ -211,13 +211,9 @@ DAOs represent an emerging model for governance in digital environments [^114]:
 - Concept: DAOs are internet-native organizations that leverage blockchain technology and smart contracts to automate rules, manage resources, and facilitate collective decision-making. Governance rights are often distributed through tokens, allowing token holders to propose and vote on initiatives.114
     
 - Potential for BKC: DAOs could offer mechanisms for:
-    
-
-- Transparently managing shared BKC resources or funds.
-    
-- Coordinating community-led projects or stewardship activities within the bioregion.
-    
-- Allowing members to vote on proposals related to BKC development, policy changes, or resource allocation.
+    - Transparently managing shared BKC resources or funds.
+    - Coordinating community-led projects or stewardship activities within the bioregion.
+    - Allowing members to vote on proposals related to BKC development, policy changes, or resource allocation.
     
 
 - Challenges: DAOs also present challenges, including the risk of low voter turnout, the complexities of designing fair and effective token-based governance, unclear legal frameworks for DAO operations, and potential technical vulnerabilities in smart contracts.[^115]
@@ -273,19 +269,14 @@ By vesting control of IKS directly with Indigenous communities through these gov
 A clear and nuanced licensing framework is essential for managing the diverse types of knowledge that will reside within the BKC, promoting sharing while respecting intellectual property rights and cultural protocols.
 
 - Creative Commons (CC) Licenses: For much of the content contributed by the broader community (e.g., research, educational materials, general observations), Creative Commons licenses offer a standardized and flexible way to grant permissions for sharing and reuse.[^49] The BKC could adopt a default CC license for general contributions, such as:
-    
-
-- CC BY (Attribution): Allows others to distribute, remix, adapt, and build upon the work, even commercially, as long as they credit the original creator.
-    
-- CC BY-SA (Attribution-ShareAlike): Similar to CC BY, but requires any adaptations to be licensed under the same or compatible terms. This is a "copyleft" license that helps keep derivative works open. Other CC options like NonCommercial (NC) or NoDerivatives (ND) could be made available for contributors who wish to apply more restrictions.[^117] CC0 (public domain dedication) can be used for works where the creator wishes to waive all copyright interest.[^117] It is important to educate contributors that once an open license is applied, it cannot be retroactively revoked.[^117]
+    - CC BY (Attribution): Allows others to distribute, remix, adapt, and build upon the work, even commercially, as long as they credit the original creator.
+    - CC BY-SA (Attribution-ShareAlike): Similar to CC BY, but requires any adaptations to be licensed under the same or compatible terms. This is a "copyleft" license that helps keep derivative works open. Other CC options like NonCommercial (NC) or NoDerivatives (ND) could be made available for contributors who wish to apply more restrictions.[^117] CC0 (public domain dedication) can be used for works where the creator wishes to waive all copyright interest.[^117] It is important to educate contributors that once an open license is applied, it cannot be retroactively revoked.[^117]
     
 
 - Software Licenses: For any open-source software components developed for the BKC platform itself, permissive licenses like the Apache License 2.0 or the MIT License are common choices. These allow for broad reuse and modification while requiring preservation of copyright and license notices.[^117]
     
 - Traditional Knowledge (TK) Licenses and Labels: Standard copyright and CC licenses are often inadequate or inappropriate for Indigenous Knowledge, which is typically collectively owned, passed down through generations, and governed by specific cultural protocols regarding its use and dissemination.49 The BKC must implement specialized approaches for IKS:
-    
-
-- TK Licenses/Labels: These are designed to recognize and respect the unique access and use expectations of Indigenous, traditional, and local communities concerning their knowledge and cultural expressions.49 They aim to clarify cultural protocols and guide users outside those cultures in using the material fairly and respectfully. Examples include the Local Contexts system, which provides customizable TK Labels (e.g., TK Attribution, TK Outreach, TK Culturally Sensitive) that communities can apply to their digitized heritage to communicate permissions and responsibilities.35 These can be used alongside or in place of standard copyright or CC licenses for IKS.
+    - TK Licenses/Labels: These are designed to recognize and respect the unique access and use expectations of Indigenous, traditional, and local communities concerning their knowledge and cultural expressions.49 They aim to clarify cultural protocols and guide users outside those cultures in using the material fairly and respectfully. Examples include the Local Contexts system, which provides customizable TK Labels (e.g., TK Attribution, TK Outreach, TK Culturally Sensitive) that communities can apply to their digitized heritage to communicate permissions and responsibilities.35 These can be used alongside or in place of standard copyright or CC licenses for IKS.
     
 
 - Data Licenses: For specific datasets shared within the BKC (e.g., ecological monitoring data, geospatial data), specific data licenses like those from the Open Data Commons (e.g., ODbL, PDDL) might be appropriate to clarify terms of use for the data itself, distinct from any accompanying textual descriptions or visualizations.
@@ -441,21 +432,13 @@ This initial phase focuses on laying a strong, ethical, and community-grounded f
     
 
 - Deliverables:
-    
-
-- Comprehensive Bioregional Assessment Report.
-    
-- Community Engagement and Trust-Building Strategy.
-    
-- Co-developed and community-ratified Indigenous Knowledge and Data Sovereignty Protocols.
-    
-- Pilot BKC Ontology for selected core domains, with documentation of the "ontology commoning" process.
-    
-- Technology Feasibility Report and Prototype Demonstrations.
-    
-- Draft Governance Framework for community review.
-    
-- Initial funding and partnerships secured.
+    - Comprehensive Bioregional Assessment Report.
+    - Community Engagement and Trust-Building Strategy.
+    - Co-developed and community-ratified Indigenous Knowledge and Data Sovereignty Protocols.
+    - Pilot BKC Ontology for selected core domains, with documentation of the "ontology commoning" process.
+    - Technology Feasibility Report and Prototype Demonstrations.
+    - Draft Governance Framework for community review.
+    - Initial funding and partnerships secured.
     
 
 - Focus: The primary focus of Phase 1 is to establish a legitimate, ethical, and socially robust foundation for the BKC, ensuring that its development is driven by community needs and respects Indigenous rights from the outset. Technical development is secondary to this foundational work.
@@ -528,15 +511,10 @@ With a functional core platform and demonstrated value, Phase 3 focuses on scali
     - Broader Community Outreach and Onboarding: Actively promote the BKC throughout the bioregion to diverse communities and stakeholder groups. Develop accessible training materials, user guides, and workshops to support new users in joining, contributing to, and utilizing the BKC.[^99] Provide dedicated support for communities that may face barriers to participation.
     
     - Development of Advanced Features: Based on user feedback, emerging needs, and technological advancements, implement more sophisticated tools and functionalities. This could include:
-    
-
-    - Advanced knowledge graph analytics and visualization tools.
-    
-    - OG-RAG powered conversational AI interfaces for natural language querying.97
-    
-    - Enhanced collaborative tools, potentially leveraging Holochain "We" applets for project management, co-authoring, or decision-making.[^80]
-    
-    - Tools for implementing and tracking ecosystem stewardship certifications or other regenerative economic models linked to the BKC.[^86]
+        - Advanced knowledge graph analytics and visualization tools.
+        - OG-RAG powered conversational AI interfaces for natural language querying.97
+        - Enhanced collaborative tools, potentially leveraging Holochain "We" applets for project management, co-authoring, or decision-making.[^80]
+        - Tools for implementing and tracking ecosystem stewardship certifications or other regenerative economic models linked to the BKC.[^86]
     
 
     - Ontology Evolution and Maintenance: Establish robust and ongoing processes for "ontology commoning." This includes mechanisms for community members to propose changes or additions to the ontology, version control for the ontology, community review and validation processes, and systematic ways to integrate new knowledge domains or adapt to evolving understandings within the bioregion.
@@ -586,8 +564,6 @@ This phase represents the BKC's maturation into an enduring and integral part of
     
 
 - Deliverables:
-    
-
     - An enduring, evolving, and resilient Bioregional Knowledge Commons that serves as a vital and trusted resource for current and future generations within the bioregion.
     
     - A legacy of community stewardship and collaborative knowledge creation.
